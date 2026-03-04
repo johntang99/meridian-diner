@@ -1,0 +1,76 @@
+{
+  "menuType": "desserts",
+  "title": "Desserts",
+  "subtitle": "Diner sweets, pies, and warm comfort desserts.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e6666f2d67628db8477ccfe561efa4983033a2dd.jpg",
+  "categories": [
+    {
+      "id": "pies-cakes",
+      "name": "Pies & Cakes",
+      "description": "House-baked favorites.",
+      "displayOrder": 1
+    },
+    {
+      "id": "classic-sweets",
+      "name": "Classic Sweets",
+      "description": "Warm and nostalgic desserts.",
+      "displayOrder": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "ds-001",
+      "categoryId": "pies-cakes",
+      "name": "Apple Pie",
+      "description": "Warm spiced apples, flaky crust, whipped cream.",
+      "price": 799,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "ds-002",
+      "categoryId": "pies-cakes",
+      "name": "Cherry Pie",
+      "description": "Tart cherries, vanilla cream.",
+      "price": 799,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "ds-003",
+      "categoryId": "pies-cakes",
+      "name": "New York Cheesecake",
+      "description": "Classic cheesecake, berry compote.",
+      "price": 849,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "ds-004",
+      "categoryId": "classic-sweets",
+      "name": "Bread Pudding",
+      "description": "Vanilla custard, caramel drizzle.",
+      "price": 749,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "ds-005",
+      "categoryId": "classic-sweets",
+      "name": "Chocolate Sundae",
+      "description": "Vanilla ice cream, fudge, nuts, cherry.",
+      "price": 699,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "ds-006",
+      "categoryId": "classic-sweets",
+      "name": "Banana Pudding",
+      "description": "Vanilla wafers, whipped cream.",
+      "price": 699,
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

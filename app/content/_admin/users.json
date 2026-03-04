@@ -1,0 +1,14 @@
+[
+  {
+    "id": "admin-1",
+    "email": "admin@themeridian.com",
+    "name": "Super Admin",
+    "role": "super_admin",
+    "sites": [
+      "meridian-diner"
+    ],
+    "passwordHash": "$2b$10$/24Ail4TC2uJjys1XqtBxuMtW1iTe2ZL9EWGfHso63WHrLZcXN5XO",
+    "createdAt": "2026-03-03T00:00:00Z",
+    "lastLoginAt": "2026-03-03T00:00:00.000Z"
+  }
+]

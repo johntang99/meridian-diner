@@ -1,0 +1,87 @@
+{
+  "hero": {
+    "eyebrow": "Private Dining",
+    "headline": "An Exceptional Setting for Every Occasion",
+    "body": "Whether it's an intimate dinner for twelve or a celebration for sixty, The Meridian's private dining spaces offer an unparalleled backdrop for your most important moments.",
+    "ctaText": "Enquire Now",
+    "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/c77125e17b114c9ef8ab79e8e72037d288a22d2c.jpg"
+  },
+  "spaces": [
+    {
+      "name": "The Salon",
+      "capacity": "12–18 guests",
+      "description": "An intimate room with floor-to-ceiling windows, custom lighting, and a dedicated entrance. Ideal for birthday dinners, small corporate gatherings, and anniversary celebrations.",
+      "features": [
+        "Dedicated server",
+        "Custom menus",
+        "Natural light",
+        "Private entrance"
+      ],
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg"
+    },
+    {
+      "name": "The Library",
+      "capacity": "20–40 guests",
+      "description": "Our larger private space features walnut bookshelves, a private bar, and state-of-the-art AV equipment. Perfect for corporate events, rehearsal dinners, and cocktail receptions.",
+      "features": [
+        "AV equipment",
+        "Private bar",
+        "Custom menus",
+        "Dedicated team",
+        "Dance floor option"
+      ],
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/71e99245610593f3d8d52de0dee09969438b0967.jpg"
+    }
+  ],
+  "occasions": [
+    {
+      "label": "Corporate Events",
+      "icon": "briefcase"
+    },
+    {
+      "label": "Birthday Celebrations",
+      "icon": "cake"
+    },
+    {
+      "label": "Wedding Rehearsal Dinners",
+      "icon": "heart"
+    },
+    {
+      "label": "Anniversaries",
+      "icon": "star"
+    },
+    {
+      "label": "Cocktail Receptions",
+      "icon": "glass"
+    },
+    {
+      "label": "Brand Activations",
+      "icon": "sparkle"
+    }
+  ],
+  "testimonial": {
+    "quote": "The Meridian made our rehearsal dinner absolutely perfect. From the custom menu to the impeccable service, every detail was thoughtful and elegant.",
+    "author": "Rebecca & Thomas",
+    "occasion": "Wedding Rehearsal Dinner"
+  },
+  "form": {
+    "headline": "Start Planning Your Event",
+    "description": "Tell us about your event and our private dining team will be in touch within 24 hours.",
+    "occasionOptions": [
+      "Corporate Event",
+      "Birthday",
+      "Anniversary",
+      "Wedding-Related",
+      "Holiday Party",
+      "Other"
+    ],
+    "sourceOptions": [
+      "Google",
+      "Yelp",
+      "Instagram",
+      "Referred by a friend",
+      "Repeat guest",
+      "Other"
+    ]
+  }
+}

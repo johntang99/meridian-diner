@@ -1,0 +1,16 @@
+{
+  "domains": [
+    {
+      "siteId": "meridian-diner",
+      "domain": "localhost",
+      "environment": "dev",
+      "enabled": true
+    },
+    {
+      "siteId": "meridian-diner",
+      "domain": "themeridian.com",
+      "environment": "prod",
+      "enabled": true
+    }
+  ]
+}

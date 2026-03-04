@@ -1,0 +1,76 @@
+{
+  "menuType": "beverages",
+  "title": "Coffee & Beverages",
+  "subtitle": "Freshly brewed coffee, teas, juices, and diner classics.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4c501f93b358b128bdc84d07a88c8a455df11543.jpg",
+  "categories": [
+    {
+      "id": "coffee-tea",
+      "name": "Coffee & Tea",
+      "description": "Hot beverages brewed throughout the day.",
+      "displayOrder": 1
+    },
+    {
+      "id": "cold-drinks",
+      "name": "Cold Drinks",
+      "description": "Refreshing non-alcoholic options.",
+      "displayOrder": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "bv-001",
+      "categoryId": "coffee-tea",
+      "name": "Bottomless House Coffee",
+      "description": "Fresh drip coffee.",
+      "price": 499,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "bv-002",
+      "categoryId": "coffee-tea",
+      "name": "Espresso",
+      "description": "Double shot.",
+      "price": 449,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "bv-003",
+      "categoryId": "coffee-tea",
+      "name": "Hot Tea",
+      "description": "Assorted black, green, and herbal.",
+      "price": 399,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "bv-004",
+      "categoryId": "cold-drinks",
+      "name": "Fresh Orange Juice",
+      "description": "Pressed daily.",
+      "price": 599,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "bv-005",
+      "categoryId": "cold-drinks",
+      "name": "Lemonade",
+      "description": "House-made, lightly sweetened.",
+      "price": 499,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "bv-006",
+      "categoryId": "cold-drinks",
+      "name": "Fountain Soda",
+      "description": "Free refills.",
+      "price": 399,
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

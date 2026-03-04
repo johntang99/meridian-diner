@@ -1,0 +1,38 @@
+{
+  "topbar": {
+    "show": true,
+    "phone": "(212) 555-0142",
+    "phoneHref": "tel:+12125550142",
+    "message": "现在接受春季预订"
+  },
+  "menu": {
+    "variant": "transparent",
+    "fontWeight": "semibold",
+    "logo": {
+      "type": "text",
+      "text": "THE MERIDIAN",
+      "subtext": "始于2019"
+    },
+    "items": [
+      {
+        "text": "菜单",
+        "url": "/menu",
+        "children": [
+          { "text": "晚餐", "url": "/menu/dinner" },
+          { "text": "鸡尾酒与葡萄酒", "url": "/menu/cocktails" }
+        ]
+      },
+      { "text": "关于", "url": "/about" },
+      { "text": "预订", "url": "/reservations" },
+      { "text": "活动", "url": "/events", "feature_gate": "events" },
+      { "text": "画廊", "url": "/gallery", "feature_gate": "gallery" },
+      { "text": "博客", "url": "/blog" },
+      { "text": "联系", "url": "/contact" }
+    ]
+  },
+  "transparent_hero": true,
+  "cta": {
+    "text": "预订餐位",
+    "link": "/reservations"
+  }
+}

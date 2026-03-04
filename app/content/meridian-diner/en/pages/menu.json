@@ -1,0 +1,222 @@
+{
+  "hero": {
+    "headline": "The Complete Diner Menu",
+    "subline": "From all-day breakfast to burgers, comfort classics, weekly specials, and chef signatures."
+  },
+  "sectionVariants": {
+    "todaysSpecial": "rich",
+    "weeklySpecials": "rich",
+    "chefSignatures": "rich"
+  },
+  "homeSectionVariants": {
+    "todaysSpecial": "rich",
+    "chefSignatures": "compact"
+  },
+  "todaySpecial": {
+    "name": "Chef Bellamy Signature Meatloaf Plate",
+    "description": "Braised short-rib meatloaf, buttery mash, seasonal vegetables, onion gravy.",
+    "price": 24,
+    "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg",
+    "badges": [
+      "Limited",
+      "Best Seller"
+    ],
+    "includes": [
+      "Creamy mash",
+      "Seasonal vegetables",
+      "House gravy"
+    ],
+    "menuType": "dinner",
+    "ctaLabel": "See Dinner Menu"
+  },
+  "weeklySpecials": [
+    {
+      "day": "Monday",
+      "dayNumber": 1,
+      "name": "Chicken Pot Pie",
+      "description": "Flaky crust, roasted chicken, root vegetables.",
+      "price": 18,
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b41f2eb6dbeb2f98fbdfa39abc05e39d9f1c7181.jpg",
+      "badges": [
+        "House Favorite"
+      ],
+      "includes": [
+        "Side salad",
+        "Dinner roll",
+        "Choice of tea or coffee"
+      ],
+      "menuType": "lunch",
+      "ctaLabel": "See Lunch Menu"
+    },
+    {
+      "day": "Tuesday",
+      "dayNumber": 2,
+      "name": "Turkey Dinner",
+      "description": "Roast turkey, stuffing, mashed potatoes, cranberry.",
+      "price": 21,
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/0f81a2a54847b6b16c5fb904355636d88e3f96ba.jpg",
+      "badges": [
+        "Classic"
+      ],
+      "includes": [
+        "Turkey gravy",
+        "Seasonal vegetables",
+        "Cranberry relish"
+      ],
+      "menuType": "dinner",
+      "ctaLabel": "See Dinner Menu"
+    },
+    {
+      "day": "Wednesday",
+      "dayNumber": 3,
+      "name": "BBQ Meatloaf",
+      "description": "House glaze, mac and cheese, collard greens.",
+      "price": 20,
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg",
+      "badges": [
+        "Best Seller"
+      ],
+      "includes": [
+        "Creamy mac and cheese",
+        "Braised greens",
+        "Pickled onions"
+      ],
+      "menuType": "dinner",
+      "ctaLabel": "See Dinner Menu"
+    },
+    {
+      "day": "Thursday",
+      "dayNumber": 4,
+      "name": "Country Fried Steak",
+      "description": "Pepper gravy, hash browns, green beans.",
+      "price": 22,
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4ae1adc81a3383aa758bcaeff094e9b23fad2a05.jpg",
+      "badges": [
+        "Comfort Food"
+      ],
+      "includes": [
+        "Pepper gravy",
+        "Hash browns",
+        "Butter beans"
+      ],
+      "menuType": "dinner",
+      "ctaLabel": "See Dinner Menu"
+    },
+    {
+      "day": "Friday",
+      "dayNumber": 5,
+      "name": "Fish Fry",
+      "description": "Beer-battered cod, fries, coleslaw, tartar.",
+      "price": 23,
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4ae1adc81a3383aa758bcaeff094e9b23fad2a05.jpg",
+      "badges": [
+        "Friday Special"
+      ],
+      "includes": [
+        "Malt vinegar fries",
+        "House tartar",
+        "Cabbage slaw"
+      ],
+      "menuType": "dinner",
+      "ctaLabel": "See Dinner Menu"
+    },
+    {
+      "day": "Saturday",
+      "dayNumber": 6,
+      "name": "Prime Rib Night",
+      "description": "Slow-roasted prime rib, au jus, baked potato.",
+      "price": 32,
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e68ce15fc74b0bee4aef18a39994375f2f4b00ed.jpg",
+      "badges": [
+        "Chef Choice",
+        "Limited"
+      ],
+      "includes": [
+        "Yorkshire pudding",
+        "Baked potato",
+        "Horseradish cream"
+      ],
+      "menuType": "dinner",
+      "ctaLabel": "See Dinner Menu"
+    },
+    {
+      "day": "Sunday",
+      "dayNumber": 0,
+      "name": "Brunch Board",
+      "description": "Pancakes, eggs, bacon, fruit, house jam.",
+      "price": 26,
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/37706f7783cb467f224b48a3a352e30dec4dbbf2.jpg",
+      "badges": [
+        "Weekend Only"
+      ],
+      "includes": [
+        "Maple syrup",
+        "Seasonal fruit",
+        "Fresh pastry"
+      ],
+      "menuType": "breakfast",
+      "ctaLabel": "See Breakfast Menu"
+    }
+  ],
+  "chefSignatures": [
+    {
+      "menuType": "burgers-sandwiches",
+      "itemId": "bs-005",
+      "badges": [
+        "Chef Pick",
+        "Best Seller"
+      ],
+      "highlights": [
+        "Diner classic",
+        "Grilled rye",
+        "Swiss + onions"
+      ],
+      "pairing": "Crispy fries and a classic cola float",
+      "ctaLabel": "See Burgers & Sandwiches"
+    },
+    {
+      "menuType": "dinner",
+      "itemId": "d-034",
+      "badges": [
+        "Signature",
+        "Limited"
+      ],
+      "highlights": [
+        "Slow braise",
+        "Comfort classic",
+        "Chef favorite"
+      ],
+      "pairing": "Sparkling wine or a classic old fashioned",
+      "ctaLabel": "See Dinner Menu"
+    },
+    {
+      "menuType": "all-day-breakfast",
+      "itemId": "adb-005",
+      "badges": [
+        "Weekend Favorite"
+      ],
+      "highlights": [
+        "Custard-soaked brioche",
+        "Berry compote",
+        "Available all day"
+      ],
+      "pairing": "Cold brew with vanilla sweet cream",
+      "ctaLabel": "See All-Day Breakfast"
+    },
+    {
+      "menuType": "burgers-sandwiches",
+      "itemId": "bs-006",
+      "badges": [
+        "Chef Signature",
+        "Crowd Favorite"
+      ],
+      "highlights": [
+        "Buttermilk chicken",
+        "House comeback sauce",
+        "Crispy texture"
+      ],
+      "pairing": "Fresh lemonade or iced tea",
+      "ctaLabel": "See Burgers & Sandwiches"
+    }
+  ]
+}

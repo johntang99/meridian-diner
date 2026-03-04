@@ -1,0 +1,276 @@
+{
+  "title": "The Meridian Journal",
+  "subtitle": "Stories from our kitchen, wine cellar, and beyond.",
+  "posts": [
+    {
+      "slug": "spring-menu-2026",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg",
+      "category": "seasonal-guide",
+      "readTime": "4 min",
+      "title": "What's New on Our Spring Menu",
+      "excerpt": "Chef Bellamy reveals the ingredients and inspirations behind this season's new dishes, from ramp risotto to strawberry panna cotta.",
+      "author": "Marcus Bellamy",
+      "publishDate": "2026-03-01",
+      "tags": [
+        "spring",
+        "seasonal",
+        "menu"
+      ],
+      "featured": true,
+      "published": true
+    },
+    {
+      "slug": "wine-guide-natural-wines",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/7c9dcf8f8e691442ae3cbae956e60050dbb51a71.jpg",
+      "category": "wine-spirits",
+      "readTime": "6 min",
+      "title": "A Beginner's Guide to Natural Wine",
+      "excerpt": "Head Sommelier David Chen demystifies natural wine — what it is, why it matters, and our favorite bottles on the list.",
+      "author": "David Chen",
+      "publishDate": "2026-02-20",
+      "tags": [
+        "wine",
+        "natural",
+        "guide"
+      ],
+      "featured": true,
+      "published": true
+    },
+    {
+      "slug": "farm-partners-hudson-valley",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ec871018c47382353e0458c3131c81c536b885c7.jpg",
+      "category": "sourcing-ingredients",
+      "readTime": "5 min",
+      "title": "Meet Our Hudson Valley Farm Partners",
+      "excerpt": "We visit three local farms within 100 miles of NYC that supply The Meridian with seasonal produce, eggs, and dairy.",
+      "author": "Marcus Bellamy",
+      "publishDate": "2026-02-10",
+      "tags": [
+        "farm-to-table",
+        "sourcing",
+        "local"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "behind-the-bar-smoke-and-honey",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ed444e06736f8bf0267e5386b4056fa867cd5857.jpg",
+      "category": "wine-spirits",
+      "readTime": "3 min",
+      "title": "Behind the Bar: The Story of Smoke & Honey",
+      "excerpt": "Bar Director Sarah Kim shares the inspiration and technique behind our newest signature cocktail.",
+      "author": "Sarah Kim",
+      "publishDate": "2026-01-28",
+      "tags": [
+        "cocktails",
+        "behind-the-scenes",
+        "signature"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "valentines-day-recap",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f54eac5201117640a9940a1796a05a28ade90c7c.jpg",
+      "category": "events-announcements",
+      "readTime": "3 min",
+      "title": "Valentine's Day 2026: A Night to Remember",
+      "excerpt": "A look back at our sold-out Valentine's Day dinner — the special menu, the roses, and the moments that made it magical.",
+      "author": "James Morrison",
+      "publishDate": "2026-02-16",
+      "tags": [
+        "events",
+        "valentines",
+        "recap"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "pastry-chef-elena-interview",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/508a957c416a2222d88bca82af7a9d67695bc1e4.jpg",
+      "category": "chef-perspective",
+      "readTime": "7 min",
+      "title": "In Conversation with Pastry Chef Elena Vasquez",
+      "excerpt": "Elena talks about her journey from Le Cordon Bleu to The Meridian, her favorite dessert to make, and why she loves seasonal fruit.",
+      "author": "Editorial",
+      "publishDate": "2026-01-15",
+      "tags": [
+        "team",
+        "pastry",
+        "interview"
+      ],
+      "featured": true,
+      "published": true
+    },
+    {
+      "slug": "holiday-gift-guide-2025",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/d78aec36ea71f0339ec2b422f090a168a61b4b79.jpg",
+      "category": "news",
+      "readTime": "4 min",
+      "title": "The Meridian Holiday Gift Guide",
+      "excerpt": "Gift cards, wine club memberships, private dining vouchers, and our take-home cookie boxes. The perfect gifts for food lovers.",
+      "author": "Editorial",
+      "publishDate": "2025-12-01",
+      "tags": [
+        "gifts",
+        "holiday",
+        "guide"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "summer-cocktails-2025",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/047bb50bca87ff81056695c201b5b1a768a5f896.jpg",
+      "category": "wine-spirits",
+      "readTime": "4 min",
+      "title": "Summer Cocktails: Our 5 Favorites",
+      "excerpt": "From the Garden Party to the Rosé Spritz, these are the drinks that defined summer at The Meridian.",
+      "author": "Sarah Kim",
+      "publishDate": "2025-07-10",
+      "tags": [
+        "cocktails",
+        "summer",
+        "seasonal"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "foraging-dinner-preview",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/d89ab52154f92ff7630876d08c217085a7ea328b.jpg",
+      "category": "events-announcements",
+      "readTime": "3 min",
+      "title": "Spring Foraging Dinner: What to Expect",
+      "excerpt": "A preview of our upcoming collaboration with forager Mika Torres — wild ramps, fiddleheads, and the stories behind the ingredients.",
+      "author": "Marcus Bellamy",
+      "publishDate": "2026-03-10",
+      "tags": [
+        "events",
+        "foraging",
+        "spring"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "cheese-program",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1e739fbd9cf34bc4fcd2c2e2476a26e02e28d284.jpg",
+      "category": "sourcing-ingredients",
+      "readTime": "5 min",
+      "title": "Our Artisan Cheese Program",
+      "excerpt": "How we source, age, and serve our cheese selection — from a tiny goat farm in Vermont to your table.",
+      "author": "Marcus Bellamy",
+      "publishDate": "2025-10-20",
+      "tags": [
+        "cheese",
+        "sourcing",
+        "artisan"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "design-story",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg",
+      "category": "behind-the-scenes",
+      "readTime": "6 min",
+      "title": "The Design of The Meridian",
+      "excerpt": "Architect Nina Park shares the vision behind our dining room — the materials, the lighting, and why every seat has a view.",
+      "author": "Editorial",
+      "publishDate": "2025-09-15",
+      "tags": [
+        "design",
+        "interior",
+        "architecture"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "sustainability-commitment",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/d56967f7a99ddc19d7dcd4c81621ba79c83cc16c.jpg",
+      "category": "kitchen-stories",
+      "readTime": "5 min",
+      "title": "Our Commitment to Sustainability",
+      "excerpt": "Zero-waste kitchen practices, compostable packaging, and sustainable sourcing — how The Meridian minimizes its environmental impact.",
+      "author": "Marcus Bellamy",
+      "publishDate": "2025-04-22",
+      "tags": [
+        "sustainability",
+        "environment",
+        "kitchen"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "staff-meal-traditions",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/508a957c416a2222d88bca82af7a9d67695bc1e4.jpg",
+      "category": "behind-the-scenes",
+      "readTime": "4 min",
+      "title": "Staff Meal: Our Daily Tradition",
+      "excerpt": "Every day before service, the team sits down together for staff meal. Here's why it matters and what's on the table.",
+      "author": "Marcus Bellamy",
+      "publishDate": "2025-06-01",
+      "tags": [
+        "team",
+        "tradition",
+        "kitchen"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "private-dining-guide",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/a6e0b9c71c75d3b53d267a3fd50f558c0773eeb2.jpg",
+      "category": "news",
+      "readTime": "3 min",
+      "title": "Planning Your Private Event at The Meridian",
+      "excerpt": "Everything you need to know about our private dining room — capacity, menus, pricing, and how to make it yours.",
+      "author": "James Morrison",
+      "publishDate": "2025-08-10",
+      "tags": [
+        "private-dining",
+        "events",
+        "guide"
+      ],
+      "featured": false,
+      "published": true
+    },
+    {
+      "slug": "autumn-tasting-menu",
+      "type": "article",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg",
+      "category": "seasonal-guide",
+      "readTime": "4 min",
+      "title": "Our Autumn Tasting Menu: A Deep Dive",
+      "excerpt": "Course by course through our fall tasting menu — duck, mushrooms, pear, and a chocolate dessert that will haunt your dreams.",
+      "author": "Marcus Bellamy",
+      "publishDate": "2025-10-01",
+      "tags": [
+        "autumn",
+        "tasting-menu",
+        "seasonal"
+      ],
+      "featured": false,
+      "published": true
+    }
+  ]
+}

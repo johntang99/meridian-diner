@@ -1,0 +1,76 @@
+{
+  "menuType": "milkshakes",
+  "title": "Milkshakes & Floats",
+  "subtitle": "Thick shakes and nostalgic soda fountain favorites.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/a7ab82f02064e9d4d8e7111b7fe14298adb37600.jpg",
+  "categories": [
+    {
+      "id": "milkshakes",
+      "name": "Milkshakes",
+      "description": "Hand-spun premium ice cream shakes.",
+      "displayOrder": 1
+    },
+    {
+      "id": "floats",
+      "name": "Floats",
+      "description": "Classic soda and ice cream pairings.",
+      "displayOrder": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "mk-001",
+      "categoryId": "milkshakes",
+      "name": "Vanilla Milkshake",
+      "description": "Classic vanilla bean shake.",
+      "price": 799,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "mk-002",
+      "categoryId": "milkshakes",
+      "name": "Chocolate Milkshake",
+      "description": "Rich cocoa and vanilla ice cream.",
+      "price": 799,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "mk-003",
+      "categoryId": "milkshakes",
+      "name": "Strawberry Milkshake",
+      "description": "Real strawberry puree and whipped cream.",
+      "price": 799,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "mk-004",
+      "categoryId": "floats",
+      "name": "Root Beer Float",
+      "description": "Vanilla scoop, draft root beer.",
+      "price": 749,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "mk-005",
+      "categoryId": "floats",
+      "name": "Cola Float",
+      "description": "Classic cola and vanilla ice cream.",
+      "price": 749,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "mk-006",
+      "categoryId": "floats",
+      "name": "Creamsicle Float",
+      "description": "Orange soda, vanilla cream, citrus zest.",
+      "price": 799,
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

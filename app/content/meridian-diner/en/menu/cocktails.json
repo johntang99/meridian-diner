@@ -1,0 +1,274 @@
+{
+  "menuType": "cocktails",
+  "title": "Cocktails & Spirits",
+  "subtitle": "Crafted with precision, served with soul. Signature cocktails, classics reimagined, and seasonal creations",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/047bb50bca87ff81056695c201b5b1a768a5f896.jpg",
+  "categories": [
+    {
+      "id": "signature",
+      "name": "Signature Cocktails",
+      "description": "House originals by our bar team",
+      "displayOrder": 1
+    },
+    {
+      "id": "classics",
+      "name": "Classics Reimagined",
+      "description": "Timeless favorites with our twist",
+      "displayOrder": 2
+    },
+    {
+      "id": "seasonal",
+      "name": "Seasonal",
+      "description": "Limited offerings that change with the season",
+      "displayOrder": 3
+    },
+    {
+      "id": "zero-proof",
+      "name": "Zero Proof",
+      "description": "Spirit-free cocktails, full flavor",
+      "displayOrder": 4
+    }
+  ],
+  "items": [
+    {
+      "id": "c-001",
+      "categoryId": "signature",
+      "name": "The Meridian",
+      "description": "Aged rum, passion fruit, lime, demerara, Angostura bitters, gold leaf",
+      "price": 2200,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": true,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "c-002",
+      "categoryId": "signature",
+      "name": "Velvet Noir",
+      "description": "Mezcal, activated charcoal, agave, lime, smoked salt rim",
+      "price": 2000,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": true,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "c-003",
+      "categoryId": "signature",
+      "name": "Garden Party",
+      "description": "Hendrick's gin, cucumber, elderflower, sparkling, fresh herbs",
+      "price": 1900,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": false,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "c-004",
+      "categoryId": "signature",
+      "name": "Smoke & Honey",
+      "description": "Bourbon, honey syrup, lemon, smoked rosemary, egg white",
+      "price": 2100,
+      "dietaryFlags": [
+        "vegetarian",
+        "gf"
+      ],
+      "allergens": [
+        "eggs"
+      ],
+      "featured": false,
+      "seasonal": false,
+      "newItem": true,
+      "available": true,
+      "displayOrder": 4
+    },
+    {
+      "id": "c-005",
+      "categoryId": "signature",
+      "name": "Tokyo Drift",
+      "description": "Japanese whisky, yuzu, shiso, ginger, sparkling sake",
+      "price": 2300,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": false,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 5
+    },
+    {
+      "id": "c-010",
+      "categoryId": "classics",
+      "name": "Old Fashioned",
+      "description": "Woodford Reserve, demerara, Angostura, orange peel",
+      "price": 1800,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": false,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "c-011",
+      "categoryId": "classics",
+      "name": "Negroni",
+      "description": "Tanqueray, Campari, Carpano Antica, orange twist",
+      "price": 1800,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": false,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "c-012",
+      "categoryId": "classics",
+      "name": "Espresso Martini",
+      "description": "Ketel One, Mr. Black, fresh espresso, vanilla",
+      "price": 1900,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": true,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "c-013",
+      "categoryId": "classics",
+      "name": "French 75",
+      "description": "Plymouth gin, Champagne, lemon, lavender sugar",
+      "price": 2000,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": false,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 4
+    },
+    {
+      "id": "c-014",
+      "categoryId": "classics",
+      "name": "Manhattan",
+      "description": "Bulleit rye, sweet vermouth, bitters, Luxardo cherry",
+      "price": 1800,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": false,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 5
+    },
+    {
+      "id": "c-020",
+      "categoryId": "seasonal",
+      "name": "Autumn Orchard",
+      "description": "Apple brandy, cinnamon syrup, lemon, bitters, apple slice",
+      "price": 1900,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": true,
+      "seasonal": true,
+      "newItem": true,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "c-021",
+      "categoryId": "seasonal",
+      "name": "Pear & Thyme Collins",
+      "description": "Vodka, pear purée, thyme syrup, lemon, soda",
+      "price": 1800,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": false,
+      "seasonal": true,
+      "newItem": true,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "c-030",
+      "categoryId": "zero-proof",
+      "name": "Citrus Blossom",
+      "description": "Orange, grapefruit, elderflower tonic, rosemary",
+      "price": 1200,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": false,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "c-031",
+      "categoryId": "zero-proof",
+      "name": "Seedlip Garden Spritz",
+      "description": "Seedlip Garden 108, tonic, cucumber, mint",
+      "price": 1300,
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "allergens": [],
+      "featured": false,
+      "seasonal": false,
+      "newItem": false,
+      "available": true,
+      "displayOrder": 2
+    }
+  ]
+}

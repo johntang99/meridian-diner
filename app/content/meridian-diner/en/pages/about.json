@@ -1,0 +1,78 @@
+{
+  "cta": {
+    "ctaHref": "/en/reservations",
+    "subline": "Reserve a table and let us take care of the rest.",
+    "variant": "minimal",
+    "ctaLabel": "Make a Reservation",
+    "headline": "Experience Our Story Firsthand"
+  },
+  "hero": {
+    "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/8655abcc32409b7f0a6ff3e5c3fd2a146e1cac6c.jpg",
+    "eyebrow": "Est. 2019",
+    "subline": "A neighborhood restaurant with a global palate and a seasonal soul.",
+    "variant": "photo-background",
+    "headline": "Our Story"
+  },
+  "story": {
+    "body": "After a decade of cooking in Michelin-starred kitchens in New York and Lyon, Marcus wanted to build something different — a restaurant where the food was uncompromising but the atmosphere was warm, where every ingredient told a story of place and season.\n\nWe work directly with farms within 150 miles of Manhattan, changing our menu as the seasons change. Our sommelier David Chen has built a 350-label wine program with a focus on sustainable and biodynamic producers. Our bar director Sarah Kim creates cocktails that are as thoughtful and seasonal as the food.\n\nThe result is a restaurant that feels both special and familiar — a place where celebrations happen naturally and regulars become friends.",
+    "pullQuote": "I cook with the seasons because nature is the best menu writer. My job is simply to listen.",
+    "leadParagraph": "The Meridian was born from a simple belief: that a great meal can turn an ordinary evening into an occasion. Chef Marcus Bellamy opened our doors on the Upper West Side in 2019 with a mission to celebrate seasonal American cuisine through the lens of global technique.",
+    "pullQuoteAttribution": "Chef Marcus Bellamy"
+  },
+  "awards": {
+    "items": [
+      {
+        "name": "James Beard Foundation",
+        "year": "2024",
+        "award": "Best Chef: NYC Nominee"
+      },
+      {
+        "name": "Wine Spectator",
+        "year": "2023",
+        "award": "Award of Excellence"
+      },
+      {
+        "name": "Time Out New York",
+        "year": "2020",
+        "award": "Best New Restaurant"
+      },
+      {
+        "name": "Eater New York",
+        "year": "2022",
+        "award": "Restaurant of the Year Finalist"
+      }
+    ],
+    "headline": "Recognition"
+  },
+  "values": {
+    "items": [
+      {
+        "icon": "leaf",
+        "title": "Seasonal First",
+        "description": "Our menu changes with the harvest. Every dish reflects what's freshest and most alive right now."
+      },
+      {
+        "icon": "globe",
+        "title": "Global Technique",
+        "description": "French foundations, Japanese precision, Latin warmth — our cooking draws from the world's great traditions."
+      },
+      {
+        "icon": "heart",
+        "title": "Genuine Hospitality",
+        "description": "Fine dining without pretension. We want every guest to feel welcomed, celebrated, and cared for."
+      }
+    ],
+    "headline": "What We Stand For"
+  },
+  "teamPreview": {
+    "ctaLink": "/en/about/team",
+    "ctaText": "Meet the Full Team",
+    "subline": "A passionate team of culinary professionals dedicated to your experience.",
+    "headline": "The People Behind the Plates"
+  },
+  "_workflow": {
+    "status": "published",
+    "updatedAt": "2026-03-04T09:04:59.393Z",
+    "publishedAt": "2026-03-04T08:58:06.372Z"
+  }
+}

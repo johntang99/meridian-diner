@@ -1,0 +1,106 @@
+{
+  "menuType": "breakfast",
+  "title": "Breakfast Menu",
+  "subtitle": "Seasonal morning classics, house pastries, and coffee program.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9ed7a378536f463672bb5b3b9edbce025bfafdeb.jpg",
+  "categories": [
+    {
+      "id": "pastries",
+      "name": "Pastries & Bakes",
+      "description": "Fresh from our pastry station each morning.",
+      "displayOrder": 1
+    },
+    {
+      "id": "mains",
+      "name": "Breakfast Mains",
+      "description": "Hearty and refined breakfast plates.",
+      "displayOrder": 2
+    },
+    {
+      "id": "beverages",
+      "name": "Coffee & Beverages",
+      "description": "House coffee program and morning drinks.",
+      "displayOrder": 3
+    }
+  ],
+  "items": [
+    {
+      "id": "bk-001",
+      "categoryId": "pastries",
+      "name": "Butter Croissant",
+      "description": "European-style laminated pastry, cultured butter.",
+      "price": 800,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "bk-002",
+      "categoryId": "pastries",
+      "name": "Seasonal Fruit Danish",
+      "description": "Vanilla pastry cream, rotating seasonal fruit.",
+      "price": 900,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "bk-003",
+      "categoryId": "mains",
+      "name": "Soft Scramble Toast",
+      "description": "Farm eggs, chive creme fraiche, sourdough.",
+      "price": 1800,
+      "dietaryFlags": [
+        "vegetarian"
+      ],
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "bk-004",
+      "categoryId": "mains",
+      "name": "Smoked Salmon Plate",
+      "description": "Cured salmon, capers, red onion, cream cheese, rye.",
+      "price": 2400,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "bk-005",
+      "categoryId": "mains",
+      "name": "Avocado Grain Bowl",
+      "description": "Ancient grains, poached egg, citrus vinaigrette.",
+      "price": 1900,
+      "dietaryFlags": [
+        "vegetarian"
+      ],
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "bk-006",
+      "categoryId": "beverages",
+      "name": "House Filter Coffee",
+      "description": "Single-origin rotating selection.",
+      "price": 600,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "bk-007",
+      "categoryId": "beverages",
+      "name": "Cappuccino",
+      "description": "Double espresso, silky whole milk microfoam.",
+      "price": 700,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "bk-008",
+      "categoryId": "beverages",
+      "name": "Fresh Orange Juice",
+      "description": "Pressed daily.",
+      "price": 900,
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

@@ -1,0 +1,705 @@
+{
+  "items": [
+    {
+      "id": "d-001",
+      "name": "Tuna Tartare",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/general/1772609332429-photo-1501595091296-3aa970afb3ff.jpg",
+      "price": 2200,
+      "newItem": false,
+      "featured": true,
+      "seasonal": false,
+      "allergens": [
+        "fish",
+        "sesame",
+        "soy"
+      ],
+      "available": true,
+      "signature": true,
+      "categoryId": "starters",
+      "description": "Yellowfin tuna, avocado mousse, sesame crisp, ponzu vinaigrette",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 1
+    },
+    {
+      "id": "d-002",
+      "name": "Burrata & Heirloom Tomatoes",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/burrata-1.jpg",
+      "price": 1900,
+      "newItem": false,
+      "featured": false,
+      "seasonal": true,
+      "allergens": [
+        "dairy",
+        "gluten"
+      ],
+      "available": true,
+      "categoryId": "starters",
+      "description": "Creamy burrata, peak-season tomatoes, aged balsamic, basil oil, grilled sourdough",
+      "dietaryFlags": [
+        "vegetarian"
+      ],
+      "displayOrder": 2
+    },
+    {
+      "id": "d-003",
+      "name": "Duck Liver Mousse",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/duck-1.jpg",
+      "price": 2100,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "gluten",
+        "dairy",
+        "eggs"
+      ],
+      "available": true,
+      "categoryId": "starters",
+      "description": "Port wine gelée, pickled shallots, brioche toast, Dijon",
+      "dietaryFlags": [],
+      "displayOrder": 3
+    },
+    {
+      "id": "d-004",
+      "name": "Roasted Bone Marrow",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/bone-marrow-1.jpg",
+      "price": 1800,
+      "newItem": true,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "gluten"
+      ],
+      "available": true,
+      "categoryId": "starters",
+      "description": "Herb gremolata, capers, grilled bread, fleur de sel",
+      "dietaryFlags": [],
+      "displayOrder": 4
+    },
+    {
+      "id": "d-005",
+      "name": "Wild Mushroom Arancini",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/risotto-1.jpg",
+      "price": 1600,
+      "newItem": false,
+      "featured": false,
+      "seasonal": true,
+      "allergens": [
+        "gluten",
+        "dairy",
+        "eggs"
+      ],
+      "available": true,
+      "categoryId": "starters",
+      "description": "Truffle aioli, Parmigiano-Reggiano, micro arugula",
+      "dietaryFlags": [
+        "vegetarian"
+      ],
+      "displayOrder": 5
+    },
+    {
+      "id": "d-006",
+      "name": "Hamachi Crudo",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/salmon-1.jpg",
+      "price": 2400,
+      "newItem": false,
+      "featured": true,
+      "seasonal": false,
+      "allergens": [
+        "fish"
+      ],
+      "available": true,
+      "categoryId": "starters",
+      "description": "Yuzu, jalapeño, cilantro, olive oil, sea salt",
+      "dietaryFlags": [
+        "gf",
+        "dairy-free"
+      ],
+      "displayOrder": 6,
+      "signature": true
+    },
+    {
+      "id": "d-007",
+      "name": "Grilled Octopus",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/general/1772609445739-photo-1578935149228-66b184c83e69.jpg",
+      "price": 2300,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "shellfish"
+      ],
+      "available": true,
+      "signature": true,
+      "categoryId": "starters",
+      "description": "Chorizo vinaigrette, fingerling potatoes, piquillo peppers, smoked paprika",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 7
+    },
+    {
+      "id": "d-010",
+      "name": "Little Gem Caesar",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/burrata-1.jpg",
+      "price": 1600,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "gluten",
+        "dairy",
+        "fish",
+        "eggs"
+      ],
+      "available": true,
+      "categoryId": "salads",
+      "description": "White anchovy, garlic croutons, shaved Pecorino, classic dressing",
+      "dietaryFlags": [],
+      "displayOrder": 1
+    },
+    {
+      "id": "d-011",
+      "name": "Roasted Beet Salad",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/burrata-1.jpg",
+      "price": 1700,
+      "newItem": false,
+      "featured": false,
+      "seasonal": true,
+      "allergens": [
+        "dairy",
+        "nuts"
+      ],
+      "available": true,
+      "categoryId": "salads",
+      "description": "Red and golden beets, goat cheese, candied walnuts, honey-thyme vinaigrette",
+      "dietaryFlags": [
+        "vegetarian",
+        "gf"
+      ],
+      "displayOrder": 2
+    },
+    {
+      "id": "d-012",
+      "name": "Lobster Bisque",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/scallops-1.jpg",
+      "price": 1900,
+      "newItem": false,
+      "featured": true,
+      "seasonal": false,
+      "allergens": [
+        "shellfish",
+        "dairy",
+        "gluten"
+      ],
+      "available": true,
+      "categoryId": "salads",
+      "description": "Maine lobster, sherry cream, chive oil, puff pastry crouton",
+      "dietaryFlags": [],
+      "displayOrder": 3
+    },
+    {
+      "id": "d-013",
+      "name": "French Onion Soup",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/risotto-1.jpg",
+      "price": 1500,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "available": true,
+      "categoryId": "salads",
+      "description": "Caramelized onions, Gruyère crouton, sherry broth",
+      "dietaryFlags": [
+        "vegetarian"
+      ],
+      "displayOrder": 4
+    },
+    {
+      "id": "d-020",
+      "name": "Pan-Seared Salmon",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/general/1772609539385-photo-1625944226626-9bd664656506.jpg",
+      "price": 3800,
+      "newItem": false,
+      "featured": true,
+      "seasonal": false,
+      "allergens": [
+        "fish",
+        "dairy"
+      ],
+      "available": true,
+      "categoryId": "seafood",
+      "description": "Crispy skin, lemon beurre blanc, haricots verts, fingerling potatoes",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 1,
+      "signature": true
+    },
+    {
+      "id": "d-021",
+      "name": "Seared Diver Scallops",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/general/1772609662694-photo-1612204078213-a227dba74093.jpg",
+      "price": 4200,
+      "newItem": false,
+      "featured": true,
+      "seasonal": false,
+      "allergens": [
+        "shellfish",
+        "dairy"
+      ],
+      "available": true,
+      "signature": true,
+      "categoryId": "seafood",
+      "description": "Cauliflower purée, brown butter, pancetta, microgreens",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 2
+    },
+    {
+      "id": "d-022",
+      "name": "Grilled Branzino",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/salmon-1.jpg",
+      "price": 4400,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "fish"
+      ],
+      "available": true,
+      "categoryId": "seafood",
+      "description": "Whole fish, lemon, capers, cherry tomatoes, olive oil",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 3
+    },
+    {
+      "id": "d-023",
+      "name": "Lobster Linguine",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/scallops-1.jpg",
+      "price": 4800,
+      "newItem": true,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "shellfish",
+        "gluten",
+        "dairy"
+      ],
+      "available": true,
+      "categoryId": "seafood",
+      "description": "Half Maine lobster, cherry tomatoes, white wine, garlic, basil",
+      "dietaryFlags": [],
+      "displayOrder": 4
+    },
+    {
+      "id": "d-030",
+      "name": "Dry-Aged NY Strip",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e68ce15fc74b0bee4aef18a39994375f2f4b00ed.jpg",
+      "price": 6200,
+      "newItem": false,
+      "featured": true,
+      "seasonal": false,
+      "allergens": [
+        "dairy"
+      ],
+      "available": true,
+      "signature": true,
+      "categoryId": "mains",
+      "description": "45-day dry-aged, 16oz, bone-in, compound herb butter, roasted garlic",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 1
+    },
+    {
+      "id": "d-031",
+      "name": "Filet Mignon",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/duck-1.jpg",
+      "price": 5600,
+      "newItem": false,
+      "featured": true,
+      "seasonal": false,
+      "allergens": [
+        "dairy"
+      ],
+      "available": true,
+      "categoryId": "mains",
+      "description": "8oz center-cut, red wine demi-glace, potato gratin, asparagus",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 2
+    },
+    {
+      "id": "d-032",
+      "name": "Roasted Duck Breast",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/general/1772609845687-pexels-photo-24038059.jpeg",
+      "price": 4400,
+      "newItem": false,
+      "featured": true,
+      "seasonal": true,
+      "allergens": [],
+      "available": true,
+      "categoryId": "mains",
+      "description": "Honey-lavender glaze, duck fat confit leg, seasonal greens, cherry jus",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 3,
+      "signature": true
+    },
+    {
+      "id": "d-033",
+      "name": "Rack of Lamb",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/lamb-1.jpg",
+      "price": 5200,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "nuts"
+      ],
+      "available": true,
+      "categoryId": "mains",
+      "description": "Herb-crusted, pistachio gremolata, roasted root vegetables, mint jus",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 4
+    },
+    {
+      "id": "d-034",
+      "name": "Braised Short Ribs",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/general/1772608878879-photo-1593030668930-8130abedd2b0.jpg",
+      "price": 3800,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "dairy"
+      ],
+      "available": true,
+      "signature": true,
+      "categoryId": "mains",
+      "description": "Red wine braise, creamy polenta, gremolata, roasted carrots",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 5
+    },
+    {
+      "id": "d-035",
+      "name": "Wild Mushroom Risotto",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/risotto-1.jpg",
+      "price": 3200,
+      "newItem": false,
+      "featured": false,
+      "seasonal": true,
+      "allergens": [
+        "dairy"
+      ],
+      "available": true,
+      "categoryId": "mains",
+      "description": "Arborio rice, porcini, chanterelle, truffle oil, aged Parmesan",
+      "dietaryFlags": [
+        "vegetarian",
+        "gf"
+      ],
+      "displayOrder": 6
+    },
+    {
+      "id": "d-036",
+      "name": "Free-Range Chicken",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/duck-1.jpg",
+      "price": 3400,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [],
+      "available": true,
+      "categoryId": "mains",
+      "description": "Pan-roasted half chicken, lemon-herb jus, roasted potatoes, broccolini",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 7
+    },
+    {
+      "id": "d-037",
+      "name": "Pork Chop",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/lamb-1.jpg",
+      "price": 3800,
+      "newItem": true,
+      "featured": false,
+      "seasonal": true,
+      "allergens": [],
+      "available": true,
+      "categoryId": "mains",
+      "description": "Double-cut Berkshire, apple mostarda, sweet potato purée, crispy sage",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 8
+    },
+    {
+      "id": "d-040",
+      "name": "Truffle Fries",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/risotto-1.jpg",
+      "price": 1400,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "dairy"
+      ],
+      "available": true,
+      "categoryId": "sides",
+      "description": "Parmesan, truffle oil, fresh herbs",
+      "dietaryFlags": [
+        "vegetarian",
+        "gf"
+      ],
+      "displayOrder": 1
+    },
+    {
+      "id": "d-041",
+      "name": "Grilled Broccolini",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/burrata-1.jpg",
+      "price": 1200,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [],
+      "available": true,
+      "categoryId": "sides",
+      "description": "Lemon, chili flakes, garlic",
+      "dietaryFlags": [
+        "vegan",
+        "gf"
+      ],
+      "displayOrder": 2,
+      "signature": true
+    },
+    {
+      "id": "d-042",
+      "name": "Creamed Spinach",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/risotto-1.jpg",
+      "price": 1200,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "dairy"
+      ],
+      "available": true,
+      "categoryId": "sides",
+      "description": "Nutmeg, Gruyère, slow-cooked",
+      "dietaryFlags": [
+        "vegetarian",
+        "gf"
+      ],
+      "displayOrder": 3
+    },
+    {
+      "id": "d-043",
+      "name": "Roasted Brussels Sprouts",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/burrata-1.jpg",
+      "price": 1300,
+      "newItem": false,
+      "featured": false,
+      "seasonal": true,
+      "allergens": [
+        "nuts"
+      ],
+      "available": true,
+      "categoryId": "sides",
+      "description": "Pancetta, aged balsamic, toasted almonds",
+      "dietaryFlags": [
+        "gf"
+      ],
+      "displayOrder": 4
+    },
+    {
+      "id": "d-044",
+      "name": "Potato Gratin",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/risotto-1.jpg",
+      "price": 1300,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "dairy"
+      ],
+      "available": true,
+      "categoryId": "sides",
+      "description": "Yukon Gold, Gruyère, cream, fresh thyme",
+      "dietaryFlags": [
+        "vegetarian",
+        "gf"
+      ],
+      "displayOrder": 5
+    },
+    {
+      "id": "d-050",
+      "name": "Crème Brûlée",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/creme-brulee-1.jpg",
+      "price": 1500,
+      "newItem": false,
+      "featured": true,
+      "seasonal": false,
+      "allergens": [
+        "dairy",
+        "eggs"
+      ],
+      "available": true,
+      "categoryId": "desserts",
+      "description": "Madagascar vanilla, caramelized sugar, fresh berries",
+      "dietaryFlags": [
+        "vegetarian",
+        "gf"
+      ],
+      "displayOrder": 1
+    },
+    {
+      "id": "d-051",
+      "name": "Chocolate Fondant",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/chocolate-1.jpg",
+      "price": 1600,
+      "newItem": false,
+      "featured": true,
+      "seasonal": false,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "gluten"
+      ],
+      "available": true,
+      "signature": true,
+      "categoryId": "desserts",
+      "description": "Warm Valrhona chocolate, salted caramel, vanilla gelato",
+      "dietaryFlags": [
+        "vegetarian"
+      ],
+      "displayOrder": 2
+    },
+    {
+      "id": "d-052",
+      "name": "Seasonal Tart",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/tart-1.jpg",
+      "price": 1400,
+      "newItem": false,
+      "featured": false,
+      "seasonal": true,
+      "allergens": [
+        "dairy",
+        "eggs",
+        "gluten",
+        "nuts"
+      ],
+      "available": true,
+      "categoryId": "desserts",
+      "description": "Today's fruit, frangipane, whipped cream",
+      "dietaryFlags": [
+        "vegetarian"
+      ],
+      "displayOrder": 3
+    },
+    {
+      "id": "d-053",
+      "name": "Cheese Selection",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/cheese-1.jpg",
+      "price": 2200,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "dairy",
+        "gluten",
+        "nuts"
+      ],
+      "available": true,
+      "categoryId": "desserts",
+      "description": "Three artisan cheeses, honeycomb, fig jam, walnut bread",
+      "dietaryFlags": [
+        "vegetarian"
+      ],
+      "displayOrder": 4
+    },
+    {
+      "id": "d-054",
+      "name": "Affogato",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/chocolate-1.jpg",
+      "price": 1200,
+      "newItem": false,
+      "featured": false,
+      "seasonal": false,
+      "allergens": [
+        "dairy",
+        "nuts"
+      ],
+      "available": true,
+      "categoryId": "desserts",
+      "description": "Espresso, vanilla gelato, amaretti cookie",
+      "dietaryFlags": [
+        "vegetarian"
+      ],
+      "displayOrder": 5
+    }
+  ],
+  "title": "Dinner Menu",
+  "menuType": "dinner",
+  "subtitle": "Seasonal American cuisine with global influences. Starters, mains, sides, and desserts crafted by Chef Bellamy",
+  "_workflow": {
+    "status": "published",
+    "updatedAt": "2026-03-04T07:39:14.612Z",
+    "publishedAt": "2026-03-04T07:04:43.097Z"
+  },
+  "categories": [
+    {
+      "id": "starters",
+      "name": "Starters",
+      "description": "Begin your evening with seasonal inspiration",
+      "displayOrder": 1
+    },
+    {
+      "id": "salads",
+      "name": "Salads & Soups",
+      "description": "Garden-fresh and comforting",
+      "displayOrder": 2
+    },
+    {
+      "id": "seafood",
+      "name": "Seafood",
+      "description": "Daily catches and ocean favorites",
+      "displayOrder": 3
+    },
+    {
+      "id": "mains",
+      "name": "Entrées",
+      "description": "Signature dishes and seasonal classics",
+      "displayOrder": 4
+    },
+    {
+      "id": "sides",
+      "name": "Sides",
+      "description": "Perfect accompaniments",
+      "displayOrder": 5
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "description": "Sweet endings from our pastry kitchen",
+      "displayOrder": 6
+    }
+  ],
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/menu/lamb-1.jpg"
+}

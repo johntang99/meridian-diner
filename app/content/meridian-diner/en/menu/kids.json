@@ -1,0 +1,76 @@
+{
+  "menuType": "kids",
+  "title": "Kids Menu",
+  "subtitle": "Smaller portions and family favorites for little diners.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b5f81cf1eedc6f822cbdac0e739b1a6120cee1be.jpg",
+  "categories": [
+    {
+      "id": "kids-mains",
+      "name": "Kids Mains",
+      "description": "Fun and familiar plates.",
+      "displayOrder": 1
+    },
+    {
+      "id": "kids-sides-drinks",
+      "name": "Kids Sides & Drinks",
+      "description": "Perfect pairings for young guests.",
+      "displayOrder": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "kd-001",
+      "categoryId": "kids-mains",
+      "name": "Kids Pancake Stack",
+      "description": "Two pancakes, syrup, fruit cup.",
+      "price": 899,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "kd-002",
+      "categoryId": "kids-mains",
+      "name": "Kids Cheeseburger",
+      "description": "Single patty, cheddar, fries.",
+      "price": 999,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "kd-003",
+      "categoryId": "kids-mains",
+      "name": "Grilled Cheese",
+      "description": "Cheddar on sourdough, fries or fruit.",
+      "price": 849,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "kd-004",
+      "categoryId": "kids-sides-drinks",
+      "name": "Apple Slices",
+      "description": "Fresh sliced apples.",
+      "price": 349,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "kd-005",
+      "categoryId": "kids-sides-drinks",
+      "name": "Mini Shake",
+      "description": "Vanilla or chocolate.",
+      "price": 499,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "kd-006",
+      "categoryId": "kids-sides-drinks",
+      "name": "Juice Box",
+      "description": "Apple or orange juice.",
+      "price": 299,
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

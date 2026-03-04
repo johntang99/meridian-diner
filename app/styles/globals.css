@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   DENTAL THEME VARIABLES
+   Customizable per clinic via theme.json
+   ============================================ */
+
+:root {
+  /* TYPOGRAPHY */
+  --text-display: 3rem;        /* 48px - Hero titles */
+  --text-heading: 2.25rem;     /* 36px - Section titles */
+  --text-subheading: 1.25rem;  /* 20px - Card titles */
+  --text-body: 1rem;           /* 16px - Body text */
+  --text-small: 0.875rem;      /* 14px - Meta/tags */
+  --font-body-default: var(--font-inter, 'Inter'), -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Helvetica Neue', sans-serif;
+  --font-display: var(--font-playfair, 'Playfair Display'), Georgia, serif;
+  --font-heading: var(--font-playfair, 'Playfair Display'), Georgia, serif;
+  --font-subheading: var(--font-body-default);
+  --font-body: var(--font-body-default);
+  --font-small: var(--font-body-default);
+
+  /* PRIMARY COLORS - Deep Teal */
+  --primary: #0D6E6E;          /* Deep Teal - Main brand */
+  --primary-dark: #095555;     /* Darker Teal - Hover states */
+  --primary-light: #14A3A3;    /* Light Teal - Accents */
+  --primary-50: #E0F5F5;       /* Soft Teal - Very light tint */
+  --primary-100: #B3E8E8;      /* Light Teal tint */
+
+  /* SECONDARY COLORS - Warm Gold */
+  --secondary: #C9A84C;        /* Warm Gold - Premium accents */
+  --secondary-dark: #9E8338;   /* Darker Gold */
+  --secondary-light: #E0C56A;  /* Light Gold */
+  --secondary-50: #FFF8E7;     /* Light Gold tint */
+
+  /* EMERGENCY COLOR */
+  --emergency: #D94F3D;        /* Coral Red - Emergency only */
+
+  /* BACKDROP COLORS */
+  --backdrop-primary: #F8FAFA;    /* Near white */
+  --backdrop-secondary: #FFF8E7;  /* Light gold */
+
+  /* SURFACE & TEXT */
+  --color-surface: #F8FAFA;
+  --color-surface-dark: #111827;
+  --color-text: #1A1A2E;
+  --color-text-light: #6B7280;
+  --color-border: #E5E7EB;
+
+  /* LAYOUT */
+  --section-padding-y: 80px;
+  --card-radius: 12px;
+  --card-radius-lg: 16px;
+  --shadow-card: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-feature: 0 8px 40px rgba(0,0,0,0.12);
+  --max-width: 1280px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  :root {
+    --text-display: 2.25rem;     /* 36px on mobile */
+    --text-heading: 1.875rem;    /* 30px on mobile */
+    --text-subheading: 1.125rem; /* 18px on mobile */
+  }
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    font-family: var(--font-body, var(--font-body-default));
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-gray-900;
+    font-family: var(--font-heading, var(--font-body-default));
+  }
+
+  a {
+    @apply text-primary hover:text-primary-dark transition-colors;
+  }
+}
+
+/* ============================================
+   CUSTOM UTILITIES
+   ============================================ */
+
+@layer utilities {
+  .text-display {
+    font-family: var(--font-display, var(--font-body-default));
+  }
+
+  .text-heading {
+    font-family: var(--font-heading, var(--font-body-default));
+  }
+
+  .text-subheading {
+    font-family: var(--font-subheading, var(--font-body-default));
+  }
+
+  .text-body {
+    font-family: var(--font-body, var(--font-body-default));
+  }
+
+  .text-small {
+    font-family: var(--font-small, var(--font-body-default));
+  }
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .gradient-backdrop {
+    background: linear-gradient(135deg, var(--backdrop-primary) 0%, var(--backdrop-secondary) 100%);
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ============================================
+   COMPONENT STYLES
+   ============================================ */
+
+@layer components {
+  /* Button base styles */
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-dark focus:ring-primary;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary text-white hover:bg-secondary-dark focus:ring-secondary;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary;
+  }
+
+  /* Card base styles */
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 transition-shadow duration-200 hover:shadow-xl;
+  }
+
+  /* Badge styles */
+  .badge {
+    @apply inline-block px-3 py-1 text-sm font-semibold rounded-full;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary-50 text-primary;
+  }
+
+  .badge-secondary {
+    @apply badge bg-secondary-50 text-secondary;
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Stagger animation delays */
+.animate-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-delay-300 {
+  animation-delay: 300ms;
+}

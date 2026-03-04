@@ -1,0 +1,81 @@
+{
+  "pages": {
+    "home": [
+      { "id": "hero" },
+      { "id": "trustBar" },
+      { "id": "todaysSpecial", "variant": "rich" },
+      { "id": "chefSignatures", "variant": "compact" },
+      { "id": "aboutPreview" },
+      { "id": "reservationsCTA" },
+      { "id": "testimonials" },
+      { "id": "eventsPreview" },
+      { "id": "gallery" },
+      { "id": "blog" },
+      { "id": "cta" }
+    ],
+    "menu": [
+      { "id": "hero" },
+      { "id": "todaysSpecial", "variant": "rich" },
+      { "id": "weeklySpecials", "variant": "rich" },
+      { "id": "chefSignatures", "variant": "rich" },
+      { "id": "menuCards" }
+    ],
+    "menuType": [
+      { "id": "hero" },
+      { "id": "categoryNav" },
+      { "id": "menuSections" }
+    ],
+    "services": [
+      { "id": "hero" },
+      { "id": "overview" },
+      { "id": "services" },
+      { "id": "faq" },
+      { "id": "relatedReading" },
+      { "id": "cta" }
+    ],
+    "about": [
+      { "id": "hero" },
+      { "id": "story" },
+      { "id": "team" },
+      { "id": "cta" }
+    ],
+    "reservations": [
+      { "id": "hero" },
+      { "id": "reservationForm" },
+      { "id": "policy" },
+      { "id": "cta" }
+    ],
+    "privateDining": [
+      { "id": "hero" },
+      { "id": "packages" },
+      { "id": "inquiryForm" },
+      { "id": "cta" }
+    ],
+    "events": [
+      { "id": "hero" },
+      { "id": "eventList" },
+      { "id": "cta" }
+    ],
+    "gallery": [
+      { "id": "hero" },
+      { "id": "galleryGrid" },
+      { "id": "cta" }
+    ],
+    "contact": [
+      { "id": "hero" },
+      { "id": "contactDetails" },
+      { "id": "map" },
+      { "id": "cta" }
+    ],
+    "faq": [
+      { "id": "hero" },
+      { "id": "faqList" },
+      { "id": "cta" }
+    ],
+    "blog": [
+      { "id": "hero" },
+      { "id": "postGrid" },
+      { "id": "cta" }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "headline": "Join Our Team",
+    "subline": "We're always looking for passionate, talented people."
+  },
+  "values": [
+    { "title": "Culture", "description": "A supportive, collaborative kitchen and front-of-house where every voice matters." },
+    { "title": "Growth", "description": "Mentorship from industry leaders. We invest in our team's development and career advancement." },
+    { "title": "Benefits", "description": "Competitive pay, health insurance, staff meals, and industry-leading paid time off." },
+    { "title": "Team", "description": "Work alongside talented professionals who are passionate about hospitality and craft." }
+  ],
+  "openings": [
+    { "title": "Sous Chef", "department": "Culinary", "type": "Full-time", "description": "Lead kitchen operations alongside Chef Bellamy. 3+ years fine dining experience required." },
+    { "title": "Sommelier", "department": "Service", "type": "Full-time", "description": "Curate and present our 350+ label wine program. WSET Level 3 or equivalent preferred." },
+    { "title": "Front-of-House Manager", "department": "Management", "type": "Full-time", "description": "Oversee nightly service operations. 5+ years restaurant management experience required." }
+  ],
+  "emptyState": {
+    "headline": "No open positions right now.",
+    "description": "Send us your CV anyway — we'll keep it on file."
+  }
+}

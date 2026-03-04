@@ -1,0 +1,213 @@
+{
+  "title": "Events at The Meridian",
+  "subtitle": "Special evenings, seasonal celebrations, and unique culinary experiences.",
+  "events": [
+    {
+      "id": "e-001",
+      "title": "Thursday Wine Pairing Dinner",
+      "description": "Join Head Sommelier David Chen for a curated 5-course dinner with perfectly paired wines from our cellar. A different region featured each week.",
+      "shortDescription": "Join us for a 5-course dinner with curated wine pairings from our cellar. A different region featured each week",
+      "eventType": "wine-dinner",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/17340a4cd063da2e632ff47adc54d519e5ac07c9.jpg",
+      "tags": [
+        "wine",
+        "dinner",
+        "recurring"
+      ],
+      "startDatetime": "2026-03-12T19:00:00Z",
+      "endDatetime": "2026-03-12T22:00:00Z",
+      "recurring": {
+        "frequency": "weekly",
+        "days": [
+          "thursday"
+        ]
+      },
+      "pricePerPerson": 14500,
+      "reservationRequired": true,
+      "capacity": 24,
+      "featured": true,
+      "published": true,
+      "cancelled": false
+    },
+    {
+      "id": "e-002",
+      "title": "Jazz Supper Club",
+      "description": "Live jazz trio performs every Friday and Saturday evening. Enjoy the music with cocktails and late-night bites from our bar menu. No cover charge.",
+      "shortDescription": "Live jazz with cocktails and late-night bites",
+      "eventType": "live-music",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/91d9842a69f1293c6ffb847c3cb9bc1a6c5908fd.jpg",
+      "tags": [
+        "jazz",
+        "music",
+        "nightlife"
+      ],
+      "startDatetime": "2026-03-13T20:00:00Z",
+      "endDatetime": "2026-03-14T00:00:00Z",
+      "recurring": {
+        "frequency": "weekly",
+        "days": [
+          "friday",
+          "saturday"
+        ]
+      },
+      "pricePerPerson": null,
+      "reservationRequired": false,
+      "featured": true,
+      "published": true,
+      "cancelled": false
+    },
+    {
+      "id": "e-003",
+      "title": "Spring Foraging Dinner",
+      "description": "Chef Bellamy partners with local forager Mika Torres for a one-night-only 7-course menu built entirely from wild and foraged ingredients found within 50 miles of NYC.",
+      "shortDescription": "7-course menu from foraged ingredients",
+      "eventType": "chef-collab",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/d89ab52154f92ff7630876d08c217085a7ea328b.jpg",
+      "tags": [
+        "seasonal",
+        "foraging",
+        "collaboration"
+      ],
+      "startDatetime": "2026-04-18T19:00:00Z",
+      "endDatetime": "2026-04-18T22:30:00Z",
+      "pricePerPerson": 22500,
+      "reservationRequired": true,
+      "capacity": 40,
+      "featured": true,
+      "published": true,
+      "cancelled": false
+    },
+    {
+      "id": "e-004",
+      "title": "Cocktail Masterclass",
+      "description": "Learn the art of the cocktail with Bar Director Sarah Kim. Create 4 signature drinks, learn techniques, and take home your own shaker set. Includes light bites.",
+      "shortDescription": "Hands-on cocktail class with our bar director",
+      "eventType": "class",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ed444e06736f8bf0267e5386b4056fa867cd5857.jpg",
+      "tags": [
+        "cocktails",
+        "class",
+        "interactive"
+      ],
+      "startDatetime": "2026-03-22T15:00:00Z",
+      "endDatetime": "2026-03-22T17:30:00Z",
+      "pricePerPerson": 12000,
+      "reservationRequired": true,
+      "capacity": 16,
+      "featured": false,
+      "published": true,
+      "cancelled": false
+    },
+    {
+      "id": "e-005",
+      "title": "Mother's Day Brunch",
+      "description": "A special Mother's Day 4-course brunch menu with complimentary Champagne. Live acoustic guitar and a rose for every mother. Reservations strongly recommended.",
+      "shortDescription": "4-course brunch with complimentary Champagne",
+      "eventType": "holiday",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg",
+      "tags": [
+        "brunch",
+        "mothers-day",
+        "holiday"
+      ],
+      "startDatetime": "2026-05-10T11:00:00Z",
+      "endDatetime": "2026-05-10T15:00:00Z",
+      "pricePerPerson": 9500,
+      "reservationRequired": true,
+      "capacity": 80,
+      "featured": true,
+      "published": true,
+      "cancelled": false
+    },
+    {
+      "id": "e-006",
+      "title": "Napa Valley Wine Dinner",
+      "description": "An evening celebrating Napa Valley's finest producers. 6 courses paired with premium wines, hosted by visiting winemaker from Opus One.",
+      "shortDescription": "6-course dinner with Napa Valley wines",
+      "eventType": "wine-dinner",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/7c9dcf8f8e691442ae3cbae956e60050dbb51a71.jpg",
+      "tags": [
+        "wine",
+        "napa",
+        "premium"
+      ],
+      "startDatetime": "2026-04-25T19:00:00Z",
+      "endDatetime": "2026-04-25T22:30:00Z",
+      "pricePerPerson": 27500,
+      "reservationRequired": true,
+      "capacity": 30,
+      "featured": false,
+      "published": true,
+      "cancelled": false
+    },
+    {
+      "id": "e-007",
+      "title": "Chef's Table Experience",
+      "description": "An intimate 8-course tasting menu served at the chef's counter overlooking the kitchen. Watch Chef Bellamy and his team prepare each course. Limited to 8 guests.",
+      "shortDescription": "8-course tasting at the kitchen counter",
+      "eventType": "tasting",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/2cdcf2ee706d1d1cda8309a7324106830d37f269.jpg",
+      "tags": [
+        "tasting",
+        "exclusive",
+        "kitchen"
+      ],
+      "startDatetime": "2026-03-28T19:30:00Z",
+      "endDatetime": "2026-03-28T23:00:00Z",
+      "recurring": {
+        "frequency": "weekly",
+        "days": [
+          "saturday"
+        ]
+      },
+      "pricePerPerson": 29500,
+      "reservationRequired": true,
+      "capacity": 8,
+      "featured": true,
+      "published": true,
+      "cancelled": false
+    },
+    {
+      "id": "e-008",
+      "title": "Rosé Garden Party",
+      "description": "Kick off summer on our patio with an afternoon of rosé tastings, passed hors d'oeuvres, and live DJ. An annual Meridian tradition.",
+      "shortDescription": "Rosé tastings and hors d'oeuvres on the patio",
+      "eventType": "seasonal-launch",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/0126304f3244ed1008d4ad34dd7633d39584a963.jpg",
+      "tags": [
+        "summer",
+        "rosé",
+        "outdoor"
+      ],
+      "startDatetime": "2026-06-06T14:00:00Z",
+      "endDatetime": "2026-06-06T18:00:00Z",
+      "pricePerPerson": 7500,
+      "reservationRequired": true,
+      "capacity": 60,
+      "featured": false,
+      "published": true,
+      "cancelled": false
+    },
+    {
+      "id": "e-009",
+      "title": "Italian Guest Chef Pop-Up",
+      "description": "Chef Giulia Moretti of Osteria Giulia (Milan) brings her modern Italian cuisine to The Meridian for a one-night collaboration with Chef Bellamy.",
+      "shortDescription": "Milan meets Manhattan — one-night collaboration",
+      "eventType": "pop-up",
+      "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9bd20c206db1e853e927d3ac38a1e470332ac5e1.jpg",
+      "tags": [
+        "pop-up",
+        "italian",
+        "collaboration"
+      ],
+      "startDatetime": "2026-05-16T19:00:00Z",
+      "endDatetime": "2026-05-16T23:00:00Z",
+      "pricePerPerson": 19500,
+      "reservationRequired": true,
+      "capacity": 50,
+      "featured": false,
+      "published": true,
+      "cancelled": false
+    }
+  ]
+}

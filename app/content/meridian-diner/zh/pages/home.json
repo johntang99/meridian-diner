@@ -1,0 +1,102 @@
+{
+  "topBar": {
+    "address": "西72街142号，纽约",
+    "phone": "(212) 555-0142",
+    "email": "info@themeridian.com",
+    "badge": {
+      "text": "现在接受预订",
+      "visible": true
+    }
+  },
+  "hero": {
+    "variant": "photo-background",
+    "businessName": "The Meridian",
+    "tagline": "匠心与时刻的交汇",
+    "description": "融合全球灵感的时令美式料理，精酿鸡尾酒，以及曼哈顿上西区无可挑剔的服务。",
+    "primaryCta": { "text": "预订餐位", "link": "/zh/reservations" },
+    "secondaryCta": { "text": "查看菜单", "link": "/zh/menu" },
+    "image": "",
+    "floatingTags": ["农场直供", "精酿鸡尾酒", "时令菜单", "私人包间"],
+    "stats": [
+      { "icon": "Star", "number": "4.8", "label": "谷歌评分" },
+      { "icon": "Award", "number": "2024", "label": "詹姆斯·比尔德提名" },
+      { "icon": "Wine", "number": "350+", "label": "葡萄酒标签" }
+    ]
+  },
+  "testimonials": {
+    "variant": "carousel",
+    "badge": "客人评价",
+    "title": "客人对我们的评价",
+    "subtitle": "用心打造的难忘之夜。",
+    "testimonials": [
+      {
+        "quote": "品鉴菜单令人惊叹——每一道菜都比上一道更令人惊喜。这才是纽约餐饮应有的样子。",
+        "name": "Sarah Mitchell",
+        "condition": "周年纪念晚餐",
+        "featured": true
+      },
+      {
+        "quote": "仅鸡尾酒项目就值得一访。富有创意、平衡且呈现精美。调酒师是真正的艺术家。",
+        "name": "James Chen",
+        "condition": "酒吧体验"
+      }
+    ],
+    "moreLink": { "text": "阅读更多评价", "url": "/zh/about" }
+  },
+  "howItWorks": {
+    "variant": "horizontal",
+    "title": "您在The Meridian的夜晚",
+    "subtitle": "从预订到餐后饮品，每个细节都经过精心考虑。",
+    "steps": [
+      { "number": 1, "icon": "CalendarCheck", "title": "预订座位", "description": "在线预订、致电或通过OpenTable。吧台欢迎随时光临。" },
+      { "number": 2, "icon": "UtensilsCrossed", "title": "享受体验", "description": "选择我们的时令点菜菜单或主厨品鉴体验。" },
+      { "number": 3, "icon": "Wine", "title": "精酿鸡尾酒与葡萄酒", "description": "我们的侍酒师和调酒师为您的餐食搭配完美饮品。" },
+      { "number": 4, "icon": "Heart", "title": "创造回忆", "description": "从庆典到安静的工作日晚餐，每次造访都是一个时刻。" }
+    ]
+  },
+  "services": {
+    "variant": "grid-cards",
+    "badge": "我们的菜单",
+    "title": "探索我们的美食",
+    "subtitle": "每份菜单都反映了我们对时令食材和创意工艺的承诺。",
+    "services": [
+      { "id": "dinner", "icon": "UtensilsCrossed", "title": "晚餐菜单", "shortDescription": "融合全球灵感的时令美式料理。随季节变化。", "link": "/zh/menu/dinner", "featured": true },
+      { "id": "cocktails", "icon": "Wine", "title": "鸡尾酒与葡萄酒", "shortDescription": "精酿鸡尾酒、350+标签精选葡萄酒。", "link": "/zh/menu/cocktails" }
+    ],
+    "moreLink": { "text": "查看所有菜单", "url": "/zh/menu" }
+  },
+  "blog": {
+    "variant": "cards-grid",
+    "badge": "博客",
+    "title": "The Meridian 的故事",
+    "subtitle": "幕后花絮、时令亮点和烹饪见解。",
+    "posts": [],
+    "moreLink": { "text": "阅读博客", "url": "/zh/blog" }
+  },
+  "gallery": {
+    "variant": "grid-masonry",
+    "badge": "画廊",
+    "title": "视觉之旅",
+    "subtitle": "我们的菜品、空间和时刻。",
+    "images": [],
+    "moreLink": { "text": "查看完整画廊", "url": "/zh/gallery" }
+  },
+  "whyChooseUs": {
+    "badge": "为什么选择我们",
+    "title": "The Meridian 的不同",
+    "subtitle": "我们与其他餐饮体验的不同之处。",
+    "features": [
+      { "icon": "Leaf", "title": "农场直供理念", "description": "我们从150英里内的本地农场和供应商采购。每种食材都有故事。" },
+      { "icon": "Award", "title": "屡获殊荣的团队", "description": "由詹姆斯·比尔德提名的主厨Marcus Bellamy领导。" },
+      { "icon": "Wine", "title": "世界级葡萄酒", "description": "350+标签，专注于可持续和生物动力生产商。" },
+      { "icon": "Users", "title": "无可挑剔的服务", "description": "从第一声问候到最后一口，每一刻都为舒适和愉悦而打造。" }
+    ]
+  },
+  "cta": {
+    "variant": "centered",
+    "title": "与我们共度难忘之夜",
+    "subtitle": "预订您的餐位，其余交给我们。",
+    "primaryCta": { "text": "预订", "link": "/zh/reservations" },
+    "secondaryCta": { "text": "致电 (212) 555-0142", "link": "tel:+12125550142" }
+  }
+}

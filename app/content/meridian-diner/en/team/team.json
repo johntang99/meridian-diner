@@ -1,0 +1,99 @@
+{
+  "title": "Our Team",
+  "subtitle": "Meet the passionate people behind every dish, cocktail, and memorable evening.",
+  "members": [
+    {
+      "id": "marcus-bellamy",
+      "name": "Marcus Bellamy",
+      "role": "Executive Chef & Owner",
+      "bio": "A graduate of the Culinary Institute of America, Chef Bellamy spent a decade at Michelin-starred restaurants in New York and Paris before opening The Meridian in 2019. His cooking philosophy centers on seasonal ingredients, clean flavors, and the belief that great food creates lasting memories. He was nominated for a James Beard Award in 2024 for Best Chef: New York City.",
+      "shortBio": "CIA graduate. James Beard nominee. Seasonal American cuisine with global inspiration.",
+      "photo": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/537d7da5cc56b6eab78899d983b6ee38e7b1f28d.jpg",
+      "photoPortrait": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/537d7da5cc56b6eab78899d983b6ee38e7b1f28d.jpg",
+      "credentials": [
+        "Culinary Institute of America",
+        "James Beard Nominee 2024",
+        "Michelin Experience"
+      ],
+      "awards": [
+        "James Beard Nominee 2024",
+        "NYC Restaurant Week Honoree 2023"
+      ],
+      "philosophy": "I cook with the seasons because nature is the best menu writer. My job is simply to listen.",
+      "department": "culinary",
+      "featured": true,
+      "displayOrder": 1,
+      "social": {
+        "instagram": "https://instagram.com/chefbellamy"
+      },
+      "joinedYear": 2019,
+      "active": true
+    },
+    {
+      "id": "elena-vasquez",
+      "name": "Elena Vasquez",
+      "role": "Pastry Chef",
+      "bio": "Elena brings a decade of pastry experience from some of Manhattan's finest kitchens. Her desserts balance classic French technique with unexpected flavor combinations. The seasonal tarts and house chocolate fondant have become Meridian signatures.",
+      "shortBio": "French-trained pastry virtuoso. Creator of our beloved seasonal dessert program.",
+      "photo": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/8db653c9b3dee2d11ca7ac9f63311b3abcfafd3e.jpg",
+      "credentials": [
+        "Le Cordon Bleu Paris",
+        "Former Pastry Chef at Per Se"
+      ],
+      "department": "pastry",
+      "featured": true,
+      "displayOrder": 2,
+      "joinedYear": 2019,
+      "active": true
+    },
+    {
+      "id": "david-chen",
+      "name": "David Chen",
+      "role": "Head Sommelier",
+      "bio": "With certifications from the Court of Master Sommeliers and the Wine & Spirit Education Trust, David curates our 350+ label wine program. He specializes in sustainable and biodynamic wines, and his Thursday wine pairing dinners have become a neighborhood institution.",
+      "shortBio": "Court of Master Sommeliers. Curator of 350+ labels with a focus on sustainability.",
+      "photo": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/047bb50bca87ff81056695c201b5b1a768a5f896.jpg",
+      "credentials": [
+        "Advanced Sommelier, CMS",
+        "WSET Level 3"
+      ],
+      "department": "bar",
+      "featured": true,
+      "displayOrder": 3,
+      "joinedYear": 2020,
+      "active": true
+    },
+    {
+      "id": "sarah-kim",
+      "name": "Sarah Kim",
+      "role": "Bar Director",
+      "bio": "Sarah leads our cocktail program with a philosophy rooted in seasonality and sustainability. Her drinks are known for balance, beauty, and unexpected ingredients. She was named one of New York's Best Bartenders by Time Out in 2023.",
+      "shortBio": "Award-winning mixologist. Seasonal cocktails with unexpected ingredients.",
+      "photo": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9f5693b24a62e7b4d4ab86e3940b2c184b2b8fe7.jpg",
+      "credentials": [
+        "Time Out Best Bartender NYC 2023"
+      ],
+      "department": "bar",
+      "featured": false,
+      "displayOrder": 4,
+      "joinedYear": 2020,
+      "active": true
+    },
+    {
+      "id": "james-morrison",
+      "name": "James Morrison",
+      "role": "General Manager",
+      "bio": "James oversees the front-of-house experience with warmth, precision, and an instinct for hospitality. With 15 years in fine dining service, he ensures every guest feels like a regular.",
+      "shortBio": "15 years in fine dining. Making every guest feel like family.",
+      "photo": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/3b3d93dab690ab28032df722943ddf17596a19d9.jpg",
+      "credentials": [
+        "Former GM at Gramercy Tavern"
+      ],
+      "department": "management",
+      "featured": false,
+      "displayOrder": 5,
+      "joinedYear": 2019,
+      "active": true
+    }
+  ]
+}

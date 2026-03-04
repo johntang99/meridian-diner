@@ -1,0 +1,18 @@
+{
+  "sites": [
+    {
+      "id": "meridian-diner",
+      "name": "The Meridian",
+      "domain": "themeridian.com",
+      "enabled": true,
+      "defaultLocale": "en",
+      "supportedLocales": [
+        "en",
+        "zh",
+        "es"
+      ],
+      "createdAt": "2026-03-03T00:00:00Z",
+      "updatedAt": "2026-03-03T00:00:00Z"
+    }
+  ]
+}

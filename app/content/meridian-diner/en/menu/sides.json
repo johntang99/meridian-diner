@@ -1,0 +1,76 @@
+{
+  "menuType": "sides",
+  "title": "Sides",
+  "subtitle": "Shareable sides and add-ons to complete your plate.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1a866a4766233549f9ea632cfdc82fe85545aa7d.jpg",
+  "categories": [
+    {
+      "id": "fries-potatoes",
+      "name": "Fries & Potatoes",
+      "description": "Crispy, seasoned, and classic.",
+      "displayOrder": 1
+    },
+    {
+      "id": "veggie-comfort",
+      "name": "Veggie & Comfort",
+      "description": "Vegetables and homestyle classics.",
+      "displayOrder": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "sd-001",
+      "categoryId": "fries-potatoes",
+      "name": "Crispy Fries",
+      "description": "Sea salt, house ketchup.",
+      "price": 599,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "sd-002",
+      "categoryId": "fries-potatoes",
+      "name": "Onion Rings",
+      "description": "Beer-battered, ranch dip.",
+      "price": 699,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "sd-003",
+      "categoryId": "fries-potatoes",
+      "name": "Hash Browns",
+      "description": "Golden and crispy.",
+      "price": 549,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "sd-004",
+      "categoryId": "veggie-comfort",
+      "name": "Mac & Cheese",
+      "description": "Three-cheese sauce, toasted crumbs.",
+      "price": 799,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "sd-005",
+      "categoryId": "veggie-comfort",
+      "name": "Coleslaw",
+      "description": "Creamy slaw with cider vinegar.",
+      "price": 499,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "sd-006",
+      "categoryId": "veggie-comfort",
+      "name": "Seasonal Vegetables",
+      "description": "Roasted daily selection.",
+      "price": 699,
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

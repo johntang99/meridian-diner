@@ -1,0 +1,43 @@
+{
+  "provider": "Unsplash",
+  "note": "All media URLs are sourced from Unsplash and stored as hosted URLs for DB persistence.",
+  "updatedAt": "2026-03-03T00:00:00.000Z",
+  "entries": [
+    {
+      "slot": "pages/home.hero.image",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1437c2ac1febba6747a3452c4b955c52a445ea09.jpg",
+      "attributionText": "Photo from Unsplash",
+      "source": "https://unsplash.com/"
+    },
+    {
+      "slot": "pages/menu.todaySpecial.image",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg",
+      "attributionText": "Photo from Unsplash",
+      "source": "https://unsplash.com/"
+    },
+    {
+      "slot": "pages/about.hero.image",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/8655abcc32409b7f0a6ff3e5c3fd2a146e1cac6c.jpg",
+      "attributionText": "Photo from Unsplash",
+      "source": "https://unsplash.com/"
+    },
+    {
+      "slot": "pages/events.hero.image",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f5babfd512c2ba8a006142207cbffa5a2b37cd9a.jpg",
+      "attributionText": "Photo from Unsplash",
+      "source": "https://unsplash.com/"
+    },
+    {
+      "slot": "pages/private-dining.hero.image",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/c77125e17b114c9ef8ab79e8e72037d288a22d2c.jpg",
+      "attributionText": "Photo from Unsplash",
+      "source": "https://unsplash.com/"
+    },
+    {
+      "slot": "gallery/gallery.items[*].url",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/00fb71873b0d1e18872c2623f1b7adc1e2b63bc7.jpg",
+      "attributionText": "Photos from Unsplash",
+      "source": "https://unsplash.com/"
+    }
+  ]
+}

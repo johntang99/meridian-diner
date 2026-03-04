@@ -1,0 +1,230 @@
+{
+  "title": "Gallery",
+  "subtitle": "A visual journey through The Meridian — our dishes, spaces, and moments.",
+  "categories": [
+    "food",
+    "interior",
+    "events",
+    "team",
+    "behind-the-scenes",
+    "seasonal"
+  ],
+  "items": [
+    {
+      "id": "g-001",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/01ebe1ec2474c500dfe4ff157ef1db2d7ba484b4.jpg",
+      "alt": "Tuna tartare plated with microgreens and edible flowers",
+      "category": "food",
+      "caption": "Tuna Tartare — our most photographed starter",
+      "featured": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "g-002",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e68ce15fc74b0bee4aef18a39994375f2f4b00ed.jpg",
+      "alt": "Dry-aged NY strip with compound butter on a dark plate",
+      "category": "food",
+      "caption": "Dry-Aged NY Strip, 45 days",
+      "featured": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "g-003",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e99e6193cc7ef981af2980dc0db2136644822791.jpg",
+      "alt": "Chocolate fondant with salted caramel drizzle",
+      "category": "food",
+      "caption": "Valrhona Chocolate Fondant",
+      "featured": false,
+      "displayOrder": 3
+    },
+    {
+      "id": "g-004",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/047bb50bca87ff81056695c201b5b1a768a5f896.jpg",
+      "alt": "Signature cocktail The Meridian with gold leaf garnish",
+      "category": "food",
+      "caption": "The Meridian — our namesake cocktail",
+      "featured": true,
+      "displayOrder": 4
+    },
+    {
+      "id": "g-005",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4ae1adc81a3383aa758bcaeff094e9b23fad2a05.jpg",
+      "alt": "Seared diver scallops on cauliflower purée",
+      "category": "food",
+      "caption": "Seared Diver Scallops",
+      "featured": false,
+      "displayOrder": 5
+    },
+    {
+      "id": "g-006",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9bd20c206db1e853e927d3ac38a1e470332ac5e1.jpg",
+      "alt": "Lobster linguine being prepared in the kitchen",
+      "category": "food",
+      "caption": "Lobster Linguine — fresh daily",
+      "featured": false,
+      "displayOrder": 6
+    },
+    {
+      "id": "g-007",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b5bdc65ea0790a5755fa7c29f1e8ef8a9c44df5f.jpg",
+      "alt": "Seasonal tart with summer berries",
+      "category": "food",
+      "caption": "Summer berry tart from our pastry kitchen",
+      "featured": false,
+      "displayOrder": 7
+    },
+    {
+      "id": "g-008",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1e739fbd9cf34bc4fcd2c2e2476a26e02e28d284.jpg",
+      "alt": "Cheese selection with honeycomb and fig jam",
+      "category": "food",
+      "caption": "Artisan cheese selection",
+      "featured": false,
+      "displayOrder": 8
+    },
+    {
+      "id": "g-010",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/7729e6b0a4abb5b5ae12843ba5397820eef39b5e.jpg",
+      "alt": "Main dining room with warm lighting and leather banquettes",
+      "category": "interior",
+      "caption": "Our main dining room",
+      "featured": true,
+      "displayOrder": 10
+    },
+    {
+      "id": "g-011",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/da49d00d61a30d734ee61d29f1b97e946ec3609d.jpg",
+      "alt": "Bar area with marble counter and backlit bottles",
+      "category": "interior",
+      "caption": "The bar at The Meridian",
+      "featured": true,
+      "displayOrder": 11
+    },
+    {
+      "id": "g-012",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg",
+      "alt": "Private dining room set for an event",
+      "category": "interior",
+      "caption": "The Garden Room — private dining for up to 24",
+      "featured": false,
+      "displayOrder": 12
+    },
+    {
+      "id": "g-013",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/84ce8c08280deb39f7a84f66b2263436df574636.jpg",
+      "alt": "Outdoor patio with string lights at dusk",
+      "category": "interior",
+      "caption": "Our patio, open spring through fall",
+      "featured": false,
+      "displayOrder": 13
+    },
+    {
+      "id": "g-014",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/7c9dcf8f8e691442ae3cbae956e60050dbb51a71.jpg",
+      "alt": "Wine cellar with floor-to-ceiling racks",
+      "category": "interior",
+      "caption": "350+ labels in our temperature-controlled cellar",
+      "featured": false,
+      "displayOrder": 14
+    },
+    {
+      "id": "g-020",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/a6e0b9c71c75d3b53d267a3fd50f558c0773eeb2.jpg",
+      "alt": "Wine dinner event with guests at a long table",
+      "category": "events",
+      "caption": "Thursday Wine Pairing Dinner",
+      "featured": true,
+      "displayOrder": 20
+    },
+    {
+      "id": "g-021",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/91d9842a69f1293c6ffb847c3cb9bc1a6c5908fd.jpg",
+      "alt": "Jazz trio performing on the small stage",
+      "category": "events",
+      "caption": "Friday Jazz Supper Club",
+      "featured": false,
+      "displayOrder": 21
+    },
+    {
+      "id": "g-022",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ed444e06736f8bf0267e5386b4056fa867cd5857.jpg",
+      "alt": "Cocktail masterclass participants shaking drinks",
+      "category": "events",
+      "caption": "Cocktail Masterclass with Sarah Kim",
+      "featured": false,
+      "displayOrder": 22
+    },
+    {
+      "id": "g-030",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/537d7da5cc56b6eab78899d983b6ee38e7b1f28d.jpg",
+      "alt": "Chef Marcus Bellamy plating a dish in the kitchen",
+      "category": "team",
+      "caption": "Chef Bellamy during evening service",
+      "featured": true,
+      "displayOrder": 30
+    },
+    {
+      "id": "g-031",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9f5693b24a62e7b4d4ab86e3940b2c184b2b8fe7.jpg",
+      "alt": "Bar Director Sarah Kim crafting a cocktail",
+      "category": "team",
+      "caption": "Sarah Kim behind the bar",
+      "featured": false,
+      "displayOrder": 31
+    },
+    {
+      "id": "g-032",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/508a957c416a2222d88bca82af7a9d67695bc1e4.jpg",
+      "alt": "The full kitchen team during prep",
+      "category": "team",
+      "caption": "Our kitchen brigade",
+      "featured": false,
+      "displayOrder": 32
+    },
+    {
+      "id": "g-040",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b23ae5b865e1ddcfc437b31d4849cdb8ac462787.jpg",
+      "alt": "Chef hands slicing fresh herbs",
+      "category": "behind-the-scenes",
+      "caption": "Precision in every cut",
+      "featured": false,
+      "displayOrder": 40
+    },
+    {
+      "id": "g-041",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ec871018c47382353e0458c3131c81c536b885c7.jpg",
+      "alt": "Morning delivery of fresh produce",
+      "category": "behind-the-scenes",
+      "caption": "Farm deliveries every morning",
+      "featured": false,
+      "displayOrder": 41
+    },
+    {
+      "id": "g-042",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/508a957c416a2222d88bca82af7a9d67695bc1e4.jpg",
+      "alt": "Staff meal around a big table",
+      "category": "behind-the-scenes",
+      "caption": "Daily staff meal tradition",
+      "featured": false,
+      "displayOrder": 42
+    },
+    {
+      "id": "g-050",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg",
+      "alt": "Spring ingredients spread on a wooden board",
+      "category": "seasonal",
+      "caption": "Spring arrivals — ramps, asparagus, morels",
+      "featured": false,
+      "displayOrder": 50
+    },
+    {
+      "id": "g-051",
+      "url": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/06e4b6316babd9eef82e9b07a64ad5a8167267a3.jpg",
+      "alt": "Autumn table setting with warm candlelight",
+      "category": "seasonal",
+      "caption": "Autumn at The Meridian",
+      "featured": false,
+      "displayOrder": 51
+    }
+  ]
+}

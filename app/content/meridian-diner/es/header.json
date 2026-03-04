@@ -1,0 +1,38 @@
+{
+  "topbar": {
+    "show": true,
+    "phone": "(212) 555-0142",
+    "phoneHref": "tel:+12125550142",
+    "message": "Aceptando Reservaciones para Primavera"
+  },
+  "menu": {
+    "variant": "transparent",
+    "fontWeight": "semibold",
+    "logo": {
+      "type": "text",
+      "text": "THE MERIDIAN",
+      "subtext": "EST. 2019"
+    },
+    "items": [
+      {
+        "text": "Menú",
+        "url": "/menu",
+        "children": [
+          { "text": "Cena", "url": "/menu/dinner" },
+          { "text": "Cócteles y Vinos", "url": "/menu/cocktails" }
+        ]
+      },
+      { "text": "Nosotros", "url": "/about" },
+      { "text": "Reservaciones", "url": "/reservations" },
+      { "text": "Eventos", "url": "/events", "feature_gate": "events" },
+      { "text": "Galería", "url": "/gallery", "feature_gate": "gallery" },
+      { "text": "Blog", "url": "/blog" },
+      { "text": "Contacto", "url": "/contact" }
+    ]
+  },
+  "transparent_hero": true,
+  "cta": {
+    "text": "Reservar Mesa",
+    "link": "/reservations"
+  }
+}

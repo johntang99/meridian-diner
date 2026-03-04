@@ -1,0 +1,18 @@
+{
+  "cta": {
+    "ctaLink": "/en/reservations/private-dining",
+    "ctaText": "Book a Private Event",
+    "headline": "Photography by our team. Available for private events."
+  },
+  "hero": {
+    "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/361d277966f931242b367614d5f7113b1258c684.jpg",
+    "subline": "A look inside The Meridian — our dishes, spaces, and moments.",
+    "headline": "Gallery",
+    "variant": "photo-background"
+  },
+  "_workflow": {
+    "status": "published",
+    "updatedAt": "2026-03-04T09:20:39.926Z",
+    "publishedAt": "2026-03-04T09:20:39.926Z"
+  }
+}

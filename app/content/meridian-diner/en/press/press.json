@@ -1,0 +1,11 @@
+{
+  "title": "Press & Awards",
+  "subtitle": "What the critics and industry leaders are saying about The Meridian.",
+  "items": [
+    { "id": "p-001", "publication": "The New York Times", "headline": "The Meridian Brings Seasonal Sophistication to the Upper West Side", "excerpt": "Chef Marcus Bellamy's thoughtful approach to seasonal cooking makes The Meridian a neighborhood gem worth crossing town for.", "url": "#", "date": "2025-11-15", "isAward": false, "featured": true, "displayOrder": 1 },
+    { "id": "p-002", "publication": "James Beard Foundation", "headline": "Best Chef: New York City — Nominee", "award": "James Beard Award Nominee 2024", "date": "2024-02-28", "isAward": true, "featured": true, "displayOrder": 2 },
+    { "id": "p-003", "publication": "Wine Spectator", "headline": "Award of Excellence", "award": "Wine Spectator Award of Excellence 2025", "excerpt": "The Meridian's 350+ label wine list demonstrates a deep commitment to quality, diversity, and sustainable viticulture.", "date": "2025-08-01", "isAward": true, "featured": true, "displayOrder": 3 },
+    { "id": "p-004", "publication": "Eater New York", "headline": "The Meridian Is the Upper West Side's Best-Kept Secret", "excerpt": "With a killer cocktail program and seasonally obsessed kitchen, this is a restaurant firing on all cylinders.", "url": "#", "date": "2025-06-10", "isAward": false, "featured": false, "displayOrder": 4 },
+    { "id": "p-005", "publication": "Time Out New York", "headline": "50 Best Restaurants in NYC 2025", "excerpt": "The Meridian earns its spot with impeccable service, a thoughtful wine program, and a menu that changes just often enough to keep regulars excited.", "url": "#", "date": "2025-12-01", "isAward": false, "featured": false, "displayOrder": 5 }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": "The Meridian | Fine Dining in New York City",
+  "description": "Experience seasonal American cuisine with global influences at The Meridian. Reserve your table for dinner, cocktails, private dining, and special events in NYC.",
+  "keywords": ["fine dining NYC", "New York restaurant", "seasonal cuisine", "craft cocktails", "private dining", "Upper West Side restaurant"],
+  "home": {
+    "title": "The Meridian — Where Craft Meets Occasion",
+    "description": "Seasonal American cuisine, craft cocktails, and impeccable hospitality on the Upper West Side of Manhattan."
+  },
+  "pages": {
+    "menu": {
+      "title": "Menus",
+      "description": "Explore our dinner, cocktail, wine, and tasting menus — crafted with seasonal ingredients and global inspiration."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Meet Chef Marcus Bellamy and the team behind The Meridian. Our story, philosophy, and commitment to exceptional dining."
+    },
+    "reservations": {
+      "title": "Reservations",
+      "description": "Reserve your table at The Meridian. Walk-ins welcome at the bar. Private dining available for groups of 8 or more."
+    },
+    "contact": {
+      "title": "Contact & Hours",
+      "description": "Get in touch with The Meridian. Find directions, hours, and ways to reach our team."
+    },
+    "events": {
+      "title": "Events",
+      "description": "Wine dinners, chef's table experiences, live jazz, and special seasonal events at The Meridian."
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "A visual journey through The Meridian — our dishes, spaces, and moments."
+    },
+    "blog": {
+      "title": "Journal",
+      "description": "Stories from our kitchen, seasonal highlights, wine pairings, and behind-the-scenes at The Meridian."
+    }
+  }
+}

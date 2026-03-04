@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "headline": "Give the Gift of The Meridian",
+    "subline": "The perfect gift for any occasion."
+  },
+  "amounts": [50, 100, 200],
+  "customRange": { "min": 25, "max": 500 },
+  "purchaseNote": "To purchase, please call us or visit in person.",
+  "inPersonNote": "Available at the host stand during service.",
+  "giftingIdeas": [
+    { "title": "Birthday", "description": "Celebrate with an unforgettable dining experience — a gift they'll truly remember." },
+    { "title": "Anniversary", "description": "Mark the milestone with a special evening at The Meridian. Add a bottle from our cellar." },
+    { "title": "Corporate Gifting", "description": "Impress clients and reward your team with gift cards in any amount. Bulk orders welcome." }
+  ],
+  "redemption": {
+    "steps": [
+      "Present your gift card to your server at the start of your meal.",
+      "The card balance will be applied to your check.",
+      "Any remaining balance stays on the card for your next visit."
+    ],
+    "validity": "Valid for 5 years from date of purchase.",
+    "noExchange": "Cannot be exchanged for cash."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "businessName": "The Meridian",
+  "tagline": "匠心与时刻的交汇",
+  "description": "位于纽约市中心的精致餐饮目的地，The Meridian以时令食材、精酿鸡尾酒和无可挑剔的服务著称。",
+  "address": "西72街142号",
+  "city": "纽约",
+  "state": "纽约州",
+  "zip": "10023",
+  "phone": "(212) 555-0142",
+  "email": "info@themeridian.com",
+  "addressMapUrl": "https://maps.google.com/?q=142+West+72nd+Street+New+York+NY+10023",
+  "headerVariant": "transparent",
+  "social": {
+    "facebook": "https://facebook.com/themeridiannyc",
+    "instagram": "https://instagram.com/themeridiannyc",
+    "youtube": ""
+  }
+}

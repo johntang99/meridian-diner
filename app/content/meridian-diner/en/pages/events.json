@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f5babfd512c2ba8a006142207cbffa5a2b37cd9a.jpg",
+    "subline": "Wine dinners, chef's tables, live music, and seasonal celebrations.",
+    "headline": "Events",
+    "variant": "photo-background"
+  },
+  "privateDiningCta": {
+    "ctaLink": "/en/reservations/private-dining",
+    "ctaText": "Enquire About Private Events",
+    "headline": "Hosting a Private Event?",
+    "description": "From intimate dinners for 10 to celebrations for 60 — our private dining team handles every detail."
+  },
+  "_workflow": {
+    "status": "published",
+    "updatedAt": "2026-03-04T09:17:33.452Z",
+    "publishedAt": "2026-03-04T09:17:33.452Z"
+  }
+}

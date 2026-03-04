@@ -1,0 +1,79 @@
+{
+  "menuType": "salads-soups",
+  "title": "Salads & Soups",
+  "subtitle": "Fresh, warming, and perfect with any diner meal.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f0073bf3b433203596d8fe379a5e101881659441.jpg",
+  "categories": [
+    {
+      "id": "salads",
+      "name": "Salads",
+      "description": "Crisp greens and house dressings.",
+      "displayOrder": 1
+    },
+    {
+      "id": "soups",
+      "name": "Soups",
+      "description": "Slow-simmered daily soups.",
+      "displayOrder": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "ss-001",
+      "categoryId": "salads",
+      "name": "Cobb Salad",
+      "description": "Chicken, egg, bacon, blue cheese, tomato.",
+      "price": 1499,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "ss-002",
+      "categoryId": "salads",
+      "name": "Caesar Salad",
+      "description": "Romaine, croutons, Parmesan, Caesar dressing.",
+      "price": 1199,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "ss-003",
+      "categoryId": "salads",
+      "name": "House Garden Salad",
+      "description": "Mixed greens, cucumber, tomato, carrots.",
+      "price": 1099,
+      "dietaryFlags": [
+        "vegan"
+      ],
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "ss-004",
+      "categoryId": "soups",
+      "name": "Chicken Noodle Soup",
+      "description": "Homestyle broth, chicken, carrots, noodles.",
+      "price": 899,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "ss-005",
+      "categoryId": "soups",
+      "name": "Tomato Basil Soup",
+      "description": "Creamy tomato soup with basil oil.",
+      "price": 899,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "ss-006",
+      "categoryId": "soups",
+      "name": "Chili of the Day",
+      "description": "Slow-cooked chili, cheddar, scallions.",
+      "price": 999,
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

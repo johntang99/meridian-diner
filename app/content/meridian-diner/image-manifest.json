@@ -1,0 +1,176 @@
+{
+  "images": [
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "scallops",
+      "filename": "scallops-1.jpg",
+      "url": "/uploads/meridian-diner/menu/scallops-1.jpg",
+      "alt": "Fresh scallops in a water-filled container with netting.",
+      "credit": "Photo by GONG TY on Unsplash",
+      "creditUrl": "https://unsplash.com/@deathclutch108"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "duck",
+      "filename": "duck-1.jpg",
+      "url": "/uploads/meridian-diner/menu/duck-1.jpg",
+      "alt": "a close up of a plate of food on a table",
+      "credit": "Photo by ibmoon Kim on Unsplash",
+      "creditUrl": "https://unsplash.com/@kimibmoon"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "chocolate",
+      "filename": "chocolate-1.jpg",
+      "url": "/uploads/meridian-diner/menu/chocolate-1.jpg",
+      "alt": "Autumn-themed cake with fox and pumpkin decorations",
+      "credit": "Photo by mdreza jalali on Unsplash",
+      "creditUrl": "https://unsplash.com/@mdrezajalali"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "creme-brulee",
+      "filename": "creme-brulee-1.jpg",
+      "url": "/uploads/meridian-diner/menu/creme-brulee-1.jpg",
+      "alt": "a white bowl filled with food on top of a table",
+      "credit": "Photo by Laura Peruchi on Unsplash",
+      "creditUrl": "https://unsplash.com/@lauraperuchi"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "cocktail",
+      "filename": "cocktail-1.jpg",
+      "url": "/uploads/meridian-diner/menu/cocktail-1.jpg",
+      "alt": "Bottles of liquor sit with lemon slices.",
+      "credit": "Photo by Nikola Perekovic on Unsplash",
+      "creditUrl": "https://unsplash.com/@nikolaframe"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "cocktail",
+      "filename": "cocktail-2.jpg",
+      "url": "/uploads/meridian-diner/menu/cocktail-2.jpg",
+      "alt": "clear drinking glass with water",
+      "credit": "Photo by James Kern on Unsplash",
+      "creditUrl": "https://unsplash.com/@jamesrkern"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "cocktail",
+      "filename": "cocktail-3.jpg",
+      "url": "/uploads/meridian-diner/menu/cocktail-3.jpg",
+      "alt": "Dark glass bowl filled with fresh berries",
+      "credit": "Photo by Heather Newsom on Unsplash",
+      "creditUrl": "https://unsplash.com/@native7photo"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "wine",
+      "filename": "wine-1.jpg",
+      "url": "/uploads/meridian-diner/menu/wine-1.jpg",
+      "alt": "white and black labeled bottle",
+      "credit": "Photo by Adam Dam on Unsplash",
+      "creditUrl": "https://unsplash.com/@aggelos2"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "wine",
+      "filename": "wine-2.jpg",
+      "url": "/uploads/meridian-diner/menu/wine-2.jpg",
+      "alt": "a man in a suit is pouring wine into a glass",
+      "credit": "Photo by Meesh Nguyen on Unsplash",
+      "creditUrl": "https://unsplash.com/@metameesh"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "burrata",
+      "filename": "burrata-1.jpg",
+      "url": "/uploads/meridian-diner/menu/burrata-1.jpg",
+      "alt": "sliced fruit on white ceramic plate",
+      "credit": "Photo by Sebastian Coman Photography on Unsplash",
+      "creditUrl": "https://unsplash.com/@sebastiancoman"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "octopus",
+      "filename": "octopus-1.jpg",
+      "url": "/uploads/meridian-diner/menu/octopus-1.jpg",
+      "alt": "black and brown horse ceramic figurine",
+      "credit": "Photo by Moritz Kindler on Unsplash",
+      "creditUrl": "https://unsplash.com/@moritz_photography"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "bone-marrow",
+      "filename": "bone-marrow-1.jpg",
+      "url": "/uploads/meridian-diner/menu/bone-marrow-1.jpg",
+      "alt": "A baked dish with a bone on top.",
+      "credit": "Photo by Intrepid on Unsplash",
+      "creditUrl": "https://unsplash.com/@intrepidfilm"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "salmon",
+      "filename": "salmon-1.jpg",
+      "url": "/uploads/meridian-diner/menu/salmon-1.jpg",
+      "alt": "Chef arranging small plates of food",
+      "credit": "Photo by Filipp Romanovski on Unsplash",
+      "creditUrl": "https://unsplash.com/@filipp_roman_photography"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "lamb",
+      "filename": "lamb-1.jpg",
+      "url": "/uploads/meridian-diner/menu/lamb-1.jpg",
+      "alt": "Rack of lamb with roasted vegetables and sauce",
+      "credit": "Photo by Hans Westbeek on Unsplash",
+      "creditUrl": "https://unsplash.com/@hanswestbeek"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "risotto",
+      "filename": "risotto-1.jpg",
+      "url": "/uploads/meridian-diner/menu/risotto-1.jpg",
+      "alt": "a bowl of food on a wooden table",
+      "credit": "Photo by Rob Wicks on Unsplash",
+      "creditUrl": "https://unsplash.com/@robwicks"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "cheese",
+      "filename": "cheese-1.jpg",
+      "url": "/uploads/meridian-diner/menu/cheese-1.jpg",
+      "alt": "person holding stainless steel fork and knife slicing cooked food on white ceramic plate",
+      "credit": "Photo by Amin Hasani on Unsplash",
+      "creditUrl": "https://unsplash.com/@aminhasani"
+    },
+    {
+      "category": "menu",
+      "folder": "menu",
+      "prefix": "tart",
+      "filename": "tart-1.jpg",
+      "url": "/uploads/meridian-diner/menu/tart-1.jpg",
+      "alt": "Plum crumble tart with fresh plums on a wooden table",
+      "credit": "Photo by Mila on Unsplash",
+      "creditUrl": "https://unsplash.com/@imoflow_me"
+    }
+  ],
+  "updatedAt": "2026-03-04T07:07:23.336Z",
+  "totalImages": 17
+}

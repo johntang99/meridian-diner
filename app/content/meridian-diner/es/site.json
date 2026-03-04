@@ -1,0 +1,18 @@
+{
+  "businessName": "The Meridian",
+  "tagline": "Donde la Artesanía Se Encuentra con la Ocasión",
+  "description": "Un destino gastronómico refinado en el corazón de Nueva York. The Meridian celebra ingredientes de temporada, cócteles artesanales y hospitalidad impecable.",
+  "address": "142 West 72nd Street",
+  "city": "Nueva York",
+  "state": "NY",
+  "zip": "10023",
+  "phone": "(212) 555-0142",
+  "email": "info@themeridian.com",
+  "addressMapUrl": "https://maps.google.com/?q=142+West+72nd+Street+New+York+NY+10023",
+  "headerVariant": "transparent",
+  "social": {
+    "facebook": "https://facebook.com/themeridiannyc",
+    "instagram": "https://instagram.com/themeridiannyc",
+    "youtube": ""
+  }
+}

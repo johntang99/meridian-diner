@@ -1,0 +1,76 @@
+{
+  "menuType": "burgers-sandwiches",
+  "title": "Burgers & Sandwiches",
+  "subtitle": "Stacked high, grilled to order, and served with fries.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b31f334c45d17d620bfa91e2b5ea29b97e1e5a7e.jpg",
+  "categories": [
+    {
+      "id": "burgers",
+      "name": "Burgers",
+      "description": "Premium beef and house toppings.",
+      "displayOrder": 1
+    },
+    {
+      "id": "sandwiches",
+      "name": "Sandwiches",
+      "description": "Diner classics and modern favorites.",
+      "displayOrder": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "bs-001",
+      "categoryId": "burgers",
+      "name": "Classic Cheeseburger",
+      "description": "American cheese, lettuce, tomato, onion, pickle.",
+      "price": 1599,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "bs-002",
+      "categoryId": "burgers",
+      "name": "Bacon BBQ Burger",
+      "description": "Applewood bacon, cheddar, onion rings, BBQ sauce.",
+      "price": 1799,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "bs-003",
+      "categoryId": "burgers",
+      "name": "Mushroom Swiss Burger",
+      "description": "Sauteed mushrooms, Swiss, garlic aioli.",
+      "price": 1699,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "bs-004",
+      "categoryId": "sandwiches",
+      "name": "Turkey Club",
+      "description": "Roasted turkey, bacon, lettuce, tomato, mayo.",
+      "price": 1499,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "bs-005",
+      "categoryId": "sandwiches",
+      "name": "Patty Melt",
+      "description": "Swiss and onions on grilled rye.",
+      "price": 1549,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "bs-006",
+      "categoryId": "sandwiches",
+      "name": "Crispy Chicken Sandwich",
+      "description": "Buttermilk chicken, slaw, pickles, comeback sauce.",
+      "price": 1599,
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

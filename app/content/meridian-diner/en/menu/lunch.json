@@ -1,0 +1,79 @@
+{
+  "menuType": "lunch",
+  "title": "Lunch Menu",
+  "subtitle": "Midday comfort with diner favorites and lighter options.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/3499651084a1780280ebc275aa0bef7fae265d75.jpg",
+  "categories": [
+    {
+      "id": "lunch-combos",
+      "name": "Lunch Combos",
+      "description": "Balanced plates for a quick lunch.",
+      "displayOrder": 1
+    },
+    {
+      "id": "bowls-wraps",
+      "name": "Bowls & Wraps",
+      "description": "Fresh and satisfying lunch picks.",
+      "displayOrder": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "ln-001",
+      "categoryId": "lunch-combos",
+      "name": "Soup & Half Sandwich",
+      "description": "Tomato basil soup with turkey melt half.",
+      "price": 1399,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "ln-002",
+      "categoryId": "lunch-combos",
+      "name": "Meatloaf Lunch Plate",
+      "description": "Classic meatloaf, mashed potatoes, seasonal veg.",
+      "price": 1599,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "ln-003",
+      "categoryId": "lunch-combos",
+      "name": "Fish & Chips Lite",
+      "description": "Beer-battered cod, fries, slaw.",
+      "price": 1699,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "ln-004",
+      "categoryId": "bowls-wraps",
+      "name": "Southwest Chicken Bowl",
+      "description": "Grilled chicken, black beans, corn, rice, pico.",
+      "price": 1499,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "ln-005",
+      "categoryId": "bowls-wraps",
+      "name": "Turkey Club Wrap",
+      "description": "Roasted turkey, bacon, avocado, ranch.",
+      "price": 1449,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "ln-006",
+      "categoryId": "bowls-wraps",
+      "name": "Veggie Grain Bowl",
+      "description": "Quinoa, roasted vegetables, lemon tahini.",
+      "price": 1399,
+      "dietaryFlags": [
+        "vegan"
+      ],
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

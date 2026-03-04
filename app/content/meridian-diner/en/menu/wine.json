@@ -1,0 +1,76 @@
+{
+  "menuType": "wine",
+  "title": "Wine List",
+  "subtitle": "By-the-glass staples and bottle selections for every table.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4efc5c1266a2c88bb5770b7a264d4697644ebfe8.jpg",
+  "categories": [
+    {
+      "id": "by-the-glass",
+      "name": "By the Glass",
+      "description": "Curated daily pours.",
+      "displayOrder": 1
+    },
+    {
+      "id": "bottles",
+      "name": "Bottles",
+      "description": "Cellar selections to pair with dinner.",
+      "displayOrder": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "wn-001",
+      "categoryId": "by-the-glass",
+      "name": "Chardonnay, Sonoma",
+      "description": "Bright citrus, light oak.",
+      "price": 1400,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "wn-002",
+      "categoryId": "by-the-glass",
+      "name": "Sauvignon Blanc, Marlborough",
+      "description": "Crisp, tropical fruit.",
+      "price": 1300,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "wn-003",
+      "categoryId": "by-the-glass",
+      "name": "Pinot Noir, Willamette",
+      "description": "Cherry, earth, soft tannins.",
+      "price": 1500,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "wn-004",
+      "categoryId": "bottles",
+      "name": "Napa Cabernet Sauvignon",
+      "description": "Blackcurrant, cedar, structured finish.",
+      "price": 7800,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "wn-005",
+      "categoryId": "bottles",
+      "name": "Chianti Classico",
+      "description": "Red berry, spice, food-friendly acidity.",
+      "price": 6200,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "wn-006",
+      "categoryId": "bottles",
+      "name": "Brut Sparkling",
+      "description": "Fine bubbles, citrus and brioche.",
+      "price": 6800,
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "businessName": "The Meridian",
+  "tagline": "Where Craft Meets Occasion",
+  "description": "A refined dining destination in the heart of New York City, The Meridian celebrates seasonal ingredients, craft cocktails, and impeccable hospitality.",
+  "address": "142 West 72nd Street",
+  "city": "New York",
+  "state": "NY",
+  "zip": "10023",
+  "phone": "(212) 555-0142",
+  "email": "info@themeridian.com",
+  "addressMapUrl": "https://maps.google.com/?q=142+West+72nd+Street+New+York+NY+10023",
+  "headerVariant": "transparent",
+  "social": {
+    "facebook": "https://facebook.com/themeridiannyc",
+    "instagram": "https://instagram.com/themeridiannyc",
+    "yelp": "https://yelp.com/biz/the-meridian-new-york",
+    "google_maps": "https://maps.google.com/?q=142+West+72nd+Street+New+York+NY+10023"
+  },
+  "hours": [
+    "Tuesday – Thursday: 5:00 PM – 10:00 PM",
+    "Friday – Saturday: 5:00 PM – 11:00 PM",
+    "Sunday: 5:00 PM – 9:30 PM",
+    "Monday: Closed"
+  ],
+  "features": {
+    "reservation_provider": "custom",
+    "private_dining": true,
+    "events": true,
+    "gallery": true,
+    "blog": true,
+    "press": true,
+    "gift_cards": true,
+    "careers": true
+  }
+}

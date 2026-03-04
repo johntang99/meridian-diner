@@ -1,0 +1,54 @@
+{
+  "title": "Privacy Policy",
+  "updatedAt": "March 1, 2026",
+  "intro": "The Meridian Restaurant (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website or dine with us.",
+  "sections": [
+    {
+      "heading": "Information We Collect",
+      "body": "We collect information you provide directly to us, such as when you make a reservation, subscribe to our newsletter, submit a contact form, or apply for employment.",
+      "bullets": [
+        "Name, email address, and phone number",
+        "Reservation details (date, time, party size, dietary preferences)",
+        "Payment information (processed securely through third-party payment processors)",
+        "Communications you send to us via contact forms or email",
+        "Employment application details including resume and work history"
+      ]
+    },
+    {
+      "heading": "How We Use Your Information",
+      "body": "We use the information we collect to provide, maintain, and improve our services.",
+      "bullets": [
+        "Process and confirm reservations",
+        "Send reservation confirmations and reminders",
+        "Respond to your inquiries and requests",
+        "Send promotional communications (with your consent)",
+        "Improve our website and dining experience",
+        "Process employment applications"
+      ]
+    },
+    {
+      "heading": "Information Sharing",
+      "body": "We do not sell, trade, or rent your personal information to third parties. We may share your information with trusted service providers who assist us in operating our website and conducting our business, such as reservation platforms, email service providers, and payment processors. These parties are obligated to keep your information confidential."
+    },
+    {
+      "heading": "Cookies and Tracking",
+      "body": "Our website uses cookies and similar technologies to enhance your browsing experience. You can set your browser to refuse cookies, though some features of the website may not function properly without them."
+    },
+    {
+      "heading": "Data Security",
+      "body": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet is 100% secure."
+    },
+    {
+      "heading": "Your Rights",
+      "body": "You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at info@themeridian.com. We will respond to your request within 30 days."
+    },
+    {
+      "heading": "Changes to This Policy",
+      "body": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the \"Last updated\" date."
+    },
+    {
+      "heading": "Contact Us",
+      "body": "If you have questions about this Privacy Policy, please contact us at info@themeridian.com or call (212) 555-0142."
+    }
+  ]
+}

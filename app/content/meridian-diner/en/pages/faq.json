@@ -1,0 +1,58 @@
+{
+  "hero": {
+    "headline": "Frequently Asked Questions"
+  },
+  "groups": [
+    {
+      "heading": "Reservations",
+      "items": [
+        { "question": "How far in advance should I book?", "answer": "We recommend 2–3 weeks for weekends and 1 week for weekdays. For special occasions, 4–6 weeks ensures availability." },
+        { "question": "What is your cancellation policy?", "answer": "Cancellations made 48 hours in advance incur no charge. Late cancellations may be subject to a $25 per person fee." },
+        { "question": "Do you accept walk-ins?", "answer": "We hold a small number of tables for walk-in guests. We recommend arriving before 6:00 PM for the best availability." },
+        { "question": "Do you accommodate large parties?", "answer": "For parties of 8 or more, please contact us directly to arrange a group reservation. For 15+ guests, our private dining team can create a bespoke experience." },
+        { "question": "Can I request a specific table?", "answer": "We accommodate table preferences whenever possible. Please note your preference in the special requests field when booking." },
+        { "question": "Is there a dress code?", "answer": "Smart casual. We ask guests to avoid athletic wear and flip-flops. We welcome guests to dress up if the occasion calls for it." }
+      ]
+    },
+    {
+      "heading": "Menus & Dietary Needs",
+      "items": [
+        { "question": "Do you offer vegetarian or vegan options?", "answer": "Yes. Every menu includes at least three vegetarian and two vegan dishes. Our kitchen is happy to adapt most dishes — just let your server know." },
+        { "question": "How do you handle food allergies?", "answer": "Every dish on our menu is tagged with major allergens. Please inform your server of any allergies and we will ensure your meal is safe and delicious." },
+        { "question": "Does the menu change seasonally?", "answer": "Our dinner and tasting menus evolve with the seasons. Expect new dishes roughly every 6–8 weeks, with some signature items available year-round." },
+        { "question": "Can we arrange a custom tasting menu?", "answer": "Absolutely. For groups of 6 or more, Chef Bellamy can create a bespoke multi-course experience. Please contact us at least 2 weeks in advance." },
+        { "question": "Do you have a children's menu?", "answer": "While we don't have a formal children's menu, our kitchen is happy to prepare simpler dishes for younger guests. Please let us know when booking." }
+      ]
+    },
+    {
+      "heading": "Private Dining",
+      "items": [
+        { "question": "How many guests can you accommodate for a private event?", "answer": "The Salon accommodates 12–18 guests and The Library seats up to 40. For cocktail receptions, The Library can host up to 60 standing." },
+        { "question": "Can we bring our own cake for a celebration?", "answer": "Of course! There is no corkage or cake-cutting fee. You are also welcome to order from our pastry team — Chef Vasquez creates stunning celebration cakes." },
+        { "question": "Do you offer AV equipment for corporate events?", "answer": "The Library is equipped with a projector, screen, and wireless microphone. A tech setup fee of $150 applies and includes setup assistance." },
+        { "question": "What is the deposit for private dining?", "answer": "We require a 50% deposit at the time of booking, with the balance due on the day of the event. Deposits are fully refundable if cancelled 14 days in advance." }
+      ]
+    },
+    {
+      "heading": "Parking & Location",
+      "items": [
+        { "question": "Is parking available nearby?", "answer": "Several parking garages are within a 2-minute walk. We also offer a complimentary valet service on Friday and Saturday evenings." },
+        { "question": "What is the nearest subway station?", "answer": "The 72nd Street station (1/2/3 lines) is a 4-minute walk from The Meridian." },
+        { "question": "Is the restaurant wheelchair accessible?", "answer": "Yes. Our main entrance, dining room, restrooms, and private dining rooms are all fully wheelchair accessible." }
+      ]
+    },
+    {
+      "heading": "Gift Cards & Other",
+      "items": [
+        { "question": "Do you offer gift cards?", "answer": "Yes! Digital and physical gift cards are available in any amount from $50 to $500. Visit our Gift Cards page or purchase at the host stand." },
+        { "question": "Can I purchase merchandise?", "answer": "We offer a small selection of branded items including aprons, tote bags, and our house-made hot sauce. Available at the host stand and online soon." },
+        { "question": "Do you cater off-site events?", "answer": "While our primary focus is the dining room, we occasionally cater exclusive off-site events. Please contact our events team to discuss your needs." }
+      ]
+    }
+  ],
+  "contact": {
+    "headline": "Can't find what you're looking for?",
+    "ctaText": "Send Us a Message",
+    "ctaLink": "/en/contact"
+  }
+}

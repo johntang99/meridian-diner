@@ -1,0 +1,200 @@
+{
+  "cta": {
+    "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/2cdcf2ee706d1d1cda8309a7324106830d37f269.jpg",
+    "title": "Join Us for an Unforgettable Evening",
+    "variant": "centered",
+    "subtitle": "Reserve your table and let us take care of the rest.",
+    "primaryCta": {
+      "link": "/en/reservations",
+      "text": "Make a Reservation"
+    },
+    "secondaryCta": {
+      "link": "tel:+12125550142",
+      "text": "Call (212) 555-0142"
+    }
+  },
+  "blog": {
+    "badge": "From Our Journal",
+    "posts": [],
+    "title": "Stories from The Meridian",
+    "variant": "cards-grid",
+    "moreLink": {
+      "url": "/en/blog",
+      "text": "Read Our Journal"
+    },
+    "subtitle": "Behind the scenes, seasonal highlights, and culinary insights."
+  },
+  "hero": {
+    "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1437c2ac1febba6747a3452c4b955c52a445ea09.jpg",
+    "eyebrow": "Upper West Side, Manhattan",
+    "subline": "Seasonal American cuisine with global influences, craft cocktails, and impeccable hospitality.",
+    "variant": "gallery-background",
+    "headline": "Where Craft Meets Occasion",
+    "ctaPrimary": {
+      "link": "/en/reservations",
+      "text": "Reserve a Table"
+    },
+    "ctaSecondary": {
+      "link": "/en/menu",
+      "text": "View Menu"
+    },
+    "gallery": [
+      "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg",
+      "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/general/1772609332429-photo-1501595091296-3aa970afb3ff.jpg"
+    ]
+  },
+  "gallery": {
+    "badge": "Gallery",
+    "title": "A Visual Journey",
+    "images": [
+      {
+        "alt": "Warmly lit dining room with guests enjoying dinner",
+        "src": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/7729e6b0a4abb5b5ae12843ba5397820eef39b5e.jpg",
+        "label": "Main Dining Room"
+      },
+      {
+        "alt": "Bar counter with cocktails and glowing back bar",
+        "src": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/da49d00d61a30d734ee61d29f1b97e946ec3609d.jpg",
+        "label": "Cocktail Bar"
+      },
+      {
+        "alt": "Chef plated dish with garnish",
+        "src": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/01ebe1ec2474c500dfe4ff157ef1db2d7ba484b4.jpg",
+        "label": "Seasonal Plates"
+      },
+      {
+        "alt": "Elegant table setting for evening service",
+        "src": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ce3dfd2a9a6295d40f1326b1846ff108e3e90bd6.jpg",
+        "label": "Evening Service"
+      }
+    ],
+    "variant": "grid-masonry",
+    "moreLink": {
+      "url": "/en/gallery",
+      "text": "View Full Gallery"
+    },
+    "subtitle": "Our dishes, our spaces, our moments."
+  },
+  "trustBar": {
+    "items": [
+      {
+        "type": "award",
+        "label": "James Beard Nominee 2024"
+      },
+      {
+        "type": "press",
+        "label": "Wine Spectator Award"
+      },
+      {
+        "type": "press",
+        "label": "Eater New York"
+      },
+      {
+        "type": "press",
+        "label": "Time Out NYC"
+      }
+    ],
+    "variant": "logos-only"
+  },
+  "_workflow": {
+    "status": "published",
+    "updatedAt": "2026-03-04T09:32:12.608Z",
+    "publishedAt": "2026-03-04T05:59:28.044Z"
+  },
+  "aboutPreview": {
+    "cta": {
+      "link": "/en/about",
+      "text": "Meet Our Team"
+    },
+    "body": "After years at Michelin-starred kitchens in New York and Lyon, Chef Bellamy opened The Meridian with a simple vision: celebrate the best seasonal ingredients with global techniques and warm, unhurried hospitality. Every dish tells a story of place and season.",
+    "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/17340a4cd063da2e632ff47adc54d519e5ac07c9.jpg",
+    "stats": [
+      {
+        "label": "Years",
+        "value": "6+"
+      },
+      {
+        "label": "Farm Radius",
+        "value": "150mi"
+      },
+      {
+        "label": "Wine Labels",
+        "value": "350+"
+      }
+    ],
+    "eyebrow": "Our Story",
+    "variant": "split-image",
+    "headline": "Chef Marcus Bellamy's Vision"
+  },
+  "testimonials": {
+    "badge": "Guest Reviews",
+    "title": "What Our Guests Say",
+    "variant": "carousel",
+    "subtitle": "Unforgettable evenings, crafted with care.",
+    "testimonials": [
+      {
+        "name": "Sarah Mitchell",
+        "quote": "The tasting menu was a revelation — every course more surprising than the last. This is what New York dining should be.",
+        "featured": true,
+        "condition": "Anniversary Dinner"
+      },
+      {
+        "name": "James Chen",
+        "quote": "The cocktail program alone is worth the visit. Creative, balanced, and beautifully presented.",
+        "condition": "Bar Experience"
+      },
+      {
+        "name": "Maria Rodriguez",
+        "quote": "We hosted our rehearsal dinner here and it was perfect. The private dining room, the service, the food — everything exceeded expectations.",
+        "condition": "Private Event"
+      },
+      {
+        "name": "David Park",
+        "quote": "The seasonal menu keeps us coming back every few months. Chef Bellamy's duck dish in autumn is not to be missed.",
+        "condition": "Regular Guest"
+      }
+    ]
+  },
+  "eventsPreview": {
+    "items": [
+      {
+        "date": "2026-03-20",
+        "slug": "e-001",
+        "type": "wine-dinner",
+        "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/17340a4cd063da2e632ff47adc54d519e5ac07c9.jpg",
+        "title": "Thursday Wine Pairing Dinner",
+        "description": "Five courses paired with wines from Napa Valley, presented by our sommelier David Chen.",
+        "price_per_person": 195
+      },
+      {
+        "date": "2026-04-05",
+        "slug": "e-003",
+        "type": "special-dinner",
+        "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/d89ab52154f92ff7630876d08c217085a7ea328b.jpg",
+        "title": "Spring Foraging Dinner",
+        "description": "A collaboration with forager Mika Torres featuring wild ramps, fiddleheads, and morels.",
+        "price_per_person": 165
+      },
+      {
+        "date": "2026-03-14",
+        "slug": "e-002",
+        "type": "live-music",
+        "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/91d9842a69f1293c6ffb847c3cb9bc1a6c5908fd.jpg",
+        "title": "Friday Jazz Supper Club",
+        "description": "Live jazz trio, three-course prix fixe, and craft cocktails every Friday evening."
+      }
+    ],
+    "ctaLink": "/en/events",
+    "ctaText": "View All Events",
+    "subline": "Special dinners, live music, and culinary experiences.",
+    "headline": "Upcoming Events"
+  },
+  "reservationsCTA": {
+    "ctaHref": "/en/reservations",
+    "subline": "Join us for an unforgettable evening of seasonal cuisine and warm hospitality.",
+    "variant": "banner",
+    "ctaLabel": "Reserve Now",
+    "headline": "Your Table Awaits",
+    "urgencyNote": "Currently booking 2–3 weeks ahead for weekend evenings"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "topBar": {
+    "address": "142 West 72nd Street, Nueva York",
+    "phone": "(212) 555-0142",
+    "email": "info@themeridian.com",
+    "badge": {
+      "text": "Aceptando Reservaciones",
+      "visible": true
+    }
+  },
+  "hero": {
+    "variant": "photo-background",
+    "businessName": "The Meridian",
+    "tagline": "Donde la Artesanía Se Encuentra con la Ocasión",
+    "description": "Cocina americana de temporada con influencias globales, cócteles artesanales y hospitalidad impecable en el Upper West Side de Manhattan.",
+    "primaryCta": { "text": "Reservar Mesa", "link": "/es/reservations" },
+    "secondaryCta": { "text": "Ver Menú", "link": "/es/menu" },
+    "image": "",
+    "floatingTags": ["De la Granja a la Mesa", "Cócteles Artesanales", "Menús de Temporada", "Comedor Privado"],
+    "stats": [
+      { "icon": "Star", "number": "4.8", "label": "Calificación Google" },
+      { "icon": "Award", "number": "2024", "label": "Nominado James Beard" },
+      { "icon": "Wine", "number": "350+", "label": "Etiquetas de Vino" }
+    ]
+  },
+  "testimonials": {
+    "variant": "carousel",
+    "badge": "Reseñas",
+    "title": "Lo Que Dicen Nuestros Invitados",
+    "subtitle": "Noches inolvidables, creadas con esmero.",
+    "testimonials": [
+      {
+        "quote": "El menú degustación fue una revelación — cada plato más sorprendente que el anterior. Así debería ser la gastronomía de Nueva York.",
+        "name": "Sarah Mitchell",
+        "condition": "Cena de Aniversario",
+        "featured": true
+      },
+      {
+        "quote": "El programa de cócteles por sí solo vale la visita. Creativo, equilibrado y bellamente presentado.",
+        "name": "James Chen",
+        "condition": "Experiencia en el Bar"
+      }
+    ],
+    "moreLink": { "text": "Leer Más Reseñas", "url": "/es/about" }
+  },
+  "howItWorks": {
+    "variant": "horizontal",
+    "title": "Tu Noche en The Meridian",
+    "subtitle": "Desde la reservación hasta la última copa, cada detalle está pensado.",
+    "steps": [
+      { "number": 1, "icon": "CalendarCheck", "title": "Reserva Tu Mesa", "description": "En línea, por teléfono o por OpenTable. Sin reserva en la barra." },
+      { "number": 2, "icon": "UtensilsCrossed", "title": "Disfruta la Experiencia", "description": "Elige nuestro menú de temporada o la experiencia degustación del chef." },
+      { "number": 3, "icon": "Wine", "title": "Cócteles y Vinos", "description": "Nuestro sommelier y mixólogos maridajes perfectos." },
+      { "number": 4, "icon": "Heart", "title": "Crea Recuerdos", "description": "De celebraciones a cenas tranquilas, cada visita es una ocasión." }
+    ]
+  },
+  "services": {
+    "variant": "grid-cards",
+    "badge": "Nuestros Menús",
+    "title": "Explora Nuestras Ofertas Culinarias",
+    "subtitle": "Cada menú refleja nuestro compromiso con ingredientes de temporada.",
+    "services": [
+      { "id": "dinner", "icon": "UtensilsCrossed", "title": "Menú de Cena", "shortDescription": "Cocina americana de temporada. Nuestro menú principal cambia con las estaciones.", "link": "/es/menu/dinner", "featured": true },
+      { "id": "cocktails", "icon": "Wine", "title": "Cócteles y Vinos", "shortDescription": "Cócteles artesanales, más de 350 etiquetas de vino.", "link": "/es/menu/cocktails" }
+    ],
+    "moreLink": { "text": "Ver Todos los Menús", "url": "/es/menu" }
+  },
+  "blog": {
+    "variant": "cards-grid",
+    "badge": "Blog",
+    "title": "Historias de The Meridian",
+    "subtitle": "Detrás de escenas, temporadas y perspectivas culinarias.",
+    "posts": [],
+    "moreLink": { "text": "Leer Nuestro Blog", "url": "/es/blog" }
+  },
+  "gallery": {
+    "variant": "grid-masonry",
+    "badge": "Galería",
+    "title": "Un Viaje Visual",
+    "subtitle": "Nuestros platos, espacios y momentos.",
+    "images": [],
+    "moreLink": { "text": "Ver Galería Completa", "url": "/es/gallery" }
+  },
+  "whyChooseUs": {
+    "badge": "Por Qué Elegirnos",
+    "title": "La Diferencia de The Meridian",
+    "subtitle": "Lo que nos distingue de cualquier otra experiencia gastronómica.",
+    "features": [
+      { "icon": "Leaf", "title": "Filosofía De la Granja a la Mesa", "description": "Compramos a granjas locales dentro de 150 millas. Cada ingrediente tiene una historia." },
+      { "icon": "Award", "title": "Equipo Galardonado", "description": "Liderado por el Chef Marcus Bellamy, nominado al James Beard." },
+      { "icon": "Wine", "title": "Programa de Vinos de Clase Mundial", "description": "Más de 350 etiquetas enfocadas en productores sostenibles." },
+      { "icon": "Users", "title": "Hospitalidad Impecable", "description": "Desde el primer saludo hasta el último sorbo, cada momento está diseñado." }
+    ]
+  },
+  "cta": {
+    "variant": "centered",
+    "title": "Únete a Nosotros para una Noche Inolvidable",
+    "subtitle": "Reserva tu mesa y déjanos encargarnos del resto.",
+    "primaryCta": { "text": "Hacer Reservación", "link": "/es/reservations" },
+    "secondaryCta": { "text": "Llamar (212) 555-0142", "link": "tel:+12125550142" }
+  }
+}

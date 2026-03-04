@@ -1,0 +1,76 @@
+{
+  "menuType": "all-day-breakfast",
+  "title": "All-Day Breakfast",
+  "subtitle": "Diner breakfast classics available from open to close.",
+  "defaultItemImage": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9fbfc12719f54ecc934a88ae7a051d1d77be80e9.jpg",
+  "categories": [
+    {
+      "id": "egg-plates",
+      "name": "Egg Plates",
+      "description": "Hearty egg combinations with diner sides.",
+      "displayOrder": 1
+    },
+    {
+      "id": "griddle",
+      "name": "Griddle Favorites",
+      "description": "Pancakes, waffles, and French toast.",
+      "displayOrder": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "adb-001",
+      "categoryId": "egg-plates",
+      "name": "Two Eggs Any Style",
+      "description": "Bacon or sausage, hash browns, toast.",
+      "price": 1499,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "adb-002",
+      "categoryId": "egg-plates",
+      "name": "Country Breakfast",
+      "description": "Eggs, biscuits, sausage gravy, breakfast potatoes.",
+      "price": 1699,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "adb-003",
+      "categoryId": "egg-plates",
+      "name": "Steak & Eggs",
+      "description": "Grilled sirloin, two eggs, hash browns.",
+      "price": 2399,
+      "available": true,
+      "displayOrder": 3
+    },
+    {
+      "id": "adb-004",
+      "categoryId": "griddle",
+      "name": "Buttermilk Pancake Stack",
+      "description": "Three fluffy pancakes, whipped butter, maple syrup.",
+      "price": 1299,
+      "available": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "adb-005",
+      "categoryId": "griddle",
+      "name": "Brioche French Toast",
+      "description": "Cinnamon custard, berry compote, powdered sugar.",
+      "price": 1399,
+      "available": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "adb-006",
+      "categoryId": "griddle",
+      "name": "Belgian Waffle",
+      "description": "Whipped cream, strawberries, warm syrup.",
+      "price": 1349,
+      "available": true,
+      "displayOrder": 3
+    }
+  ]
+}

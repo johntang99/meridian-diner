@@ -1,0 +1,80 @@
+{
+  "brand": {
+    "logoText": "BIZ",
+    "name": "Business Name",
+    "description": "Helping customers with high-quality, professional service."
+  },
+  "quickLinks": [
+    {
+      "text": "About Us",
+      "url": "/en/about"
+    },
+    {
+      "text": "Menu",
+      "url": "/en/menu"
+    },
+    {
+      "text": "Reservations",
+      "url": "/en/reservations"
+    },
+    {
+      "text": "Events",
+      "url": "/en/events"
+    },
+    {
+      "text": "Gallery",
+      "url": "/en/gallery"
+    },
+    {
+      "text": "Blog",
+      "url": "/en/blog"
+    },
+    {
+      "text": "Contact",
+      "url": "/en/contact"
+    }
+  ],
+  "services": [
+    {
+      "text": "Dinner Menu",
+      "url": "/en/menu/dinner"
+    },
+    {
+      "text": "Cocktails & Wine",
+      "url": "/en/menu/cocktails"
+    },
+    {
+      "text": "Private Dining",
+      "url": "/en/private-dining"
+    },
+    {
+      "text": "Gift Cards",
+      "url": "/en/gift-cards"
+    }
+  ],
+  "contact": {
+    "addressLines": [
+      "142 West 72nd Street",
+      "New York, NY 10023"
+    ],
+    "phone": "(212) 555-0142",
+    "phoneLink": "tel:+12125550142",
+    "email": "info@themeridian.com",
+    "emailLink": "mailto:info@themeridian.com"
+  },
+  "hours": [
+    "Mon-Fri: 9:00 AM - 6:00 PM",
+    "Sat: 10:00 AM - 2:00 PM"
+  ],
+  "legalLinks": [
+    {
+      "text": "Privacy Policy",
+      "url": "/en/privacy"
+    },
+    {
+      "text": "Terms of Service",
+      "url": "/en/terms"
+    }
+  ],
+  "copyright": "© {year} Business Name. All rights reserved."
+}

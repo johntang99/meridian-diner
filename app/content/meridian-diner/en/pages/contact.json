@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "headline": "Find Us",
+    "subline": "We'd love to hear from you.",
+    "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/c77125e17b114c9ef8ab79e8e72037d288a22d2c.jpg"
+  },
+  "info": {
+    "phoneLabel": "Reservations",
+    "emailLabel": "General Inquiries",
+    "parkingNote": "Street parking available on West 72nd Street. The closest garage is at 160 West 73rd Street, a short walk from the restaurant.",
+    "transitNote": "Subway: 1, 2, 3 to 72nd Street (0.2 mi walk)"
+  },
+  "map": {
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.0!2d-73.98!3d40.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ2JzQ4LjAiTiA3M8KwNTgnNDguMCJX!5e0!3m2!1sen!2sus!4v1"
+  },
+  "form": {
+    "headline": "Send Us a Message",
+    "successMessage": "Thank you! Your message has been sent. We'll get back to you within 24 hours."
+  }
+}

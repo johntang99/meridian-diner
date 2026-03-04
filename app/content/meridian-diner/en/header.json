@@ -1,0 +1,48 @@
+{
+  "topbar": {
+    "show": true,
+    "phone": "(212) 555-0142",
+    "phoneHref": "tel:+12125550142",
+    "message": "Now Accepting Reservations for Spring"
+  },
+  "menu": {
+    "variant": "transparent",
+    "fontWeight": "semibold",
+    "logo": {
+      "type": "text",
+      "text": "THE MERIDIAN",
+      "subtext": "EST. 2019"
+    },
+    "items": [
+      {
+        "text": "Menu",
+        "url": "/menu",
+        "children": [
+          { "text": "All-Day Breakfast", "url": "/menu/all-day-breakfast" },
+          { "text": "Breakfast", "url": "/menu/breakfast" },
+          { "text": "Lunch", "url": "/menu/lunch" },
+          { "text": "Burgers & Sandwiches", "url": "/menu/burgers-sandwiches" },
+          { "text": "Salads & Soups", "url": "/menu/salads-soups" },
+          { "text": "Dinner", "url": "/menu/dinner" },
+          { "text": "Sides", "url": "/menu/sides" },
+          { "text": "Desserts", "url": "/menu/desserts" },
+          { "text": "Coffee & Beverages", "url": "/menu/beverages" },
+          { "text": "Milkshakes & Floats", "url": "/menu/milkshakes" },
+          { "text": "Kids Menu", "url": "/menu/kids" },
+          { "text": "Cocktails & Wine", "url": "/menu/cocktails" }
+        ]
+      },
+      { "text": "About", "url": "/about" },
+      { "text": "Reservations", "url": "/reservations" },
+      { "text": "Events", "url": "/events", "feature_gate": "events" },
+      { "text": "Gallery", "url": "/gallery", "feature_gate": "gallery" },
+      { "text": "Journal", "url": "/blog" },
+      { "text": "Contact", "url": "/contact" }
+    ]
+  },
+  "transparent_hero": true,
+  "cta": {
+    "text": "Reserve a Table",
+    "link": "/reservations"
+  }
+}

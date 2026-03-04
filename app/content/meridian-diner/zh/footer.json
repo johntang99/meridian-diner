@@ -1,0 +1,43 @@
+{
+  "brand": {
+    "logoText": "TM",
+    "name": "The Meridian",
+    "description": "融合全球灵感的时令美式料理。精酿鸡尾酒。无可挑剔的服务。曼哈顿上西区。"
+  },
+  "quickLinks": [
+    { "text": "晚餐菜单", "url": "/zh/menu/dinner" },
+    { "text": "鸡尾酒与葡萄酒", "url": "/zh/menu/cocktails" },
+    { "text": "关于我们", "url": "/zh/about" },
+    { "text": "预订", "url": "/zh/reservations" },
+    { "text": "活动", "url": "/zh/events" },
+    { "text": "画廊", "url": "/zh/gallery" },
+    { "text": "博客", "url": "/zh/blog" }
+  ],
+  "services": [
+    { "text": "私人包间", "url": "/zh/reservations/private-dining" },
+    { "text": "礼品卡", "url": "/zh/gift-cards" },
+    { "text": "招聘", "url": "/zh/careers" },
+    { "text": "媒体", "url": "/zh/press" }
+  ],
+  "contact": {
+    "addressLines": [
+      "西72街142号",
+      "纽约, 纽约州 10023"
+    ],
+    "phone": "(212) 555-0142",
+    "phoneLink": "tel:+12125550142",
+    "email": "info@themeridian.com",
+    "emailLink": "mailto:info@themeridian.com"
+  },
+  "hours": [
+    "周二至周四: 下午5:00 – 晚上10:00",
+    "周五至周六: 下午5:00 – 晚上11:00",
+    "周日: 下午5:00 – 晚上9:30",
+    "周一: 休息"
+  ],
+  "legalLinks": [
+    { "text": "隐私政策", "url": "/zh/privacy" },
+    { "text": "服务条款", "url": "/zh/terms" }
+  ],
+  "copyright": "© {year} The Meridian. 版权所有。"
+}

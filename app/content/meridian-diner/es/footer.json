@@ -1,0 +1,43 @@
+{
+  "brand": {
+    "logoText": "TM",
+    "name": "The Meridian",
+    "description": "Cocina americana de temporada con influencias globales. Cócteles artesanales. Hospitalidad impecable. Upper West Side, Manhattan."
+  },
+  "quickLinks": [
+    { "text": "Menú de Cena", "url": "/es/menu/dinner" },
+    { "text": "Cócteles y Vinos", "url": "/es/menu/cocktails" },
+    { "text": "Nosotros", "url": "/es/about" },
+    { "text": "Reservaciones", "url": "/es/reservations" },
+    { "text": "Eventos", "url": "/es/events" },
+    { "text": "Galería", "url": "/es/gallery" },
+    { "text": "Blog", "url": "/es/blog" }
+  ],
+  "services": [
+    { "text": "Comedor Privado", "url": "/es/reservations/private-dining" },
+    { "text": "Tarjetas de Regalo", "url": "/es/gift-cards" },
+    { "text": "Carreras", "url": "/es/careers" },
+    { "text": "Prensa", "url": "/es/press" }
+  ],
+  "contact": {
+    "addressLines": [
+      "142 West 72nd Street",
+      "Nueva York, NY 10023"
+    ],
+    "phone": "(212) 555-0142",
+    "phoneLink": "tel:+12125550142",
+    "email": "info@themeridian.com",
+    "emailLink": "mailto:info@themeridian.com"
+  },
+  "hours": [
+    "Martes – Jueves: 5:00 PM – 10:00 PM",
+    "Viernes – Sábado: 5:00 PM – 11:00 PM",
+    "Domingo: 5:00 PM – 9:30 PM",
+    "Lunes: Cerrado"
+  ],
+  "legalLinks": [
+    { "text": "Política de Privacidad", "url": "/es/privacy" },
+    { "text": "Términos de Servicio", "url": "/es/terms" }
+  ],
+  "copyright": "© {year} The Meridian. Todos los derechos reservados."
+}

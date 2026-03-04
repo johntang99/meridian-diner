@@ -1,0 +1,645 @@
+{
+  "siteId": "meridian-diner",
+  "bucket": "media",
+  "updatedAt": "2026-03-04T02:19:09.480Z",
+  "filesUpdated": 27,
+  "replacements": 106,
+  "migratedUrls": [
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/7c9dcf8f8e691442ae3cbae956e60050dbb51a71.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1447175008436-054170c2e979?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ec871018c47382353e0458c3131c81c536b885c7.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ed444e06736f8bf0267e5386b4056fa867cd5857.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f54eac5201117640a9940a1796a05a28ade90c7c.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/508a957c416a2222d88bca82af7a9d67695bc1e4.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/d78aec36ea71f0339ec2b422f090a168a61b4b79.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/047bb50bca87ff81056695c201b5b1a768a5f896.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/d89ab52154f92ff7630876d08c217085a7ea328b.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1e739fbd9cf34bc4fcd2c2e2476a26e02e28d284.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/d56967f7a99ddc19d7dcd4c81621ba79c83cc16c.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/508a957c416a2222d88bca82af7a9d67695bc1e4.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/a6e0b9c71c75d3b53d267a3fd50f558c0773eeb2.jpg"
+    },
+    {
+      "file": "en/blog/posts.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg"
+    },
+    {
+      "file": "en/events/events.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/17340a4cd063da2e632ff47adc54d519e5ac07c9.jpg"
+    },
+    {
+      "file": "en/events/events.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/91d9842a69f1293c6ffb847c3cb9bc1a6c5908fd.jpg"
+    },
+    {
+      "file": "en/events/events.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/d89ab52154f92ff7630876d08c217085a7ea328b.jpg"
+    },
+    {
+      "file": "en/events/events.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ed444e06736f8bf0267e5386b4056fa867cd5857.jpg"
+    },
+    {
+      "file": "en/events/events.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg"
+    },
+    {
+      "file": "en/events/events.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/7c9dcf8f8e691442ae3cbae956e60050dbb51a71.jpg"
+    },
+    {
+      "file": "en/events/events.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1481833761820-0509d3217039?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/2cdcf2ee706d1d1cda8309a7324106830d37f269.jpg"
+    },
+    {
+      "file": "en/events/events.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/0126304f3244ed1008d4ad34dd7633d39584a963.jpg"
+    },
+    {
+      "file": "en/events/events.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1555244162-803834f70033?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9bd20c206db1e853e927d3ac38a1e470332ac5e1.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/01ebe1ec2474c500dfe4ff157ef1db2d7ba484b4.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1558030006-450675393462?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e68ce15fc74b0bee4aef18a39994375f2f4b00ed.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e99e6193cc7ef981af2980dc0db2136644822791.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/047bb50bca87ff81056695c201b5b1a768a5f896.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4ae1adc81a3383aa758bcaeff094e9b23fad2a05.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1555244162-803834f70033?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9bd20c206db1e853e927d3ac38a1e470332ac5e1.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1535920527002-b35e96722eb9?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b5bdc65ea0790a5755fa7c29f1e8ef8a9c44df5f.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1e739fbd9cf34bc4fcd2c2e2476a26e02e28d284.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/7729e6b0a4abb5b5ae12843ba5397820eef39b5e.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/da49d00d61a30d734ee61d29f1b97e946ec3609d.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/84ce8c08280deb39f7a84f66b2263436df574636.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/7c9dcf8f8e691442ae3cbae956e60050dbb51a71.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/a6e0b9c71c75d3b53d267a3fd50f558c0773eeb2.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/91d9842a69f1293c6ffb847c3cb9bc1a6c5908fd.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ed444e06736f8bf0267e5386b4056fa867cd5857.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/537d7da5cc56b6eab78899d983b6ee38e7b1f28d.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9f5693b24a62e7b4d4ab86e3940b2c184b2b8fe7.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/508a957c416a2222d88bca82af7a9d67695bc1e4.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b23ae5b865e1ddcfc437b31d4849cdb8ac462787.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1447175008436-054170c2e979?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ec871018c47382353e0458c3131c81c536b885c7.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/508a957c416a2222d88bca82af7a9d67695bc1e4.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg"
+    },
+    {
+      "file": "en/gallery/gallery.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1519671282429-b44660ead0a7?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/06e4b6316babd9eef82e9b07a64ad5a8167267a3.jpg"
+    },
+    {
+      "file": "en/media/attribution.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1800&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1437c2ac1febba6747a3452c4b955c52a445ea09.jpg"
+    },
+    {
+      "file": "en/media/attribution.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg"
+    },
+    {
+      "file": "en/media/attribution.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/8655abcc32409b7f0a6ff3e5c3fd2a146e1cac6c.jpg"
+    },
+    {
+      "file": "en/media/attribution.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1600&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f5babfd512c2ba8a006142207cbffa5a2b37cd9a.jpg"
+    },
+    {
+      "file": "en/media/attribution.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1600&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/c77125e17b114c9ef8ab79e8e72037d288a22d2c.jpg"
+    },
+    {
+      "file": "en/media/attribution.json",
+      "key": "url",
+      "from": "https://images.unsplash.com/",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/00fb71873b0d1e18872c2623f1b7adc1e2b63bc7.jpg"
+    },
+    {
+      "file": "en/menu/all-day-breakfast.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9fbfc12719f54ecc934a88ae7a051d1d77be80e9.jpg"
+    },
+    {
+      "file": "en/menu/beverages.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4c501f93b358b128bdc84d07a88c8a455df11543.jpg"
+    },
+    {
+      "file": "en/menu/breakfast.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9ed7a378536f463672bb5b3b9edbce025bfafdeb.jpg"
+    },
+    {
+      "file": "en/menu/burgers-sandwiches.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b31f334c45d17d620bfa91e2b5ea29b97e1e5a7e.jpg"
+    },
+    {
+      "file": "en/menu/cocktails.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/047bb50bca87ff81056695c201b5b1a768a5f896.jpg"
+    },
+    {
+      "file": "en/menu/desserts.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e6666f2d67628db8477ccfe561efa4983033a2dd.jpg"
+    },
+    {
+      "file": "en/menu/dinner.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg"
+    },
+    {
+      "file": "en/menu/kids.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1543353071-873f17a7a088?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b5f81cf1eedc6f822cbdac0e739b1a6120cee1be.jpg"
+    },
+    {
+      "file": "en/menu/lunch.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/3499651084a1780280ebc275aa0bef7fae265d75.jpg"
+    },
+    {
+      "file": "en/menu/milkshakes.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/a7ab82f02064e9d4d8e7111b7fe14298adb37600.jpg"
+    },
+    {
+      "file": "en/menu/salads-soups.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f0073bf3b433203596d8fe379a5e101881659441.jpg"
+    },
+    {
+      "file": "en/menu/sides.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1576107232684-1279f390859f?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1a866a4766233549f9ea632cfdc82fe85545aa7d.jpg"
+    },
+    {
+      "file": "en/menu/wine.json",
+      "key": "defaultItemImage",
+      "from": "https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4efc5c1266a2c88bb5770b7a264d4697644ebfe8.jpg"
+    },
+    {
+      "file": "en/pages/about.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/8655abcc32409b7f0a6ff3e5c3fd2a146e1cac6c.jpg"
+    },
+    {
+      "file": "en/pages/blog.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1600&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/8655abcc32409b7f0a6ff3e5c3fd2a146e1cac6c.jpg"
+    },
+    {
+      "file": "en/pages/contact.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1600&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/c77125e17b114c9ef8ab79e8e72037d288a22d2c.jpg"
+    },
+    {
+      "file": "en/pages/events.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1600&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f5babfd512c2ba8a006142207cbffa5a2b37cd9a.jpg"
+    },
+    {
+      "file": "en/pages/gallery.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/361d277966f931242b367614d5f7113b1258c684.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1800&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1437c2ac1febba6747a3452c4b955c52a445ea09.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/01ebe1ec2474c500dfe4ff157ef1db2d7ba484b4.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1558030006-450675393462?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e68ce15fc74b0bee4aef18a39994375f2f4b00ed.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4ae1adc81a3383aa758bcaeff094e9b23fad2a05.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e99e6193cc7ef981af2980dc0db2136644822791.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/17340a4cd063da2e632ff47adc54d519e5ac07c9.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/17340a4cd063da2e632ff47adc54d519e5ac07c9.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/d89ab52154f92ff7630876d08c217085a7ea328b.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/91d9842a69f1293c6ffb847c3cb9bc1a6c5908fd.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "src",
+      "from": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/7729e6b0a4abb5b5ae12843ba5397820eef39b5e.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "src",
+      "from": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/da49d00d61a30d734ee61d29f1b97e946ec3609d.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "src",
+      "from": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/01ebe1ec2474c500dfe4ff157ef1db2d7ba484b4.jpg"
+    },
+    {
+      "file": "en/pages/home.json",
+      "key": "src",
+      "from": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/ce3dfd2a9a6295d40f1326b1846ff108e3e90bd6.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b41f2eb6dbeb2f98fbdfa39abc05e39d9f1c7181.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1516685018646-549198525c1b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/0f81a2a54847b6b16c5fb904355636d88e3f96ba.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1544025162-d76694265947?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4ae1adc81a3383aa758bcaeff094e9b23fad2a05.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4ae1adc81a3383aa758bcaeff094e9b23fad2a05.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1558030006-450675393462?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/e68ce15fc74b0bee4aef18a39994375f2f4b00ed.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/37706f7783cb467f224b48a3a352e30dec4dbbf2.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b31f334c45d17d620bfa91e2b5ea29b97e1e5a7e.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/4ae1adc81a3383aa758bcaeff094e9b23fad2a05.jpg"
+    },
+    {
+      "file": "en/pages/menu.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9ed7a378536f463672bb5b3b9edbce025bfafdeb.jpg"
+    },
+    {
+      "file": "en/pages/private-dining.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1600&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/c77125e17b114c9ef8ab79e8e72037d288a22d2c.jpg"
+    },
+    {
+      "file": "en/pages/private-dining.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/b0cb3ea6514a709f6777b562058d22553ed608e0.jpg"
+    },
+    {
+      "file": "en/pages/private-dining.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/71e99245610593f3d8d52de0dee09969438b0967.jpg"
+    },
+    {
+      "file": "en/pages/reservations.json",
+      "key": "image",
+      "from": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1600&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/75c8eff23172898ff39e840d0d382e9d19d528da.jpg"
+    },
+    {
+      "file": "en/team/team.json",
+      "key": "photo",
+      "from": "https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/537d7da5cc56b6eab78899d983b6ee38e7b1f28d.jpg"
+    },
+    {
+      "file": "en/team/team.json",
+      "key": "photoPortrait",
+      "from": "https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/537d7da5cc56b6eab78899d983b6ee38e7b1f28d.jpg"
+    },
+    {
+      "file": "en/team/team.json",
+      "key": "photo",
+      "from": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/8db653c9b3dee2d11ca7ac9f63311b3abcfafd3e.jpg"
+    },
+    {
+      "file": "en/team/team.json",
+      "key": "photo",
+      "from": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/047bb50bca87ff81056695c201b5b1a768a5f896.jpg"
+    },
+    {
+      "file": "en/team/team.json",
+      "key": "photo",
+      "from": "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/9f5693b24a62e7b4d4ab86e3940b2c184b2b8fe7.jpg"
+    },
+    {
+      "file": "en/team/team.json",
+      "key": "photo",
+      "from": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1200&q=80&auto=format&fit=crop",
+      "to": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/3b3d93dab690ab28032df722943ddf17596a19d9.jpg"
+    }
+  ]
+}

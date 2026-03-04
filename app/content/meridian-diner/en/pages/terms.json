@@ -1,0 +1,43 @@
+{
+  "title": "Terms of Service",
+  "updatedAt": "March 1, 2026",
+  "intro": "Welcome to The Meridian Restaurant. By accessing or using our website, making a reservation, or dining with us, you agree to be bound by these Terms of Service.",
+  "sections": [
+    {
+      "heading": "Reservations",
+      "body": "Reservations are subject to availability. We request at least 24 hours notice for cancellations. For parties of 6 or more, a credit card is required to hold the reservation. A cancellation fee may apply for no-shows or late cancellations on large party reservations."
+    },
+    {
+      "heading": "Private Dining",
+      "body": "Private dining events require a signed event agreement and a deposit to confirm the booking. Deposits are non-refundable within 14 days of the event date. Minimum spend requirements apply and vary by room and day of the week. Please contact our events team for details."
+    },
+    {
+      "heading": "Gift Cards",
+      "body": "Gift cards are redeemable at The Meridian Restaurant for food and beverages. Gift cards have no expiration date and cannot be redeemed for cash. Lost or stolen gift cards cannot be replaced without proof of purchase."
+    },
+    {
+      "heading": "Website Use",
+      "body": "You agree to use our website for lawful purposes only. You may not use our website in any way that could damage, disable, or impair the site. All content on our website, including text, images, and design, is the property of The Meridian Restaurant and is protected by copyright laws."
+    },
+    {
+      "heading": "Menu and Pricing",
+      "body": "Menu items and prices are subject to change without notice. While we make every effort to ensure accuracy on our website, actual menu offerings may vary. Prices listed on our website do not include tax or gratuity unless otherwise noted."
+    },
+    {
+      "heading": "Dietary Information",
+      "body": "We make every effort to identify ingredients that may cause allergic reactions. However, our kitchen handles all major allergens, and cross-contamination may occur. Please inform your server of any allergies or dietary restrictions when dining with us."
+    },
+    {
+      "heading": "Limitation of Liability",
+      "body": "The Meridian Restaurant shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website or services. Our website is provided on an \"as is\" basis without warranties of any kind."
+    },
+    {
+      "heading": "Changes to These Terms",
+      "body": "We reserve the right to modify these Terms of Service at any time. Changes will be posted on this page with an updated effective date. Your continued use of our website or services constitutes acceptance of the updated terms."
+    },
+    {
+      "heading": "Contact",
+      "body": "For questions regarding these Terms of Service, please contact us at info@themeridian.com or call (212) 555-0142."
+    }
+  ]
+}

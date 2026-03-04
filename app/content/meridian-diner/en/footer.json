@@ -1,0 +1,33 @@
+{
+  "variant": "dark",
+  "tagline": "Seasonal American cuisine with global influences. Craft cocktails. Impeccable hospitality.",
+  "columns": {
+    "story": true,
+    "hours": true,
+    "address": true,
+    "links": true
+  },
+  "explore": {
+    "heading": "Explore",
+    "links": [
+      { "text": "Menu", "url": "/menu" },
+      { "text": "About", "url": "/about" },
+      { "text": "Events", "url": "/events", "feature_gate": "events" },
+      { "text": "Gallery", "url": "/gallery", "feature_gate": "gallery" },
+      { "text": "Private Dining", "url": "/reservations/private-dining" },
+      { "text": "Gift Cards", "url": "/gift-cards" },
+      { "text": "Careers", "url": "/careers" },
+      { "text": "Contact", "url": "/contact" }
+    ]
+  },
+  "show_newsletter": true,
+  "newsletter_headline": "Stay in the loop",
+  "newsletter_placeholder": "Enter your email",
+  "newsletter_button": "Subscribe",
+  "show_lang_switcher": true,
+  "copyright": "© {year} The Meridian. All rights reserved.",
+  "legal_links": [
+    { "text": "Privacy Policy", "url": "/privacy" },
+    { "text": "Terms of Service", "url": "/terms" }
+  ]
+}

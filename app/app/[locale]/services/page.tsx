@@ -1,0 +1,471 @@
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import ReactMarkdown from 'react-markdown';
+import { getRequestSiteId, loadAllItems, loadPageContent } from '@/lib/content';
+import { buildPageMetadata } from '@/lib/seo';
+import { ServicesPage, Locale } from '@/lib/types';
+import { Badge, Card, CardHeader, CardTitle, CardDescription, CardContent, Icon, Accordion } from '@/components/ui';
+import CTASection from '@/components/sections/CTASection';
+import ServicesSection from '@/components/sections/ServicesSection';
+import HeroSection from '@/components/sections/HeroSection';
+import { HeroVariant } from '@/lib/section-variants';
+import { Award, Users, Shield } from 'lucide-react';
+import { loadLayoutSections } from '@/lib/pageLayout';
+
+interface ServicesPageProps {
+  params: {
+    locale: Locale;
+  };
+}
+
+interface BlogListItem {
+  slug: string;
+  title: string;
+  excerpt?: string;
+  image?: string;
+  category?: string;
+  publishDate?: string;
+}
+
+const trustIconMap = {
+  Award,
+  Users,
+  Shield,
+} as const;
+
+export async function generateMetadata({ params }: ServicesPageProps): Promise<Metadata> {
+  const { locale } = params;
+  const siteId = await getRequestSiteId();
+  const content = await loadPageContent<ServicesPage>('services', locale, siteId);
+
+  return buildPageMetadata({
+    siteId,
+    locale,
+    slug: 'services',
+    title: content?.hero?.title,
+    description: content?.hero?.subtitle || content?.overview?.introduction,
+  });
+}
+
+export default async function ServicesPageComponent({ params }: ServicesPageProps) {
+  const { locale } = params;
+  
+  // Load page content
+  const siteId = await getRequestSiteId();
+  const content = await loadPageContent<ServicesPage>('services', locale, siteId);
+  const blogPosts = await loadAllItems<BlogListItem>(siteId, locale, 'blog');
+
+  if (!content) {
+    notFound();
+  }
+
+  const { hero, overview, servicesList, faq, cta } = content;
+  const serviceDetailFiles = await loadAllItems<{
+    slug: string;
+    benefits?: string[];
+    whatToExpect?: string;
+  }>(siteId, locale, 'services');
+  const serviceDetailMap = new Map(
+    serviceDetailFiles.map((d) => [d.slug, d])
+  );
+  const rawServices = servicesList?.items || [];
+  const services = rawServices.map((s: any) => {
+    const detail = s.id ? serviceDetailMap.get(s.id) : null;
+    if (!detail) return s;
+    return {
+      ...s,
+      benefits: s.benefits || detail.benefits,
+      whatToExpect: s.whatToExpect || detail.whatToExpect,
+    };
+  });
+  const categories = (content as any).categories || [];
+  const layoutVariant = (content as any).layoutVariant || 'category-detail-alternating';
+  const sortedCategories = [...categories].sort((a: any, b: any) => {
+    const aOrder = Number.isFinite(Number(a.order)) ? Number(a.order) : Number.MAX_SAFE_INTEGER;
+    const bOrder = Number.isFinite(Number(b.order)) ? Number(b.order) : Number.MAX_SAFE_INTEGER;
+    return aOrder - bOrder;
+  });
+  const servicesByCategory = sortedCategories.map((category: any) => ({
+    ...category,
+    services: services.filter((s: any) => s.category === category.id),
+  }));
+  const blogBySlug = new Map(blogPosts.map((post) => [post.slug, post]));
+  const preferredSlugs = content.relatedReading?.preferredSlugs || [];
+  const preferredPosts = preferredSlugs
+    .map((slug) => blogBySlug.get(slug))
+    .filter((post): post is BlogListItem => Boolean(post));
+  const relatedPosts = preferredPosts.length
+    ? preferredPosts
+    : [...blogPosts]
+        .sort((a, b) => (b.publishDate || '').localeCompare(a.publishDate || ''))
+        .slice(0, 3);
+  const trustItemsDefault = [
+    {
+      icon: 'Award',
+      title: locale === 'en' ? 'Proven Expertise' : '专业团队',
+      description: locale === 'en' ? 'Proven, standards-based service quality' : '基于标准与经验的高质量服务',
+    },
+    {
+      icon: 'Users',
+      title: locale === 'en' ? 'Personalized Plans' : '个性化方案',
+      description: locale === 'en' ? 'Tailored to your goals and preferences' : '根据您的目标与偏好定制',
+    },
+    {
+      icon: 'Shield',
+      title: locale === 'en' ? 'Reliable & Trusted' : '可靠可信',
+      description: locale === 'en' ? 'Professional quality and clear process' : '高质量服务与清晰流程',
+    },
+  ];
+  const trustItems = (content.trustBar?.items && content.trustBar.items.length > 0
+    ? content.trustBar.items
+    : trustItemsDefault
+  ).map((item) => ({
+    ...item,
+    icon: trustIconMap[item.icon as keyof typeof trustIconMap] || Shield,
+  }));
+  const heroPlaceholder = content.heroPlaceholder || {
+    emoji: '🧘',
+    title: locale === 'en' ? 'Professional Services' : '专业服务',
+    subtitle: locale === 'en' ? 'Customized plans tailored to your goals' : '根据您的目标定制方案',
+  };
+  const overviewTitle = overview.title || (locale === 'en' ? 'Benefits of Our Care Model' : '我们的服务优势');
+  const servicesBadge = content.servicesList?.badge || (locale === 'en' ? 'OUR SERVICES' : '服务项目');
+  const servicesTitleFallback = locale === 'en' ? 'Our Services' : '服务项目';
+  const legacyLabels = content.legacyLabels || {};
+  const faqSubtitle =
+    faq.subtitle ||
+    (locale === 'en'
+      ? 'Common questions about services, safety, and expected outcomes'
+      : '关于服务、安全与预期结果的常见问题');
+  const relatedReading = content.relatedReading || {};
+  const layoutSections = await loadLayoutSections(
+    'services',
+    locale,
+    siteId,
+    ['hero', 'overview', 'services', 'faq', 'relatedReading', 'cta']
+  );
+  const layoutOrder = new Map<string, number>(
+    layoutSections.map((sectionId, index) => [sectionId, index])
+  );
+  const useLayout = layoutOrder.size > 0;
+  const isEnabled = (sectionId: string) => !useLayout || layoutOrder.has(sectionId);
+  const sectionStyle = (sectionId: string) =>
+    useLayout ? { order: layoutOrder.get(sectionId) ?? 0 } : undefined;
+
+  return (
+    <main className="min-h-screen flex flex-col">
+      {/* Hero Section */}
+      {isEnabled('hero') && (
+        <HeroSection
+          variant={(hero.variant as HeroVariant) || 'split-photo-right'}
+          tagline={hero.title}
+          description={hero.subtitle}
+          image={hero.backgroundImage || undefined}
+        />
+      )}
+
+      {/* Overview Section */}
+      {isEnabled('overview') && (
+        <section className="py-16 lg:py-24 bg-white" style={sectionStyle('overview')}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <p className="text-lg text-gray-700 leading-relaxed mb-12">
+              {overview.introduction}
+            </p>
+
+            <div className="bg-gradient-to-br from-primary/5 to-backdrop-primary rounded-2xl p-8 lg:p-12">
+              <h2 className="text-heading font-bold text-gray-900 mb-6">
+                {overviewTitle}
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {overview.benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size="sm" />
+                    <span className="text-gray-700">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      )}
+
+      {/* Services by Category */}
+      {isEnabled('services') && categories.length > 0 && services.length > 0 && (
+        <section className="py-16 lg:py-24 bg-white" style={sectionStyle('services')}>
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <Badge variant="primary" className="mb-4">
+                  {servicesBadge}
+                </Badge>
+                <h2 className="text-heading font-bold text-gray-900 mb-4">
+                  {content.servicesList?.title || servicesTitleFallback}
+                </h2>
+                {content.servicesList?.subtitle && (
+                  <p className="text-gray-600">{content.servicesList.subtitle}</p>
+                )}
+              </div>
+
+              <div className="space-y-24">
+                {servicesByCategory
+                  .filter((categoryGroup: any) => categoryGroup.services.length > 0)
+                  .map((categoryGroup: any, categoryIndex: number) => {
+                    const categoryImage =
+                      categoryGroup.image ||
+                      categoryGroup.services.find((s: any) => Boolean(s.image))?.image;
+                    const imageOnRight = categoryIndex % 2 === 0;
+                    return (
+                      <div key={categoryGroup.id} id={categoryGroup.id} className="space-y-6 scroll-mt-32">
+                        <div className="grid lg:grid-cols-2 gap-8 items-center">
+                          <div className={imageOnRight ? 'lg:order-1' : 'lg:order-2'}>
+                            <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-semibold text-primary mb-4">
+                              <Icon name={categoryGroup.icon as any} size="sm" />
+                              <span>{categoryGroup.name}</span>
+                            </div>
+                            <h3 className="text-3xl font-bold text-gray-900 mb-2">
+                              {categoryGroup.name}
+                            </h3>
+                            {categoryGroup.subtitle && (
+                              <p className="text-base font-semibold text-gray-800 mb-3">
+                                {categoryGroup.subtitle}
+                              </p>
+                            )}
+                            <div className="prose prose-sm max-w-none text-gray-600 leading-relaxed">
+                              <ReactMarkdown
+                                components={{
+                                  ul: (props) => <ul className="list-disc pl-5" {...props} />,
+                                  ol: (props) => <ol className="list-decimal pl-5" {...props} />,
+                                }}
+                              >
+                                {String(categoryGroup.description || '')}
+                              </ReactMarkdown>
+                            </div>
+                          </div>
+                          <div className={imageOnRight ? 'lg:order-2' : 'lg:order-1'}>
+                            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md bg-gradient-to-br from-gray-50 to-white">
+                              {categoryImage ? (
+                                <Image
+                                  src={categoryImage}
+                                  alt={categoryGroup.name}
+                                  width={1200}
+                                  height={780}
+                                  className="w-full h-auto object-cover"
+                                />
+                              ) : (
+                                <div className="aspect-[16/9] w-full flex items-center justify-center">
+                                  <Icon name={categoryGroup.icon as any} className="text-primary" />
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                        <div className="grid gap-4">
+                          {categoryGroup.services.map((service: any) => {
+                            const benefits = Array.isArray(service.benefits) ? service.benefits : [];
+                            const whatToExpect = typeof service.whatToExpect === 'string' ? service.whatToExpect : '';
+                            const hasBenefits = benefits.length > 0;
+                            const hasWhatToExpect = whatToExpect.length > 0;
+                            const hasDetails = hasBenefits || hasWhatToExpect;
+
+                            return (
+                              <div
+                                key={service.id}
+                                className="bg-white border border-gray-100 rounded-xl p-6 shadow-md hover:border-primary/30 hover:shadow-xl transition-all"
+                              >
+                                <div className={`grid ${hasDetails ? 'lg:grid-cols-3' : ''} gap-6`}>
+                                  {/* Column 1: Title & Description */}
+                                  <div className="lg:col-span-1">
+                                    <div className="flex items-center gap-3 mb-3">
+                                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                        <Icon name={service.icon as any} className="text-primary" size="sm" />
+                                      </div>
+                                      <Link href={`/${locale}${service.link}`} className="group">
+                                        <h4 className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+                                          {service.title}
+                                        </h4>
+                                      </Link>
+                                    </div>
+                                    {service.image ? (
+                                      <div className="flex gap-3">
+                                        <div className="w-28 h-28 rounded-lg overflow-hidden flex-shrink-0">
+                                          <Image
+                                            src={service.image}
+                                            alt={service.title}
+                                            width={112}
+                                            height={112}
+                                            className="w-full h-full object-cover"
+                                          />
+                                        </div>
+                                        <p className="text-gray-600 text-sm">
+                                          {service.shortDescription}
+                                        </p>
+                                      </div>
+                                    ) : (
+                                      <p className="text-gray-600 text-sm">
+                                        {service.shortDescription}
+                                      </p>
+                                    )}
+                                  </div>
+
+                                  {/* Column 2: Key Benefits */}
+                                  {hasBenefits && (
+                                    <div>
+                                      <h5 className="text-sm font-semibold text-gray-900 mb-3">
+                                        {locale === 'en' ? 'Key Benefits' : '主要优势'}
+                                      </h5>
+                                      <div className="space-y-2">
+                                        {benefits.slice(0, 4).map((benefit: string, idx: number) => (
+                                          <div key={idx} className="flex items-start gap-2">
+                                            <Icon name="Check" className="text-primary mt-0.5 flex-shrink-0" size="sm" />
+                                            <span className="text-sm text-gray-600">{benefit}</span>
+                                          </div>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  )}
+
+                                  {/* Column 3: What to Expect */}
+                                  {hasWhatToExpect && (
+                                    <div>
+                                      <h5 className="text-sm font-semibold text-gray-900 mb-3">
+                                        {locale === 'en' ? 'What to Expect' : '就诊流程'}
+                                      </h5>
+                                      <p className="text-sm text-gray-600 mb-4 line-clamp-4">
+                                        {whatToExpect}
+                                      </p>
+                                      <Link
+                                        href={`/${locale}${service.link}`}
+                                        className="inline-flex items-center gap-1 text-primary font-medium text-sm hover:text-primary-dark"
+                                      >
+                                        <span>{locale === 'en' ? 'Learn More' : '了解更多'}</span>
+                                        <Icon name="ChevronRight" size="sm" />
+                                      </Link>
+                                    </div>
+                                  )}
+
+                                  {/* Fallback link when no details */}
+                                  {!hasDetails && (
+                                    <div className="flex items-center">
+                                      <Link
+                                        href={`/${locale}${service.link}`}
+                                        className="inline-flex items-center gap-1 text-primary font-medium text-sm hover:text-primary-dark"
+                                      >
+                                        <span>{locale === 'en' ? 'Learn More' : '了解更多'}</span>
+                                        <Icon name="ChevronRight" size="sm" />
+                                      </Link>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    );
+                  })}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FAQ Section */}
+      {isEnabled('faq') && (
+        <section className="py-16 lg:py-24 bg-white" style={sectionStyle('faq')}>
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-heading font-bold text-gray-900 mb-4">
+                {faq.title}
+              </h2>
+              <p className="text-gray-600">
+                {faqSubtitle}
+              </p>
+            </div>
+
+            <Accordion
+              items={faq.faqs.map((item, index) => ({
+                id: `faq-${index}`,
+                title: item.question,
+                content: item.answer,
+              }))}
+              allowMultiple
+            />
+          </div>
+        </div>
+        </section>
+      )}
+
+      {isEnabled('relatedReading') && relatedPosts.length > 0 && (
+        <section
+          className="py-16 lg:py-24 bg-gradient-to-br from-backdrop-secondary to-white"
+          style={sectionStyle('relatedReading')}
+        >
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="flex items-center justify-between gap-4 mb-10">
+                <div>
+                  <h2 className="text-heading font-bold text-gray-900">
+                    {relatedReading.title || (locale === 'en' ? 'Related Reading' : '相关阅读')}
+                  </h2>
+                  <p className="text-gray-600">
+                    {relatedReading.subtitle ||
+                      (locale === 'en'
+                        ? 'Explore practical guides related to these services.'
+                        : '了解与本页服务相关的实用内容。')}
+                  </p>
+                </div>
+                <Link
+                  href={`/${locale}/blog`}
+                  className="text-primary font-semibold hover:text-primary-dark"
+                >
+                  {relatedReading.viewAllText || (locale === 'en' ? 'View all' : '查看全部')}
+                </Link>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {relatedPosts.map((post) => (
+                  <Link key={post.slug} href={`/${locale}/blog/${post.slug}`}>
+                    <Card className="h-full hover:shadow-lg transition-shadow">
+                      <CardHeader>
+                        <Badge variant="secondary" size="sm">
+                          {post.category || relatedReading.defaultCategory || (locale === 'en' ? 'Guide' : '指南')}
+                        </Badge>
+                        <CardTitle className="text-base mt-3 line-clamp-2">
+                          {post.title}
+                        </CardTitle>
+                        {post.excerpt && (
+                          <CardDescription className="line-clamp-2">
+                            {post.excerpt}
+                          </CardDescription>
+                        )}
+                      </CardHeader>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* CTA Section */}
+      {isEnabled('cta') && (
+        <div style={sectionStyle('cta')}>
+          <CTASection
+            title={cta.title}
+            subtitle={cta.subtitle}
+            primaryCta={cta.primaryCta}
+            secondaryCta={cta.secondaryCta}
+            variant={cta.variant || 'centered'}
+            className="py-16 lg:py-24"
+          />
+        </div>
+      )}
+    </main>
+  );
+}

@@ -1,0 +1,100 @@
+{
+  "variantId": "noir-saison",
+  "colors": {
+    "primary": {
+      "DEFAULT": "#1A1A1A",
+      "dark": "#0D0D0D",
+      "light": "#2E2E2E",
+      "50": "#F5F5F5",
+      "100": "#E8E8E8"
+    },
+    "secondary": {
+      "DEFAULT": "#C9A84C",
+      "dark": "#A8873B",
+      "light": "#D4B76A",
+      "50": "#FDF8EC"
+    },
+    "backdrop": {
+      "primary": "#111111",
+      "secondary": "#1A1A1A",
+      "surface": "#1F1F1F",
+      "overlay": "rgba(13,13,13,0.92)"
+    },
+    "text": {
+      "primary": "#F5F0E8",
+      "secondary": "#D4D4D4",
+      "muted": "#9CA3AF",
+      "inverse": "#1A1A1A",
+      "accent": "#C9A84C"
+    },
+    "border": {
+      "DEFAULT": "rgba(201,168,76,0.15)",
+      "subtle": "rgba(255,255,255,0.06)",
+      "emphasis": "rgba(201,168,76,0.40)"
+    },
+    "status": {
+      "success": "#22C55E",
+      "warning": "#F59E0B",
+      "error": "#EF4444"
+    }
+  },
+  "typography": {
+    "display": "clamp(2.75rem, 5.5vw, 5rem)",
+    "heading": "clamp(2rem, 3.75vw, 3.5rem)",
+    "subheading": "clamp(1.25rem, 2vw, 1.75rem)",
+    "body": "1rem",
+    "small": "0.8125rem",
+    "fonts": {
+      "display": "'Cormorant Garamond', 'Noto Serif SC', Georgia, serif",
+      "heading": "'Cormorant Garamond', 'Noto Serif SC', Georgia, serif",
+      "subheading": "'Lato', 'Noto Sans SC', system-ui, sans-serif",
+      "body": "'Lato', 'Noto Sans SC', system-ui, sans-serif",
+      "small": "'Lato', 'Noto Sans SC', system-ui, sans-serif"
+    },
+    "tracking": {
+      "display": "0.12em",
+      "heading": "0.06em",
+      "body": "0.02em",
+      "nav": "0.15em",
+      "label": "0.20em"
+    },
+    "lineHeight": {
+      "display": "1.1",
+      "heading": "1.35",
+      "body": "1.65",
+      "menu": "1.65"
+    },
+    "weight": {
+      "display": "300"
+    }
+  },
+  "spacing": {
+    "sectionPy": "6rem",
+    "sectionPySm": "4rem",
+    "containerMax": "1200px",
+    "containerPx": "2rem",
+    "cardPad": "2rem",
+    "menuItemPy": "1.25rem",
+    "navHeight": "72px",
+    "heroMinH": "100svh",
+    "gridGap": "1.5rem"
+  },
+  "effects": {
+    "cardRadius": "0px",
+    "btnRadius": "0px",
+    "badgeRadius": "2px",
+    "cardShadow": "0 1px 3px rgba(0,0,0,0.5)",
+    "cardShadowHover": "0 4px 16px rgba(0,0,0,0.7)",
+    "heroOverlay": "linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.65) 100%)",
+    "menuDivider": "1px solid rgba(201,168,76,0.15)"
+  },
+  "motion": {
+    "durationFast": "200ms",
+    "durationBase": "400ms",
+    "durationSlow": "700ms",
+    "easing": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+    "hoverLift": "-2px",
+    "entranceDist": "20px"
+  },
+  "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Lato:wght@300;400;700&family=Noto+Serif+SC:wght@300;400&family=Noto+Sans+SC:wght@400;700&display=swap"
+}
