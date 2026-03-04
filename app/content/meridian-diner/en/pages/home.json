@@ -3,7 +3,7 @@
     "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/2cdcf2ee706d1d1cda8309a7324106830d37f269.jpg",
     "title": "Join Us for an Unforgettable Evening",
     "variant": "centered",
-    "subtitle": "Reserve your table and let us take care of the rest.",
+    "subtitle": "Reserve your table and let us take care of the rest",
     "primaryCta": {
       "link": "/en/reservations",
       "text": "Make a Reservation"
@@ -27,6 +27,10 @@
   "hero": {
     "image": "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/1437c2ac1febba6747a3452c4b955c52a445ea09.jpg",
     "eyebrow": "Upper West Side, Manhattan",
+    "gallery": [
+      "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg",
+      "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/general/1772609332429-photo-1501595091296-3aa970afb3ff.jpg"
+    ],
     "subline": "Seasonal American cuisine with global influences, craft cocktails, and impeccable hospitality.",
     "variant": "gallery-background",
     "headline": "Where Craft Meets Occasion",
@@ -37,11 +41,7 @@
     "ctaSecondary": {
       "link": "/en/menu",
       "text": "View Menu"
-    },
-    "gallery": [
-      "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/external/unsplash/f71c21d6d052ebbcd40933220d4dab7323fa1b48.jpg",
-      "https://lrvhgdipkdtjcisinvwl.supabase.co/storage/v1/object/public/media/meridian-diner/general/1772609332429-photo-1501595091296-3aa970afb3ff.jpg"
-    ]
+    }
   },
   "gallery": {
     "badge": "Gallery",
@@ -98,7 +98,7 @@
   },
   "_workflow": {
     "status": "published",
-    "updatedAt": "2026-03-04T09:32:12.608Z",
+    "updatedAt": "2026-03-04T09:58:35.389Z",
     "publishedAt": "2026-03-04T05:59:28.044Z"
   },
   "aboutPreview": {
