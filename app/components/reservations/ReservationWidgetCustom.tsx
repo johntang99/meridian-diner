@@ -212,7 +212,7 @@ export default function ReservationWidgetCustom({
           style={{
             maxWidth: '320px',
             padding: '1rem',
-            borderRadius: 'var(--card-radius)',
+            borderRadius: 'var(--radius-base, 0.75rem)',
             backgroundColor: 'var(--backdrop-secondary)',
             fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-small, 0.875rem)',
@@ -265,7 +265,7 @@ export default function ReservationWidgetCustom({
       style={{
         maxWidth: '640px',
         padding: 'var(--card-pad, 2rem)',
-        borderRadius: 'var(--card-radius)',
+        borderRadius: 'var(--radius-base, 0.75rem)',
         border: '1px solid var(--border-default)',
         backgroundColor: 'var(--color-surface)',
       }}
@@ -401,7 +401,7 @@ export default function ReservationWidgetCustom({
                     onClick={() => setSelectedDate(day.date)}
                     className="aspect-square flex items-center justify-center transition-colors"
                     style={{
-                      borderRadius: 'var(--btn-radius, 4px)',
+                      borderRadius: 'var(--radius-base, 0.5rem)',
                       fontSize: '0.85rem',
                       fontFamily: 'var(--font-body)',
                       fontWeight: isSelected ? 600 : 400,
@@ -445,7 +445,7 @@ export default function ReservationWidgetCustom({
                 style={{
                   width: '44px',
                   height: '44px',
-                  borderRadius: 'var(--btn-radius, 4px)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   border: '1px solid var(--border-default)',
                   backgroundColor: 'var(--color-surface)',
                   color: 'var(--text-color-primary)',
@@ -473,7 +473,7 @@ export default function ReservationWidgetCustom({
                 style={{
                   width: '44px',
                   height: '44px',
-                  borderRadius: 'var(--btn-radius, 4px)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   border: '1px solid var(--border-default)',
                   backgroundColor: 'var(--color-surface)',
                   color: 'var(--text-color-primary)',
@@ -515,9 +515,9 @@ export default function ReservationWidgetCustom({
             className="w-full transition-opacity"
             style={{
               padding: '0.875rem',
-              borderRadius: 'var(--btn-radius, 4px)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               backgroundColor: selectedDate ? 'var(--text-color-accent)' : '#374151',
-              color: selectedDate ? '#1A1A1A' : '#D1D5DB',
+              color: selectedDate ? 'var(--text-color-inverse)' : 'var(--text-on-dark-secondary, #D1D5DB)',
               fontFamily: 'var(--font-body)',
               fontSize: '0.875rem',
               fontWeight: 600,
@@ -581,7 +581,7 @@ export default function ReservationWidgetCustom({
                 className="transition-colors"
                 style={{
                   padding: '0.75rem 0.5rem',
-                  borderRadius: 'var(--btn-radius, 4px)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   border: '1px solid var(--border-default)',
                   backgroundColor: 'var(--color-surface)',
                   color: 'var(--text-color-primary)',
@@ -630,7 +630,7 @@ export default function ReservationWidgetCustom({
           <div
             className="mb-6 px-4 py-3"
             style={{
-              borderRadius: 'var(--card-radius)',
+              borderRadius: 'var(--radius-base, 0.75rem)',
               backgroundColor: 'var(--backdrop-secondary)',
               fontFamily: 'var(--font-body)',
               fontSize: 'var(--text-small, 0.875rem)',
@@ -696,7 +696,7 @@ export default function ReservationWidgetCustom({
               style={{
                 width: '100%',
                 padding: '0.75rem',
-                borderRadius: 'var(--btn-radius, 4px)',
+                borderRadius: 'var(--radius-base, 0.5rem)',
                 border: '1px solid var(--border-default)',
                 backgroundColor: 'var(--color-surface)',
                 color: 'var(--text-color-primary)',
@@ -731,7 +731,7 @@ export default function ReservationWidgetCustom({
               style={{
                 width: '100%',
                 padding: '0.75rem',
-                borderRadius: 'var(--btn-radius, 4px)',
+                borderRadius: 'var(--radius-base, 0.5rem)',
                 border: '1px solid var(--border-default)',
                 backgroundColor: 'var(--color-surface)',
                 color: 'var(--text-color-primary)',
@@ -748,9 +748,9 @@ export default function ReservationWidgetCustom({
             className="w-full transition-opacity"
             style={{
               padding: '0.875rem',
-              borderRadius: 'var(--btn-radius, 4px)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               backgroundColor: 'var(--text-color-accent)',
-              color: '#1A1A1A',
+              color: 'var(--text-color-inverse)',
               fontFamily: 'var(--font-body)',
               fontSize: '0.875rem',
               fontWeight: 600,
@@ -803,7 +803,7 @@ function FormField({
         style={{
           width: '100%',
           padding: '0.75rem',
-          borderRadius: 'var(--btn-radius, 4px)',
+          borderRadius: 'var(--radius-base, 0.5rem)',
           border: `1px solid ${error ? 'var(--primary)' : 'var(--border-default)'}`,
           backgroundColor: 'var(--color-surface)',
           color: 'var(--text-color-primary)',

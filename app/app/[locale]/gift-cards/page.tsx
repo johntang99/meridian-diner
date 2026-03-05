@@ -103,13 +103,13 @@ export default async function GiftCardsPage({ params }: PageProps) {
                 key={amount}
                 style={{
                   padding: '1.5rem 2rem',
-                  borderRadius: 'var(--card-radius)',
+                  borderRadius: 'var(--radius-base, 0.75rem)',
                   border: '2px solid var(--border-default)',
                   backgroundColor: 'var(--color-surface)',
                   minWidth: '120px',
                 }}
               >
-                <p style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-heading, 2rem)', color: 'var(--primary)', fontWeight: 600 }}>
+                <p style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-heading, 2rem)', color: 'var(--text-on-dark-primary)', fontWeight: 600 }}>
                   ${amount}
                 </p>
               </div>
@@ -117,16 +117,16 @@ export default async function GiftCardsPage({ params }: PageProps) {
             <div
               style={{
                 padding: '1.5rem 2rem',
-                borderRadius: 'var(--card-radius)',
+                borderRadius: 'var(--radius-base, 0.75rem)',
                 border: '2px dashed var(--border-default)',
                 backgroundColor: 'var(--color-surface)',
                 minWidth: '120px',
               }}
             >
-              <p style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-subheading, 1.25rem)', color: 'var(--text-color-secondary)' }}>
+                <p style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-subheading, 1.25rem)', color: 'var(--text-on-dark-secondary)' }}>
                 {locale === 'en' ? 'Custom' : locale === 'zh' ? '自定义' : 'Personalizado'}
               </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.75rem', color: 'var(--text-color-muted)' }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.75rem', color: 'var(--text-on-dark-secondary)' }}>
                 ${customRange.min}–${customRange.max}
               </p>
             </div>
@@ -138,7 +138,7 @@ export default async function GiftCardsPage({ params }: PageProps) {
               style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-body, 1rem)',
-                color: 'var(--text-color-secondary)',
+                color: 'var(--primary-light)',
               }}
             >
               {content.purchaseNote}
@@ -156,7 +156,7 @@ export default async function GiftCardsPage({ params }: PageProps) {
               style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-small, 0.875rem)',
-                color: 'var(--text-color-muted)',
+                color: 'var(--primary-light)',
                 fontStyle: 'italic',
               }}
             >
@@ -183,7 +183,7 @@ export default async function GiftCardsPage({ params }: PageProps) {
                 fontFamily: 'var(--font-heading)',
                 fontSize: 'var(--text-heading, 2rem)',
                 letterSpacing: 'var(--tracking-heading)',
-                color: 'var(--text-color-primary)',
+                color: 'var(--primary)',
               }}
             >
               {locale === 'en' ? 'Gift Ideas' : locale === 'zh' ? '送礼灵感' : 'Ideas para Regalar'}
@@ -195,7 +195,7 @@ export default async function GiftCardsPage({ params }: PageProps) {
                   className="text-center"
                   style={{
                     padding: 'var(--card-pad, 1.5rem)',
-                    borderRadius: 'var(--card-radius)',
+                    borderRadius: 'var(--radius-base, 0.75rem)',
                     backgroundColor: 'var(--color-surface)',
                     border: '1px solid var(--border-default)',
                   }}
@@ -215,7 +215,7 @@ export default async function GiftCardsPage({ params }: PageProps) {
                     style={{
                       fontFamily: 'var(--font-body)',
                       fontSize: 'var(--text-small, 0.875rem)',
-                      color: 'var(--text-color-secondary)',
+                      color: 'var(--text-on-dark-secondary)',
                       lineHeight: 'var(--leading-body, 1.65)',
                     }}
                   >
@@ -241,7 +241,7 @@ export default async function GiftCardsPage({ params }: PageProps) {
                 fontFamily: 'var(--font-heading)',
                 fontSize: 'var(--text-heading, 2rem)',
                 letterSpacing: 'var(--tracking-heading)',
-                color: 'var(--text-color-primary)',
+                color: 'var(--primary)',
               }}
             >
               {locale === 'en' ? 'How to Redeem' : locale === 'zh' ? '如何使用' : 'Cómo Usar'}
@@ -267,7 +267,7 @@ export default async function GiftCardsPage({ params }: PageProps) {
                   style={{
                     fontFamily: 'var(--font-body)',
                     fontSize: 'var(--text-body, 1rem)',
-                    color: 'var(--text-color-secondary)',
+                    color: 'var(--primary-light)',
                     lineHeight: 'var(--leading-body, 1.65)',
                     paddingTop: '4px',
                   }}
@@ -278,12 +278,12 @@ export default async function GiftCardsPage({ params }: PageProps) {
             ))}
             <div className="mt-8" style={{ borderTop: '1px solid var(--border-default)', paddingTop: '1.5rem' }}>
               {content.redemption.validity && (
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-color-muted)', marginBottom: '0.25rem' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--primary-light)', marginBottom: '0.25rem' }}>
                   {content.redemption.validity}
                 </p>
               )}
               {content.redemption.noExchange && (
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-color-muted)' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--primary-light)' }}>
                   {content.redemption.noExchange}
                 </p>
               )}

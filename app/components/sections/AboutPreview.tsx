@@ -39,7 +39,7 @@ export default function AboutPreview({
                 fontFamily: 'var(--font-body)',
                 fontSize: '0.75rem',
                 letterSpacing: 'var(--tracking-label)',
-                color: 'var(--primary)',
+                color: 'var(--heading-on-light, #111827)',
               }}
             >
               {eyebrow}
@@ -52,7 +52,7 @@ export default function AboutPreview({
               fontSize: 'var(--text-heading, 2rem)',
               letterSpacing: 'var(--tracking-heading)',
               lineHeight: 'var(--leading-heading, 1.35)',
-              color: 'var(--primary)',
+              color: 'var(--heading-on-light, #111827)',
             }}
           >
             {headline}
@@ -63,7 +63,7 @@ export default function AboutPreview({
               fontFamily: 'var(--font-body)',
               fontSize: 'var(--text-body, 1rem)',
               lineHeight: 'var(--leading-body, 1.65)',
-              color: '#4B5563',
+              color: 'var(--body-on-light, #4B5563)',
             }}
           >
             {body}
@@ -76,7 +76,7 @@ export default function AboutPreview({
                 fontFamily: 'var(--font-body)',
                 fontSize: '0.875rem',
                 fontWeight: 600,
-                color: '#111827',
+                color: 'var(--heading-on-light, #111827)',
               }}
             >
               {cta.text} →
@@ -99,7 +99,7 @@ export default function AboutPreview({
       >
         {/* Image */}
         <div className="relative">
-          <div className="relative aspect-[4/5] overflow-hidden" style={{ borderRadius: 'var(--card-radius)' }}>
+          <div className="relative aspect-[4/5] overflow-hidden" style={{ borderRadius: 'var(--radius-base, 0.75rem)' }}>
             {image ? (
               <Image
                 src={image}
@@ -117,7 +117,7 @@ export default function AboutPreview({
             className="absolute -bottom-3 -right-3 w-full h-full hidden md:block"
             style={{
               border: '3px solid var(--primary)',
-              borderRadius: 'var(--card-radius)',
+              borderRadius: 'var(--radius-base, 0.75rem)',
               zIndex: -1,
             }}
           />
@@ -132,7 +132,7 @@ export default function AboutPreview({
                 fontFamily: 'var(--font-body)',
                 fontSize: '0.75rem',
                 letterSpacing: 'var(--tracking-label)',
-                color: 'var(--primary)',
+                color: 'var(--heading-on-light, #111827)',
               }}
             >
               {eyebrow}
@@ -145,7 +145,7 @@ export default function AboutPreview({
               fontSize: 'var(--text-heading, 2rem)',
               letterSpacing: 'var(--tracking-heading)',
               lineHeight: 'var(--leading-heading, 1.35)',
-              color: 'var(--primary)',
+              color: 'var(--heading-on-light, #111827)',
             }}
           >
             {headline}
@@ -156,7 +156,7 @@ export default function AboutPreview({
               fontFamily: 'var(--font-body)',
               fontSize: 'var(--text-body, 1rem)',
               lineHeight: 'var(--leading-body, 1.65)',
-              color: '#4B5563',
+              color: 'var(--body-on-light, #4B5563)',
             }}
           >
             {body}
@@ -171,7 +171,7 @@ export default function AboutPreview({
                     style={{
                       fontFamily: 'var(--font-display)',
                       fontSize: 'var(--text-heading, 2rem)',
-                      color: 'var(--primary)',
+                      color: 'var(--heading-on-light, #111827)',
                       lineHeight: 1,
                     }}
                   >
@@ -182,7 +182,7 @@ export default function AboutPreview({
                     style={{
                       fontFamily: 'var(--font-body)',
                       fontSize: 'var(--text-small, 0.875rem)',
-                      color: '#6B7280',
+                      color: 'var(--muted-on-light, #6B7280)',
                     }}
                   >
                     {stat.label}
@@ -201,9 +201,9 @@ export default function AboutPreview({
                 fontSize: '0.875rem',
                 fontWeight: 600,
                 letterSpacing: 'var(--tracking-label)',
-                borderRadius: 'var(--btn-radius)',
+                borderRadius: 'var(--radius-base, 0.5rem)',
                 border: '1px solid var(--border-default)',
-                color: '#111827',
+                color: 'var(--heading-on-light, #111827)',
               }}
             >
               {cta.text}

@@ -48,14 +48,21 @@
   --color-text: #1A1A2E;
   --color-text-light: #6B7280;
   --color-border: #E5E7EB;
+  --text-on-dark-primary: #FFFFFF;
+  --text-on-dark-secondary: rgba(255,255,255,0.9);
 
   /* LAYOUT */
   --section-padding-y: 80px;
-  --card-radius: 12px;
+  --section-py: var(--section-padding-y);
+  --section-py-sm: calc(var(--section-padding-y) * 0.7);
+  --card-radius: var(--radius-base);
   --card-radius-lg: 16px;
   --shadow-card: 0 4px 20px rgba(0,0,0,0.08);
   --shadow-feature: 0 8px 40px rgba(0,0,0,0.12);
   --max-width: 1280px;
+  --radius-base: 8px;
+  --shadow-base: 0 4px 20px rgba(0,0,0,0.08);
+  --btn-radius: var(--radius-base);
 }
 
 /* Responsive Typography */
@@ -120,7 +127,8 @@
   }
 
   .section-padding {
-    @apply py-16 md:py-24;
+    padding-top: var(--section-padding-y);
+    padding-bottom: var(--section-padding-y);
   }
 
   .gradient-backdrop {
@@ -150,7 +158,8 @@
 @layer components {
   /* Button base styles */
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply inline-flex items-center justify-center px-6 py-3 font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+    border-radius: var(--radius-base);
   }
 
   .btn-primary {
@@ -167,7 +176,9 @@
 
   /* Card base styles */
   .card {
-    @apply bg-white rounded-xl shadow-lg p-6 transition-shadow duration-200 hover:shadow-xl;
+    @apply bg-white p-6 transition-shadow duration-200;
+    border-radius: var(--radius-base);
+    box-shadow: var(--shadow-base);
   }
 
   /* Badge styles */

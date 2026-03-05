@@ -140,7 +140,7 @@ export default async function PressPage({ params }: PageProps) {
                   className="text-center"
                   style={{
                     padding: '1.5rem',
-                    borderRadius: 'var(--card-radius)',
+                    borderRadius: 'var(--radius-base, 0.75rem)',
                     backgroundColor: 'var(--backdrop-secondary)',
                     border: '1px solid var(--border-default)',
                     minWidth: '200px',
@@ -217,7 +217,7 @@ export default async function PressPage({ params }: PageProps) {
                   key={item.id}
                   style={{
                     padding: 'var(--card-pad, 1.5rem)',
-                    borderRadius: 'var(--card-radius)',
+                    borderRadius: 'var(--radius-base, 0.75rem)',
                     backgroundColor: 'var(--color-surface)',
                     border: '1px solid var(--border-default)',
                   }}

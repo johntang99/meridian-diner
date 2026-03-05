@@ -29,10 +29,10 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
               id={checkboxId}
               type="checkbox"
               className={cn(
-                'peer h-5 w-5 appearance-none rounded border-2 border-gray-300 bg-white transition-all',
+                'peer h-5 w-5 appearance-none rounded-[var(--radius-base,0.25rem)] border-2 border-[var(--border-default)] bg-[var(--color-surface)] transition-all',
                 'checked:border-primary checked:bg-primary',
                 'focus:outline-none focus:ring-2 focus:ring-primary/20 focus:ring-offset-2',
-                'disabled:cursor-not-allowed disabled:bg-gray-100',
+                'disabled:cursor-not-allowed disabled:bg-[var(--backdrop-secondary)]',
                 error && 'border-red-500',
                 className
               )}
@@ -40,7 +40,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
             />
             <Check
               size={16}
-              className="absolute left-0.5 top-0.5 text-white opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none"
+              className="absolute left-0.5 top-0.5 text-[var(--text-color-inverse)] opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none"
               strokeWidth={3}
             />
           </div>
@@ -48,7 +48,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
           {label && (
             <label
               htmlFor={checkboxId}
-              className="text-sm font-medium text-gray-700 cursor-pointer select-none"
+              className="text-small font-medium text-[var(--text-color-secondary)] cursor-pointer select-none"
             >
               {label}
             </label>
@@ -56,7 +56,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
         </div>
         
         {error && (
-          <p className="text-sm text-red-600 ml-8">{error}</p>
+          <p className="text-small text-[var(--color-error)] ml-8">{error}</p>
         )}
       </div>
     );
@@ -92,9 +92,9 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(
             id={radioId}
             type="radio"
             className={cn(
-              'h-5 w-5 border-2 border-gray-300 text-primary transition-all',
+              'h-5 w-5 border-2 border-[var(--border-default)] text-primary transition-all',
               'focus:ring-2 focus:ring-primary/20 focus:ring-offset-2',
-              'disabled:cursor-not-allowed disabled:bg-gray-100',
+              'disabled:cursor-not-allowed disabled:bg-[var(--backdrop-secondary)]',
               error && 'border-red-500',
               className
             )}
@@ -104,7 +104,7 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(
           {label && (
             <label
               htmlFor={radioId}
-              className="text-sm font-medium text-gray-700 cursor-pointer select-none"
+              className="text-small font-medium text-[var(--text-color-secondary)] cursor-pointer select-none"
             >
               {label}
             </label>
@@ -112,7 +112,7 @@ export const Radio = forwardRef<HTMLInputElement, RadioProps>(
         </div>
         
         {error && (
-          <p className="text-sm text-red-600 ml-8">{error}</p>
+          <p className="text-small text-[var(--color-error)] ml-8">{error}</p>
         )}
       </div>
     );

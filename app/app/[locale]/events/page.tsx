@@ -145,7 +145,7 @@ export default async function EventsPage({ params }: PageProps) {
             style={{
               maxWidth: '720px',
               padding: 'var(--card-pad, 2rem)',
-              borderRadius: 'var(--card-radius)',
+              borderRadius: 'var(--radius-base, 0.75rem)',
               border: '1px solid var(--border-default)',
               backgroundColor: 'var(--color-surface)',
             }}
@@ -182,7 +182,7 @@ export default async function EventsPage({ params }: PageProps) {
                 className="inline-block transition-opacity hover:opacity-80"
                 style={{
                   padding: '0.75rem 1.5rem',
-                  borderRadius: 'var(--btn-radius)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   backgroundColor: 'var(--primary)',
                   color: 'var(--text-color-inverse)',
                   fontFamily: 'var(--font-body)',

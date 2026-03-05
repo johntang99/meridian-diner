@@ -55,7 +55,7 @@ export default function ChefSignaturesSection({
         style={{
           paddingTop: isCompact ? 'var(--section-py-sm, 3rem)' : 'var(--section-py, 4rem)',
           paddingBottom: isCompact ? 'var(--section-py-sm, 3rem)' : 'var(--section-py, 4rem)',
-          backgroundColor: '#F3F4F6',
+          backgroundColor: 'var(--backdrop-secondary)',
         }}
       >
         <div className="mx-auto" style={{ maxWidth: 'var(--container-max, 1200px)' }}>
@@ -65,7 +65,7 @@ export default function ChefSignaturesSection({
               fontFamily: 'var(--font-heading)',
               fontSize: 'var(--text-heading, 2rem)',
               fontWeight: 700,
-              color: 'var(--primary)',
+              color: 'var(--text-on-dark-primary)',
             }}
           >
             Chef&apos;s Signature
@@ -74,7 +74,7 @@ export default function ChefSignaturesSection({
             className="mx-auto mb-6 text-center"
             style={{
               maxWidth: '680px',
-              color: 'var(--body-on-light, #4B5563)',
+              color: 'var(--text-on-dark-secondary)',
               fontSize: 'var(--text-body, 1rem)',
               lineHeight: 'var(--leading-body, 1.65)',
             }}
@@ -87,9 +87,11 @@ export default function ChefSignaturesSection({
                 key={item.name}
                 type="button"
                 onClick={() => setSelectedSignature(item)}
-                className="rounded-xl border border-gray-200 shadow-md p-0 text-left overflow-hidden transition-all duration-200 hover:shadow-xl hover:-translate-y-1"
+                className="border border-[var(--border-subtle)] p-0 text-left overflow-hidden transition-all duration-200 hover:-translate-y-1"
                 style={{
                   backgroundColor: 'var(--color-surface)',
+                  borderRadius: 'var(--radius-base, 0.75rem)',
+                  boxShadow: 'var(--shadow-base)',
                 }}
               >
                 <div className={`relative ${isCompact ? 'aspect-[4/3]' : 'aspect-[16/10]'}`}>
@@ -106,7 +108,7 @@ export default function ChefSignaturesSection({
                   <p className="mt-2" style={{ color: 'var(--text-color-secondary)', fontSize: isCompact ? '0.85rem' : undefined }}>
                     {item.description}
                   </p>
-                  <p className={`${isCompact ? 'mt-2' : 'mt-3'} text-sm`} style={{ color: 'var(--text-color-accent)', fontWeight: 600 }}>
+                  <p className={`${isCompact ? 'mt-2' : 'mt-3'} text-small`} style={{ color: 'var(--text-color-accent)', fontWeight: 600 }}>
                     View details
                   </p>
                 </div>
@@ -117,8 +119,8 @@ export default function ChefSignaturesSection({
             <div className="mt-8 text-center">
               <Link
                 href={`/${locale}/menu`}
-                className="inline-flex items-center rounded-lg px-5 py-2.5 text-sm font-semibold transition-opacity hover:opacity-90"
-                style={{ backgroundColor: 'var(--primary)', color: '#F5F0E8' }}
+                className="inline-flex items-center px-5 py-2.5 text-small font-semibold transition-opacity hover:opacity-90"
+                style={{ backgroundColor: 'var(--primary)', color: 'var(--text-color-inverse)', borderRadius: 'var(--radius-base, 0.5rem)' }}
               >
                 View All Menus
               </Link>
@@ -135,7 +137,7 @@ export default function ChefSignaturesSection({
       >
         {selectedSignature && (
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+            <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: 'var(--radius-base, 0.75rem)' }}>
               <Image
                 src={selectedSignature.image || fallbackImage}
                 alt={selectedSignature.name}
@@ -149,7 +151,7 @@ export default function ChefSignaturesSection({
                 {(selectedSignature.badges || []).map((badge) => (
                   <span
                     key={badge}
-                    className="rounded-full px-3 py-1 text-xs"
+                    className="rounded-full px-3 py-1 text-small"
                     style={{ backgroundColor: 'var(--backdrop-secondary)', color: 'var(--text-color-primary)' }}
                   >
                     {badge}
@@ -159,8 +161,8 @@ export default function ChefSignaturesSection({
               <p style={{ color: 'var(--text-color-secondary)' }}>{selectedSignature.description}</p>
               {(selectedSignature.highlights || []).length > 0 && (
                 <div className="mt-4">
-                  <p className="mb-2 text-sm font-semibold">Highlights</p>
-                  <ul className="space-y-1 text-sm" style={{ color: 'var(--text-color-secondary)' }}>
+                  <p className="mb-2 text-small font-semibold">Highlights</p>
+                  <ul className="space-y-1 text-small" style={{ color: 'var(--text-color-secondary)' }}>
                     {selectedSignature.highlights?.map((item) => (
                       <li key={item}>- {item}</li>
                     ))}
@@ -168,15 +170,15 @@ export default function ChefSignaturesSection({
                 </div>
               )}
               {selectedSignature.pairing && (
-                <p className="mt-4 text-sm">
+                <p className="mt-4 text-small">
                   <span className="font-semibold">Suggested pairing:</span> {selectedSignature.pairing}
                 </p>
               )}
               <div className="mt-6">
                 <Link
                   href={`/${locale}/menu/${selectedSignature.menuType}`}
-                  className="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold"
-                  style={{ backgroundColor: 'var(--primary)', color: '#F5F0E8' }}
+                  className="inline-flex items-center px-4 py-2 text-small font-semibold"
+                  style={{ backgroundColor: 'var(--primary)', color: 'var(--text-color-inverse)', borderRadius: 'var(--radius-base, 0.5rem)' }}
                 >
                   {selectedSignature.ctaLabel || 'View Menu Category'}
                 </Link>

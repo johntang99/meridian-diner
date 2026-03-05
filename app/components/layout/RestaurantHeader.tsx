@@ -198,8 +198,8 @@ export default function RestaurantHeader({
       {/* Skip to content */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:outline-none"
-        style={{ backgroundColor: 'var(--primary)', color: 'var(--text-color-inverse)' }}
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:outline-none"
+        style={{ backgroundColor: 'var(--primary)', color: 'var(--text-color-inverse)', borderRadius: 'var(--radius-base, 0.5rem)' }}
       >
         Skip to main content
       </a>
@@ -316,7 +316,7 @@ export default function RestaurantHeader({
                             className="py-2"
                             style={{
                               backgroundColor: 'var(--color-surface, #FFFFFF)',
-                              borderRadius: 'var(--card-radius)',
+                              borderRadius: 'var(--radius-base, 0.75rem)',
                               boxShadow: 'var(--shadow-card-hover)',
                               border: 'var(--menu-divider)',
                             }}
@@ -375,9 +375,9 @@ export default function RestaurantHeader({
                   letterSpacing: 'var(--tracking-label)',
                   fontWeight: 600,
                   padding: '0.625rem 1.5rem',
-                  borderRadius: 'var(--btn-radius)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   backgroundColor: transparentLight ? 'rgba(255,255,255,0.15)' : 'var(--primary)',
-                  color: '#F5F0E8',
+                  color: 'var(--text-color-inverse)',
                   border: transparentLight ? '1px solid rgba(255,255,255,0.3)' : 'none',
                   transitionDuration: 'var(--duration-base)',
                 }}
@@ -500,7 +500,7 @@ export default function RestaurantHeader({
                   fontSize: '1rem',
                   fontWeight: 600,
                   letterSpacing: 'var(--tracking-label)',
-                  borderRadius: 'var(--btn-radius)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   backgroundColor: 'var(--primary)',
                   color: 'var(--text-color-inverse)',
                 }}

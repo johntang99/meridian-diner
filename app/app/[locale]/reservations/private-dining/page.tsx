@@ -112,7 +112,7 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                 fontWeight: 'var(--weight-display, 400)' as any,
                 letterSpacing: 'var(--tracking-display)',
                 lineHeight: 'var(--leading-display, 1.1)',
-                color: 'var(--text-color-primary)',
+                color: 'var(--primary)',
               }}
             >
               {hero.headline}
@@ -123,7 +123,7 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: 'var(--text-body, 1rem)',
-                  color: 'var(--text-color-secondary)',
+                  color: 'var(--primary-light)',
                   lineHeight: 'var(--leading-body, 1.65)',
                   maxWidth: '500px',
                 }}
@@ -137,9 +137,9 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                 className="inline-block transition-opacity hover:opacity-80"
                 style={{
                   padding: '0.875rem 1.5rem',
-                  borderRadius: 'var(--btn-radius)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   backgroundColor: 'var(--primary)',
-                  color: 'var(--text-color-inverse)',
+                  color: 'var(--text-on-dark-primary)',
                   fontFamily: 'var(--font-body)',
                   fontSize: '0.875rem',
                   fontWeight: 600,
@@ -151,7 +151,7 @@ export default async function PrivateDiningPage({ params }: PageProps) {
           </div>
           <div
             className="relative overflow-hidden"
-            style={{ aspectRatio: '3/2', borderRadius: 'var(--card-radius)' }}
+            style={{ aspectRatio: '3/2', borderRadius: 'var(--radius-base, 0.75rem)' }}
           >
             {hero.image ? (
               <Image src={hero.image} alt={hero.headline} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
@@ -179,7 +179,7 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                 fontFamily: 'var(--font-heading)',
                 fontSize: 'var(--text-heading, 2rem)',
                 letterSpacing: 'var(--tracking-heading)',
-                color: 'var(--text-color-primary)',
+                color: 'var(--text-on-dark-primary)',
               }}
             >
               {locale === 'en' ? 'Our Spaces' : locale === 'zh' ? '我们的空间' : 'Nuestros Espacios'}
@@ -193,7 +193,7 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                   key={space.name}
                   className="overflow-hidden"
                   style={{
-                    borderRadius: 'var(--card-radius)',
+                    borderRadius: 'var(--radius-base, 0.75rem)',
                     backgroundColor: 'var(--color-surface)',
                     boxShadow: 'var(--shadow-card)',
                   }}
@@ -212,12 +212,12 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                         fontFamily: 'var(--font-heading)',
                         fontSize: 'var(--text-subheading, 1.25rem)',
                         letterSpacing: 'var(--tracking-heading)',
-                        color: 'var(--text-color-primary)',
+                        color: 'var(--text-on-dark-primary)',
                       }}
                     >
                       {space.name}
                     </h3>
-                    <p className="mb-3" style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--primary)', fontWeight: 600 }}>
+                    <p className="mb-3" style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-on-dark-primary)', fontWeight: 600 }}>
                       {locale === 'en' ? 'Up to' : locale === 'zh' ? '最多' : 'Hasta'} {space.capacity}
                     </p>
                     <p
@@ -225,7 +225,7 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                       style={{
                         fontFamily: 'var(--font-body)',
                         fontSize: 'var(--text-small, 0.875rem)',
-                        color: 'var(--text-color-secondary)',
+                        color: 'var(--text-on-dark-secondary)',
                         lineHeight: 'var(--leading-body, 1.65)',
                       }}
                     >
@@ -241,7 +241,7 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                               fontSize: '0.7rem',
                               borderRadius: 'var(--badge-radius)',
                               backgroundColor: 'var(--backdrop-secondary)',
-                              color: 'var(--text-color-muted)',
+                              color: 'var(--text-on-dark-secondary)',
                               fontFamily: 'var(--font-body)',
                             }}
                           >
@@ -271,7 +271,7 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                 fontFamily: 'var(--font-heading)',
                 fontSize: 'var(--text-heading, 2rem)',
                 letterSpacing: 'var(--tracking-heading)',
-                color: 'var(--text-color-primary)',
+                color: 'var(--primary)',
               }}
             >
               {locale === 'en' ? 'Perfect for Every Occasion' : locale === 'zh' ? '适合每一个场合' : 'Perfecto para Cada Ocasión'}
@@ -296,7 +296,7 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                     style={{
                       fontFamily: 'var(--font-body)',
                       fontSize: 'var(--text-small, 0.875rem)',
-                      color: 'var(--text-color-primary)',
+                      color: 'var(--primary)',
                       fontWeight: 600,
                     }}
                   >
@@ -328,18 +328,18 @@ export default async function PrivateDiningPage({ params }: PageProps) {
                 fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-body, 1rem)',
                 fontStyle: 'italic',
-                color: 'var(--text-color-secondary)',
+                color: 'var(--text-on-dark-secondary)',
                 lineHeight: 'var(--leading-body, 1.65)',
                 marginBottom: '1.5rem',
               }}
             >
               {testimonial.quote}
             </blockquote>
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.875rem', fontWeight: 600, color: 'var(--text-color-primary)' }}>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.875rem', fontWeight: 600, color: 'var(--text-on-dark-primary)' }}>
               — {testimonial.author}
             </p>
             {testimonial.occasion && (
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-color-muted)' }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-on-dark-secondary)' }}>
                 {testimonial.occasion}
               </p>
             )}

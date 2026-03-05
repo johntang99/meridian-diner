@@ -62,7 +62,7 @@ export default function EventCard({ event, locale = 'en', isPast = false }: Even
       href={`/${locale}/events/${eventSlug(event)}`}
       className="group block overflow-hidden transition-all"
       style={{
-        borderRadius: 'var(--card-radius)',
+        borderRadius: 'var(--radius-base, 0.75rem)',
         backgroundColor: 'var(--color-surface)',
         boxShadow: 'var(--shadow-card)',
       }}
@@ -107,7 +107,7 @@ export default function EventCard({ event, locale = 'en', isPast = false }: Even
               fontFamily: 'var(--font-heading)',
               fontSize: '1.5rem',
               fontWeight: 700,
-              color: 'var(--primary)',
+              color: 'var(--text-on-dark-primary)',
               lineHeight: 1,
             }}
           >
@@ -118,7 +118,7 @@ export default function EventCard({ event, locale = 'en', isPast = false }: Even
               fontFamily: 'var(--font-ui, var(--font-body))',
               fontSize: '0.6rem',
               letterSpacing: 'var(--tracking-label)',
-              color: 'var(--text-color-muted)',
+              color: 'var(--text-on-dark-secondary)',
               fontWeight: 600,
               marginTop: '2px',
             }}
@@ -134,7 +134,7 @@ export default function EventCard({ event, locale = 'en', isPast = false }: Even
             style={{
               borderRadius: 'var(--badge-radius)',
               backgroundColor: 'rgba(0,0,0,0.6)',
-              color: 'white',
+              color: 'var(--text-on-dark-primary, #fff)',
               fontSize: '0.65rem',
               fontWeight: 600,
               fontFamily: 'var(--font-body)',
@@ -152,7 +152,7 @@ export default function EventCard({ event, locale = 'en', isPast = false }: Even
           >
             <span
               style={{
-                color: 'white',
+                color: 'var(--text-on-dark-primary, #fff)',
                 fontFamily: 'var(--font-heading)',
                 fontSize: '1.25rem',
                 fontWeight: 700,
@@ -228,7 +228,7 @@ export default function EventCard({ event, locale = 'en', isPast = false }: Even
               style={{
                 fontFamily: 'var(--font-ui, var(--font-body))',
                 fontSize: '0.8rem',
-                color: 'var(--primary)',
+                color: 'var(--text-on-dark-primary)',
                 fontWeight: 600,
               }}
             >
@@ -242,7 +242,7 @@ export default function EventCard({ event, locale = 'en', isPast = false }: Even
                 fontSize: '0.65rem',
                 borderRadius: 'var(--badge-radius)',
                 backgroundColor: 'rgba(217, 155, 40, 0.15)',
-                color: 'rgb(180, 120, 20)',
+                color: 'var(--color-warning)',
                 fontWeight: 600,
                 fontFamily: 'var(--font-body)',
               }}

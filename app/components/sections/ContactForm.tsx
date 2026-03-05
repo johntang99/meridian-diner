@@ -70,7 +70,7 @@ export default function ContactForm({ locale = 'en', successMessage }: ContactFo
             height: '48px',
             borderRadius: '50%',
             backgroundColor: 'var(--primary)',
-            color: '#F5F0E8',
+            color: 'var(--text-color-inverse)',
             fontSize: '1.5rem',
           }}
         >
@@ -105,7 +105,7 @@ export default function ContactForm({ locale = 'en', successMessage }: ContactFo
   const inputStyle = {
     width: '100%',
     padding: '0.75rem',
-    borderRadius: 'var(--btn-radius, 4px)',
+    borderRadius: 'var(--radius-base, 0.5rem)',
     border: '1px solid var(--border-default)',
     backgroundColor: 'var(--color-surface)',
     color: 'var(--text-color-primary)',
@@ -178,9 +178,9 @@ export default function ContactForm({ locale = 'en', successMessage }: ContactFo
         className="w-full transition-opacity"
         style={{
           padding: '0.875rem',
-          borderRadius: 'var(--btn-radius, 4px)',
+          borderRadius: 'var(--radius-base, 0.5rem)',
           backgroundColor: 'var(--text-color-accent)',
-          color: '#1A1A1A',
+          color: 'var(--primary)',
           fontFamily: 'var(--font-body)',
           fontSize: '0.875rem',
           fontWeight: 600,

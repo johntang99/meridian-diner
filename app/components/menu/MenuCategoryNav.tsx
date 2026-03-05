@@ -70,7 +70,7 @@ export default function MenuCategoryNav({ variant = 'tabs', categories }: MenuCa
               fontSize: '0.875rem',
               backgroundColor: 'var(--menu-list-surface, #FFFFFF)',
               color: 'var(--menu-list-text-primary, #111827)',
-              borderRadius: 'var(--btn-radius)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               border: '1px solid var(--menu-list-border, #D1D5DB)',
             }}
           >

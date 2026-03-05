@@ -24,9 +24,12 @@ export default function HowItWorksSection({
   className,
 }: HowItWorksSectionProps) {
   return (
-    <section className={cn('section-padding bg-white', className)}>
+    <section className={cn('section-padding bg-[var(--color-surface)]', className)}>
       <div className="container-custom">
-        <div className="bg-white shadow-lg rounded-3xl p-8 md:p-12">
+        <div
+          className="bg-[var(--color-surface)] p-8 md:p-12"
+          style={{ borderRadius: 'var(--radius-base, 1.5rem)', boxShadow: 'var(--shadow-base)' }}
+        >
           {/* Section Header */}
           <div className="text-center mb-12">
           {badge && (
@@ -36,7 +39,7 @@ export default function HowItWorksSection({
           )}
           <h2 className="text-heading font-bold mb-4">{title}</h2>
           {subtitle && (
-            <p className="text-gray-600 max-w-2xl mx-auto">{subtitle}</p>
+            <p className="text-[var(--text-color-secondary)] max-w-2xl mx-auto">{subtitle}</p>
           )}
           </div>
 
@@ -78,8 +81,11 @@ function HowItWorksHorizontal({ steps }: { steps: Step[] }) {
           
           <div className="relative z-10">
             {/* Step Number */}
-            <div className="w-24 h-24 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center mb-6 mx-auto shadow-lg">
-              <span className="text-4xl font-bold text-white">
+            <div
+              className="w-24 h-24 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center mb-6 mx-auto"
+              style={{ boxShadow: 'var(--shadow-base)' }}
+            >
+              <span className="text-heading font-bold text-[var(--text-color-inverse)]">
                 {step.number}
               </span>
             </div>
@@ -92,7 +98,7 @@ function HowItWorksHorizontal({ steps }: { steps: Step[] }) {
                   {step.duration}
                 </Badge>
               )}
-              <p className="text-gray-600">{step.description}</p>
+              <p className="text-[var(--text-color-secondary)]">{step.description}</p>
             </div>
           </div>
         </div>
@@ -107,8 +113,11 @@ function HowItWorksVertical({ steps }: { steps: Step[] }) {
       {steps.map((step, index) => (
         <div key={index} className="flex gap-6 items-start">
           {/* Step Number */}
-          <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center shadow-lg">
-            <span className="text-2xl font-bold text-white">
+          <div
+            className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center"
+            style={{ boxShadow: 'var(--shadow-base)' }}
+          >
+            <span className="text-subheading font-bold text-[var(--text-color-inverse)]">
               {step.number}
             </span>
           </div>
@@ -123,7 +132,7 @@ function HowItWorksVertical({ steps }: { steps: Step[] }) {
                 </Badge>
               )}
             </div>
-            <p className="text-gray-600">{step.description}</p>
+            <p className="text-[var(--text-color-secondary)]">{step.description}</p>
           </div>
         </div>
       ))}
@@ -138,7 +147,7 @@ function HowItWorksCards({ steps }: { steps: Step[] }) {
         <Card key={index} variant="default" hover className="relative overflow-hidden">
           {/* Number Badge */}
           <div className="absolute top-4 right-4 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-            <span className="text-2xl font-bold text-primary">
+            <span className="text-subheading font-bold text-primary">
               {step.number}
             </span>
           </div>
@@ -152,7 +161,7 @@ function HowItWorksCards({ steps }: { steps: Step[] }) {
                 {step.duration}
               </Badge>
             )}
-            <p className="text-gray-600">{step.description}</p>
+            <p className="text-[var(--text-color-secondary)]">{step.description}</p>
           </CardContent>
         </Card>
       ))}
@@ -174,7 +183,10 @@ function HowItWorksVerticalImage({
       <div>
         <HowItWorksVertical steps={steps} />
       </div>
-      <div className="relative aspect-square rounded-2xl overflow-hidden bg-transparent">
+      <div
+        className="relative aspect-square overflow-hidden bg-transparent"
+        style={{ borderRadius: 'var(--radius-base, 1rem)' }}
+      >
         {image ? (
           <img
             src={image}

@@ -109,7 +109,7 @@ export default function MenuPreview({
               className="group transition-all"
               style={{
                 backgroundColor: 'var(--color-surface)',
-                borderRadius: 'var(--card-radius)',
+                borderRadius: 'var(--radius-base, 0.75rem)',
                 overflow: 'hidden',
                 boxShadow: 'var(--shadow-card)',
               }}

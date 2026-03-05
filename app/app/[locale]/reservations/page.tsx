@@ -127,7 +127,7 @@ export default async function ReservationsPage({ params }: PageProps) {
             style={{
               maxWidth: '480px',
               padding: 'var(--card-pad, 2rem)',
-              borderRadius: 'var(--card-radius)',
+              borderRadius: 'var(--radius-base, 0.75rem)',
               border: '1px solid var(--border-default)',
               backgroundColor: 'var(--color-surface)',
             }}
@@ -205,7 +205,7 @@ export default async function ReservationsPage({ params }: PageProps) {
                     href={siteInfo.addressMapUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ fontWeight: 600, color: 'var(--primary)', fontSize: '0.8rem' }}
+                    style={{ fontWeight: 600, color: 'var(--text-on-dark-primary)', fontSize: '0.8rem' }}
                   >
                     {locale === 'en' ? 'Get Directions' : locale === 'zh' ? '获取路线' : 'Cómo Llegar'} →
                   </a>
@@ -263,7 +263,7 @@ export default async function ReservationsPage({ params }: PageProps) {
             style={{
               maxWidth: '720px',
               padding: 'var(--card-pad, 2rem)',
-              borderRadius: 'var(--card-radius)',
+              borderRadius: 'var(--radius-base, 0.75rem)',
               border: '1px solid var(--border-default)',
               backgroundColor: 'var(--color-surface)',
             }}
@@ -300,9 +300,9 @@ export default async function ReservationsPage({ params }: PageProps) {
                 className="inline-block transition-opacity hover:opacity-80"
                 style={{
                   padding: '0.75rem 1.5rem',
-                  borderRadius: 'var(--btn-radius)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   backgroundColor: 'var(--text-color-accent)',
-                  color: '#1A1A1A',
+                  color: 'var(--primary)',
                   fontFamily: 'var(--font-body)',
                   fontSize: '0.875rem',
                   fontWeight: 600,
@@ -328,7 +328,7 @@ function InfoCard({ title, children }: { title: string; children: React.ReactNod
     <div
       style={{
         padding: 'var(--card-pad, 1.5rem)',
-        borderRadius: 'var(--card-radius)',
+        borderRadius: 'var(--radius-base, 0.75rem)',
         backgroundColor: 'var(--color-surface)',
         border: '1px solid var(--border-default)',
       }}

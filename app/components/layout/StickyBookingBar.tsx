@@ -74,7 +74,7 @@ export default function StickyBookingBar({
             href={phoneHref}
             className="flex-1 flex items-center justify-center gap-2 h-11 transition-colors"
             style={{
-              borderRadius: 'var(--btn-radius)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               border: '1px solid var(--border-default)',
               fontFamily: 'var(--font-body)',
               fontSize: '0.8125rem',
@@ -92,7 +92,7 @@ export default function StickyBookingBar({
           href={resolvedCtaHref}
           className="flex-1 flex items-center justify-center h-11 transition-colors"
           style={{
-            borderRadius: 'var(--btn-radius)',
+            borderRadius: 'var(--radius-base, 0.5rem)',
             backgroundColor: 'var(--primary)',
             fontFamily: 'var(--font-body)',
             fontSize: '0.8125rem',

@@ -81,7 +81,7 @@ function GalleryTile({
       style={{
         breakInside: 'avoid',
         marginBottom: 'var(--grid-gap, 1.5rem)',
-        borderRadius: 'var(--card-radius)',
+        borderRadius: 'var(--radius-base, 0.75rem)',
         position: 'relative',
       }}
     >
@@ -116,7 +116,7 @@ function GalleryTile({
               style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-small, 0.875rem)',
-                color: 'white',
+                color: 'var(--text-on-dark-primary, #fff)',
                 lineHeight: 1.4,
               }}
             >
@@ -126,7 +126,7 @@ function GalleryTile({
           {/* Expand icon */}
           <span
             className="absolute bottom-3 right-3"
-            style={{ color: 'white', fontSize: '1.25rem', opacity: 0.8 }}
+            style={{ color: 'var(--text-on-dark-primary, #fff)', fontSize: '1.25rem', opacity: 0.8 }}
           >
             ⤢
           </span>

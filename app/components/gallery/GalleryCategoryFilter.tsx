@@ -35,7 +35,7 @@ export default function GalleryCategoryFilter({
             className="transition-colors"
             style={{
               padding: '0.5rem 1rem',
-              borderRadius: 'var(--btn-radius)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               border: 'none',
               cursor: 'pointer',
               fontFamily: 'var(--font-body)',

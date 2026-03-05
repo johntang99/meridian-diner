@@ -59,22 +59,22 @@ export default function Tabs({
   
   const variants = {
     default: {
-      container: 'border-b border-gray-200',
+      container: 'border-b border-[var(--border-subtle)]',
       button: 'px-4 py-2 font-medium transition-colors',
       active: 'border-b-2 border-primary text-primary',
-      inactive: 'text-gray-600 hover:text-gray-900',
+      inactive: 'text-[var(--text-color-secondary)] hover:text-[var(--text-color-primary)]',
     },
     pills: {
-      container: 'bg-gray-100 rounded-lg p-1',
-      button: 'px-4 py-2 rounded-md font-medium transition-all',
-      active: 'bg-white text-primary shadow-sm',
-      inactive: 'text-gray-600 hover:text-gray-900',
+      container: 'bg-[var(--backdrop-secondary)] rounded-[var(--radius-base,0.5rem)] p-1',
+      button: 'px-4 py-2 rounded-[calc(var(--radius-base,0.5rem)-2px)] font-medium transition-all',
+      active: 'bg-[var(--color-surface)] text-primary shadow-[var(--shadow-base)]',
+      inactive: 'text-[var(--text-color-secondary)] hover:text-[var(--text-color-primary)]',
     },
     underline: {
       container: 'space-x-8',
       button: 'pb-3 font-medium transition-colors relative',
       active: 'text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary',
-      inactive: 'text-gray-600 hover:text-gray-900',
+      inactive: 'text-[var(--text-color-secondary)] hover:text-[var(--text-color-primary)]',
     },
   };
   

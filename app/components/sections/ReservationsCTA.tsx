@@ -24,7 +24,7 @@ export default function ReservationsCTA({
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: 'var(--text-subheading, 1.125rem)',
-            color: 'var(--text-color-primary)',
+            color: 'var(--heading-on-light, #111827)',
           }}
         >
           {headline}
@@ -36,7 +36,7 @@ export default function ReservationsCTA({
             fontFamily: 'var(--font-body)',
             fontSize: '0.875rem',
             fontWeight: 600,
-            color: 'var(--primary)',
+            color: 'var(--body-on-light, #4B5563)',
           }}
         >
           {ctaLabel} →
@@ -66,7 +66,7 @@ export default function ReservationsCTA({
             fontSize: 'var(--text-heading, 2rem)',
             letterSpacing: 'var(--tracking-heading)',
             lineHeight: 'var(--leading-heading, 1.35)',
-            color: 'var(--text-color-primary)',
+            color: 'var(--text-on-dark-primary)',
           }}
         >
           {headline}
@@ -77,7 +77,7 @@ export default function ReservationsCTA({
             style={{
               fontFamily: 'var(--font-body)',
               fontSize: 'var(--text-body, 1rem)',
-              color: 'var(--text-color-primary)',
+              color: 'var(--text-on-dark-secondary)',
               opacity: 0.8,
             }}
           >
@@ -90,7 +90,7 @@ export default function ReservationsCTA({
             style={{
               fontFamily: 'var(--font-body)',
               fontSize: 'var(--text-small, 0.875rem)',
-              color: 'var(--text-color-primary)',
+              color: 'var(--text-on-dark-secondary)',
               opacity: 0.7,
             }}
           >
@@ -105,9 +105,9 @@ export default function ReservationsCTA({
             fontSize: '0.875rem',
             fontWeight: 600,
             letterSpacing: 'var(--tracking-label)',
-            borderRadius: 'var(--btn-radius)',
+            borderRadius: 'var(--radius-base, 0.5rem)',
             backgroundColor: 'var(--text-color-accent)',
-            color: '#1A1A1A',
+            color: 'var(--primary)',
           }}
         >
           {ctaLabel}

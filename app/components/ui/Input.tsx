@@ -31,7 +31,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         {label && (
           <label
             htmlFor={inputId}
-            className="text-sm font-medium text-gray-700"
+            className="text-small font-medium text-[var(--text-color-secondary)]"
           >
             {label}
           </label>
@@ -39,7 +39,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 
         <div className="relative">
           {icon && (
-            <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+            <div className="absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-color-muted)]">
               {icon}
             </div>
           )}
@@ -50,10 +50,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             aria-invalid={error ? true : undefined}
             aria-describedby={errorId}
             className={cn(
-              'block w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-gray-900 transition-colors',
-              'placeholder:text-gray-400',
+              'block w-full rounded-[var(--radius-base,0.5rem)] border border-[var(--border-default)] bg-[var(--color-surface)] px-4 py-2.5 text-[var(--text-color-primary)] transition-colors',
+              'placeholder:text-[var(--text-color-muted)]',
               'focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20',
-              'disabled:bg-gray-100 disabled:cursor-not-allowed',
+              'disabled:bg-[var(--backdrop-secondary)] disabled:cursor-not-allowed',
               error && 'border-red-500 focus:border-red-500 focus:ring-red-500/20',
               icon && 'pl-10',
               className
@@ -63,11 +63,11 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         </div>
 
         {error && (
-          <p id={errorId} className="text-sm text-red-600" role="alert">{error}</p>
+          <p id={errorId} className="text-small text-[var(--color-error)]" role="alert">{error}</p>
         )}
 
         {helperText && !error && (
-          <p className="text-sm text-gray-500">{helperText}</p>
+          <p className="text-small text-[var(--text-color-muted)]">{helperText}</p>
         )}
       </div>
     );

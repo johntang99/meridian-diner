@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-03-05T10:14:20.376Z",
+  "baseUrl": "http://localhost:3021",
+  "inventory": "manual",
+  "siteId": "meridian-diner",
+  "locale": "en",
+  "includeSitemapDiscovery": true,
+  "routes": [
+    "/en"
+  ]
+}

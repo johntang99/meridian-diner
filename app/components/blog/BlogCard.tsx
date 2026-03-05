@@ -47,7 +47,7 @@ export default function BlogCard({ post, locale = 'en' }: BlogCardProps) {
       href={`/${locale}/blog/${post.slug}`}
       className="group block overflow-hidden transition-all"
       style={{
-        borderRadius: 'var(--card-radius)',
+        borderRadius: 'var(--radius-base, 0.75rem)',
         backgroundColor: 'var(--color-surface)',
         boxShadow: 'var(--shadow-card)',
       }}
@@ -143,7 +143,7 @@ export default function BlogCard({ post, locale = 'en' }: BlogCardProps) {
             style={{
               fontFamily: 'var(--font-body)',
               fontSize: '0.75rem',
-              color: 'var(--primary)',
+              color: 'var(--text-on-dark-primary)',
               fontWeight: 600,
             }}
           >

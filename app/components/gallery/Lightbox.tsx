@@ -92,7 +92,7 @@ export default function Lightbox({ items, currentIndex, onClose, onNavigate }: L
           transform: 'translateX(-50%)',
           fontFamily: 'var(--font-body)',
           fontSize: '0.8rem',
-          color: 'rgba(255,255,255,0.5)',
+          color: 'var(--text-on-dark-secondary, rgba(255,255,255,0.8))',
         }}
       >
         {currentIndex + 1} / {total}
@@ -108,7 +108,7 @@ export default function Lightbox({ items, currentIndex, onClose, onNavigate }: L
           background: 'none',
           border: 'none',
           cursor: 'pointer',
-          color: 'white',
+          color: 'var(--text-on-dark-primary, #fff)',
           fontSize: '1.5rem',
           zIndex: 101,
         }}
@@ -130,7 +130,7 @@ export default function Lightbox({ items, currentIndex, onClose, onNavigate }: L
             border: 'none',
             borderRadius: '50%',
             cursor: 'pointer',
-            color: 'white',
+            color: 'var(--text-on-dark-primary, #fff)',
             fontSize: '1.25rem',
             zIndex: 101,
           }}
@@ -153,7 +153,7 @@ export default function Lightbox({ items, currentIndex, onClose, onNavigate }: L
             border: 'none',
             borderRadius: '50%',
             cursor: 'pointer',
-            color: 'white',
+            color: 'var(--text-on-dark-primary, #fff)',
             fontSize: '1.25rem',
             zIndex: 101,
           }}
@@ -186,9 +186,9 @@ export default function Lightbox({ items, currentIndex, onClose, onNavigate }: L
         ) : (
           <div
             className="w-full h-full flex items-center justify-center"
-            style={{ backgroundColor: 'rgba(255,255,255,0.05)' }}
+            style={{ backgroundColor: 'var(--backdrop-secondary)' }}
           >
-            <span style={{ color: 'rgba(255,255,255,0.3)', fontFamily: 'var(--font-body)', fontSize: '0.875rem' }}>
+            <span style={{ color: 'var(--text-on-dark-secondary, rgba(255,255,255,0.75))', fontFamily: 'var(--font-body)', fontSize: '0.875rem' }}>
               No image available
             </span>
           </div>
@@ -202,7 +202,7 @@ export default function Lightbox({ items, currentIndex, onClose, onNavigate }: L
           style={{
             fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-small, 0.875rem)',
-            color: 'rgba(255,255,255,0.6)',
+            color: 'var(--text-on-dark-secondary, rgba(255,255,255,0.85))',
             maxWidth: '600px',
           }}
         >

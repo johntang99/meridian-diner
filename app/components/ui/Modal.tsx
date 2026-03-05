@@ -70,21 +70,21 @@ export default function Modal({
       {/* Modal */}
       <div
         className={cn(
-          'relative bg-white rounded-xl shadow-2xl w-full animate-fade-in',
+          'relative bg-[var(--color-surface)] rounded-[var(--radius-base,0.75rem)] shadow-[var(--shadow-base)] w-full animate-fade-in',
           sizes[size]
         )}
       >
         {/* Header */}
         {(title || showCloseButton) && (
-          <div className="flex items-start justify-between p-6 border-b border-gray-200">
+          <div className="flex items-start justify-between p-6 border-b border-[var(--border-subtle)]">
             <div className="flex-1">
               {title && (
-                <h2 className="text-heading font-bold text-gray-900">
+                <h2 className="text-heading font-bold text-[var(--text-color-primary)]">
                   {title}
                 </h2>
               )}
               {description && (
-                <p className="mt-1 text-sm text-gray-600">
+                <p className="mt-1 text-small text-[var(--text-color-secondary)]">
                   {description}
                 </p>
               )}
@@ -93,7 +93,7 @@ export default function Modal({
             {showCloseButton && (
               <button
                 onClick={onClose}
-                className="ml-4 p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors"
+                className="ml-4 p-2 text-[var(--text-color-muted)] hover:text-[var(--text-color-secondary)] hover:bg-[var(--backdrop-secondary)] rounded-[var(--radius-base,0.5rem)] transition-colors"
               >
                 <X size={20} />
               </button>
@@ -116,7 +116,7 @@ export default function Modal({
 
 // Sub-components for better composition
 export const ModalFooter = ({ children, className }: { children: React.ReactNode; className?: string }) => (
-  <div className={cn('flex items-center justify-end gap-3 mt-6 pt-6 border-t border-gray-200', className)}>
+  <div className={cn('flex items-center justify-end gap-3 mt-6 pt-6 border-t border-[var(--border-subtle)]', className)}>
     {children}
   </div>
 );

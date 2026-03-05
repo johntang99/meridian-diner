@@ -219,7 +219,7 @@ export default async function ContactPage({ params }: PageProps) {
                         style={{
                           fontFamily: 'var(--font-body)',
                           fontSize: 'var(--text-small, 0.875rem)',
-                          color: 'var(--text-color-primary)',
+                          color: isToday ? 'var(--text-on-dark-primary)' : 'var(--text-color-primary)',
                           backgroundColor: isToday ? 'var(--backdrop-secondary)' : 'transparent',
                           borderRadius: isToday ? 'var(--btn-radius, 4px)' : undefined,
                           fontWeight: isToday ? 600 : 400,
@@ -294,7 +294,7 @@ export default async function ContactPage({ params }: PageProps) {
                 height="400"
                 style={{
                   border: 0,
-                  borderRadius: 'var(--card-radius)',
+                  borderRadius: 'var(--radius-base, 0.75rem)',
                 }}
                 allowFullScreen
                 loading="lazy"
@@ -306,7 +306,7 @@ export default async function ContactPage({ params }: PageProps) {
                 className="flex items-center justify-center"
                 style={{
                   height: '400px',
-                  borderRadius: 'var(--card-radius)',
+                  borderRadius: 'var(--radius-base, 0.75rem)',
                   backgroundColor: 'var(--backdrop-secondary)',
                   color: 'var(--text-color-muted)',
                   fontFamily: 'var(--font-body)',

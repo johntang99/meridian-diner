@@ -132,9 +132,9 @@ export default async function GalleryPage({ params }: PageProps) {
                 className="inline-block transition-opacity hover:opacity-80"
                 style={{
                   padding: '0.75rem 1.5rem',
-                  borderRadius: 'var(--btn-radius)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   backgroundColor: 'var(--text-color-accent)',
-                  color: '#1A1A1A',
+                  color: 'var(--primary)',
                   fontFamily: 'var(--font-body)',
                   fontSize: '0.875rem',
                   fontWeight: 600,

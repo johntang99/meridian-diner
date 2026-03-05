@@ -17,7 +17,7 @@ export function LoadingSpinner({ size = 'md', className }: LoadingSpinnerProps) 
     <div className={cn('flex items-center justify-center', className)}>
       <div
         className={cn(
-          'animate-spin rounded-full border-4 border-gray-200 border-t-primary',
+          'animate-spin rounded-full border-4 border-[var(--border-subtle)] border-t-primary',
           sizes[size]
         )}
       />
@@ -40,9 +40,9 @@ export function Skeleton({
   height,
 }: SkeletonProps) {
   const variants = {
-    text: 'h-4 rounded',
+    text: 'h-4 rounded-[var(--radius-base,0.25rem)]',
     circular: 'rounded-full',
-    rectangular: 'rounded-lg',
+    rectangular: 'rounded-[var(--radius-base,0.5rem)]',
   };
   
   const style = {
@@ -53,7 +53,7 @@ export function Skeleton({
   return (
     <div
       className={cn(
-        'animate-pulse bg-gray-200',
+        'animate-pulse bg-[var(--backdrop-secondary)]',
         variants[variant],
         className
       )}
@@ -65,7 +65,7 @@ export function Skeleton({
 // Skeleton variants for common use cases
 export function SkeletonCard() {
   return (
-    <div className="p-6 bg-white rounded-xl shadow-md space-y-4">
+    <div className="p-6 bg-[var(--color-surface)] rounded-[var(--radius-base,0.75rem)] shadow-[var(--shadow-base)] space-y-4">
       <Skeleton variant="rectangular" height={200} />
       <Skeleton variant="text" width="60%" />
       <Skeleton variant="text" width="80%" />
@@ -94,7 +94,7 @@ export function LoadingPage() {
     <div className="min-h-screen flex items-center justify-center">
       <div className="text-center">
         <LoadingSpinner size="xl" />
-        <p className="mt-4 text-gray-600">Loading...</p>
+        <p className="mt-4 text-[var(--text-color-secondary)]">Loading...</p>
       </div>
     </div>
   );

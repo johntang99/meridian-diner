@@ -48,23 +48,23 @@ export default function Accordion({
         return (
           <div
             key={item.id}
-            className="border border-gray-200 rounded-lg overflow-hidden"
+            className="border border-[var(--border-subtle)] rounded-[var(--radius-base,0.75rem)] overflow-hidden"
           >
             {/* Header */}
             <button
               id={`${item.id}-trigger`}
               onClick={() => toggleItem(item.id)}
-              className="w-full flex items-center justify-between p-4 text-left bg-white hover:bg-gray-50 transition-colors"
+              className="w-full flex items-center justify-between p-4 text-left bg-[var(--color-surface)] hover:bg-[var(--backdrop-secondary)] transition-colors"
               aria-expanded={isOpen}
               aria-controls={`${item.id}-content`}
             >
-              <span className="font-semibold text-gray-900">
+              <span className="font-semibold text-[var(--text-color-primary)]">
                 {item.title}
               </span>
               <ChevronDown
                 size={20}
                 className={cn(
-                  'text-gray-500 transition-transform duration-200',
+                  'text-[var(--text-color-muted)] transition-transform duration-200',
                   isOpen && 'rotate-180'
                 )}
               />
@@ -80,7 +80,7 @@ export default function Accordion({
                 isOpen ? 'max-h-[1000px]' : 'max-h-0'
               )}
             >
-              <div className="p-4 pt-0 text-gray-700 bg-gray-50">
+              <div className="p-4 pt-0 text-[var(--text-color-secondary)] bg-[var(--backdrop-secondary)]">
                 {item.content}
               </div>
             </div>

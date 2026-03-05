@@ -70,7 +70,7 @@ export default function MenuItem({
       <div
         className="group overflow-hidden transition-all"
         style={{
-          borderRadius: 'var(--card-radius)',
+          borderRadius: 'var(--radius-base, 0.75rem)',
           boxShadow: 'var(--shadow-card)',
           backgroundColor: 'var(--color-surface)',
         }}
@@ -91,12 +91,12 @@ export default function MenuItem({
           {/* Badges */}
           <div className="absolute top-2 right-2 flex gap-1">
             {seasonal && (
-              <span className="px-2 py-0.5 text-xs font-medium" style={{ borderRadius: 'var(--badge-radius)', backgroundColor: 'var(--color-warning)', color: '#FFF' }}>
+              <span className="px-2 py-0.5 text-small font-medium" style={{ borderRadius: 'var(--badge-radius)', backgroundColor: 'var(--color-warning)', color: 'var(--text-color-inverse)' }}>
                 {locale === 'en' ? 'Seasonal' : locale === 'zh' ? '时令' : 'Temporada'}
               </span>
             )}
             {new_item && (
-              <span className="px-2 py-0.5 text-xs font-medium" style={{ borderRadius: 'var(--badge-radius)', backgroundColor: 'var(--primary)', color: '#F5F0E8' }}>
+              <span className="px-2 py-0.5 text-small font-medium" style={{ borderRadius: 'var(--badge-radius)', backgroundColor: 'var(--primary)', color: 'var(--text-color-inverse)' }}>
                 {locale === 'en' ? 'New' : locale === 'zh' ? '新品' : 'Nuevo'}
               </span>
             )}
@@ -129,7 +129,7 @@ export default function MenuItem({
         style={{ borderBottom: 'var(--menu-divider)' }}
       >
         {/* Photo */}
-        <div className="relative flex-shrink-0 overflow-hidden" style={{ width: '120px', height: '90px', borderRadius: 'var(--card-radius)' }}>
+        <div className="relative flex-shrink-0 overflow-hidden" style={{ width: '120px', height: '90px', borderRadius: 'var(--radius-base, 0.75rem)' }}>
           {image ? (
             <Image src={image} alt={name} fill className="object-cover" sizes="120px" />
           ) : (
@@ -205,12 +205,12 @@ function ItemHeader({
           {name}
         </h4>
         {seasonal && (
-          <span className="px-1.5 py-0.5" style={{ fontSize: '0.625rem', borderRadius: 'var(--badge-radius)', backgroundColor: 'var(--color-warning)', color: '#FFF', fontWeight: 500 }}>
+          <span className="px-1.5 py-0.5 text-small" style={{ borderRadius: 'var(--badge-radius)', backgroundColor: 'var(--color-warning)', color: 'var(--text-color-inverse)', fontWeight: 500 }}>
             {locale === 'en' ? 'Seasonal' : locale === 'zh' ? '时令' : 'Temporada'}
           </span>
         )}
         {new_item && (
-          <span className="px-1.5 py-0.5" style={{ fontSize: '0.625rem', borderRadius: 'var(--badge-radius)', backgroundColor: 'var(--primary)', color: '#F5F0E8', fontWeight: 500 }}>
+          <span className="px-1.5 py-0.5 text-small" style={{ borderRadius: 'var(--badge-radius)', backgroundColor: 'var(--primary)', color: 'var(--text-color-inverse)', fontWeight: 500 }}>
             {locale === 'en' ? 'New' : locale === 'zh' ? '新品' : 'Nuevo'}
           </span>
         )}

@@ -8,7 +8,6 @@ import { buildPageMetadata } from '@/lib/seo';
 import { ServicesPage, Locale } from '@/lib/types';
 import { Badge, Card, CardHeader, CardTitle, CardDescription, CardContent, Icon, Accordion } from '@/components/ui';
 import CTASection from '@/components/sections/CTASection';
-import ServicesSection from '@/components/sections/ServicesSection';
 import HeroSection from '@/components/sections/HeroSection';
 import { HeroVariant } from '@/lib/section-variants';
 import { Award, Users, Shield } from 'lucide-react';
@@ -153,6 +152,14 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
   const isEnabled = (sectionId: string) => !useLayout || layoutOrder.has(sectionId);
   const sectionStyle = (sectionId: string) =>
     useLayout ? { order: layoutOrder.get(sectionId) ?? 0 } : undefined;
+  const sectionSpacingStyle = {
+    paddingTop: 'var(--section-padding-y, 5rem)',
+    paddingBottom: 'var(--section-padding-y, 5rem)',
+  };
+  const tokenSurfaceStyle = {
+    borderRadius: 'var(--radius-base, 0.75rem)',
+    boxShadow: 'var(--shadow-base, 0 4px 20px rgba(0,0,0,0.08))',
+  };
 
   return (
     <main className="min-h-screen flex flex-col">
@@ -168,22 +175,28 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
 
       {/* Overview Section */}
       {isEnabled('overview') && (
-        <section className="py-16 lg:py-24 bg-white" style={sectionStyle('overview')}>
+        <section
+          className="bg-white"
+          style={{ ...(sectionStyle('overview') || {}), ...sectionSpacingStyle }}
+        >
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <p className="text-lg text-gray-700 leading-relaxed mb-12">
+            <p className="text-body text-[var(--text-color-secondary)] leading-relaxed mb-12">
               {overview.introduction}
             </p>
 
-            <div className="bg-gradient-to-br from-primary/5 to-backdrop-primary rounded-2xl p-8 lg:p-12">
-              <h2 className="text-heading font-bold text-gray-900 mb-6">
+            <div
+              className="bg-gradient-to-br from-primary/5 to-backdrop-primary p-8 lg:p-12"
+              style={{ borderRadius: 'var(--radius-base, 0.75rem)' }}
+            >
+              <h2 className="text-heading font-bold text-[var(--text-color-primary)] mb-6">
                 {overviewTitle}
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {overview.benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <Icon name="Check" className="text-primary mt-1 flex-shrink-0" size="sm" />
-                    <span className="text-gray-700">{benefit}</span>
+                    <span className="text-[var(--text-color-secondary)]">{benefit}</span>
                   </div>
                 ))}
               </div>
@@ -195,18 +208,21 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
 
       {/* Services by Category */}
       {isEnabled('services') && categories.length > 0 && services.length > 0 && (
-        <section className="py-16 lg:py-24 bg-white" style={sectionStyle('services')}>
+        <section
+          className="bg-white"
+          style={{ ...(sectionStyle('services') || {}), ...sectionSpacingStyle }}
+        >
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <Badge variant="primary" className="mb-4">
                   {servicesBadge}
                 </Badge>
-                <h2 className="text-heading font-bold text-gray-900 mb-4">
+                <h2 className="text-heading font-bold text-[var(--text-color-primary)] mb-4">
                   {content.servicesList?.title || servicesTitleFallback}
                 </h2>
                 {content.servicesList?.subtitle && (
-                  <p className="text-gray-600">{content.servicesList.subtitle}</p>
+                  <p className="text-[var(--text-color-secondary)]">{content.servicesList.subtitle}</p>
                 )}
               </div>
 
@@ -222,19 +238,22 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
                       <div key={categoryGroup.id} id={categoryGroup.id} className="space-y-6 scroll-mt-32">
                         <div className="grid lg:grid-cols-2 gap-8 items-center">
                           <div className={imageOnRight ? 'lg:order-1' : 'lg:order-2'}>
-                            <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-semibold text-primary mb-4">
+                            <div
+                              className="inline-flex items-center gap-2 border border-primary/20 bg-primary/5 px-3 py-1 text-small font-semibold text-primary mb-4"
+                              style={{ borderRadius: '999px' }}
+                            >
                               <Icon name={categoryGroup.icon as any} size="sm" />
                               <span>{categoryGroup.name}</span>
                             </div>
-                            <h3 className="text-3xl font-bold text-gray-900 mb-2">
+                            <h3 className="text-heading font-bold text-[var(--text-color-primary)] mb-2">
                               {categoryGroup.name}
                             </h3>
                             {categoryGroup.subtitle && (
-                              <p className="text-base font-semibold text-gray-800 mb-3">
+                              <p className="text-body font-semibold text-[var(--text-color-secondary)] mb-3">
                                 {categoryGroup.subtitle}
                               </p>
                             )}
-                            <div className="prose prose-sm max-w-none text-gray-600 leading-relaxed">
+                            <div className="prose prose-sm max-w-none text-[var(--text-color-secondary)] leading-relaxed">
                               <ReactMarkdown
                                 components={{
                                   ul: (props) => <ul className="list-disc pl-5" {...props} />,
@@ -246,7 +265,10 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
                             </div>
                           </div>
                           <div className={imageOnRight ? 'lg:order-2' : 'lg:order-1'}>
-                            <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-md bg-gradient-to-br from-gray-50 to-white">
+                            <div
+                              className="overflow-hidden border border-gray-200 bg-gradient-to-br from-gray-50 to-white"
+                              style={tokenSurfaceStyle}
+                            >
                               {categoryImage ? (
                                 <Image
                                   src={categoryImage}
@@ -274,24 +296,25 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
                             return (
                               <div
                                 key={service.id}
-                                className="bg-white border border-gray-100 rounded-xl p-6 shadow-md hover:border-primary/30 hover:shadow-xl transition-all"
+                                className="bg-white border border-gray-100 p-6 hover:border-primary/30 transition-all"
+                                style={tokenSurfaceStyle}
                               >
                                 <div className={`grid ${hasDetails ? 'lg:grid-cols-3' : ''} gap-6`}>
                                   {/* Column 1: Title & Description */}
                                   <div className="lg:col-span-1">
                                     <div className="flex items-center gap-3 mb-3">
-                                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                                      <div className="w-10 h-10 bg-primary/10 flex items-center justify-center flex-shrink-0" style={{ borderRadius: 'var(--radius-base, 0.5rem)' }}>
                                         <Icon name={service.icon as any} className="text-primary" size="sm" />
                                       </div>
                                       <Link href={`/${locale}${service.link}`} className="group">
-                                        <h4 className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
+                                        <h4 className="text-subheading font-bold text-[var(--text-color-primary)] group-hover:text-primary transition-colors">
                                           {service.title}
                                         </h4>
                                       </Link>
                                     </div>
                                     {service.image ? (
                                       <div className="flex gap-3">
-                                        <div className="w-28 h-28 rounded-lg overflow-hidden flex-shrink-0">
+                                        <div className="w-28 h-28 overflow-hidden flex-shrink-0" style={{ borderRadius: 'var(--radius-base, 0.5rem)' }}>
                                           <Image
                                             src={service.image}
                                             alt={service.title}
@@ -300,12 +323,12 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
                                             className="w-full h-full object-cover"
                                           />
                                         </div>
-                                        <p className="text-gray-600 text-sm">
+                                        <p className="text-[var(--text-color-secondary)] text-small">
                                           {service.shortDescription}
                                         </p>
                                       </div>
                                     ) : (
-                                      <p className="text-gray-600 text-sm">
+                                      <p className="text-[var(--text-color-secondary)] text-small">
                                         {service.shortDescription}
                                       </p>
                                     )}
@@ -314,14 +337,14 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
                                   {/* Column 2: Key Benefits */}
                                   {hasBenefits && (
                                     <div>
-                                      <h5 className="text-sm font-semibold text-gray-900 mb-3">
+                                      <h5 className="text-small font-semibold text-[var(--text-color-primary)] mb-3">
                                         {locale === 'en' ? 'Key Benefits' : '主要优势'}
                                       </h5>
                                       <div className="space-y-2">
                                         {benefits.slice(0, 4).map((benefit: string, idx: number) => (
                                           <div key={idx} className="flex items-start gap-2">
                                             <Icon name="Check" className="text-primary mt-0.5 flex-shrink-0" size="sm" />
-                                            <span className="text-sm text-gray-600">{benefit}</span>
+                                            <span className="text-small text-[var(--text-color-secondary)]">{benefit}</span>
                                           </div>
                                         ))}
                                       </div>
@@ -331,15 +354,15 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
                                   {/* Column 3: What to Expect */}
                                   {hasWhatToExpect && (
                                     <div>
-                                      <h5 className="text-sm font-semibold text-gray-900 mb-3">
+                                      <h5 className="text-small font-semibold text-[var(--text-color-primary)] mb-3">
                                         {locale === 'en' ? 'What to Expect' : '就诊流程'}
                                       </h5>
-                                      <p className="text-sm text-gray-600 mb-4 line-clamp-4">
+                                      <p className="text-small text-[var(--text-color-secondary)] mb-4 line-clamp-4">
                                         {whatToExpect}
                                       </p>
                                       <Link
                                         href={`/${locale}${service.link}`}
-                                        className="inline-flex items-center gap-1 text-primary font-medium text-sm hover:text-primary-dark"
+                                        className="inline-flex items-center gap-1 text-primary font-medium text-small hover:text-primary-dark"
                                       >
                                         <span>{locale === 'en' ? 'Learn More' : '了解更多'}</span>
                                         <Icon name="ChevronRight" size="sm" />
@@ -352,7 +375,7 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
                                     <div className="flex items-center">
                                       <Link
                                         href={`/${locale}${service.link}`}
-                                        className="inline-flex items-center gap-1 text-primary font-medium text-sm hover:text-primary-dark"
+                                        className="inline-flex items-center gap-1 text-primary font-medium text-small hover:text-primary-dark"
                                       >
                                         <span>{locale === 'en' ? 'Learn More' : '了解更多'}</span>
                                         <Icon name="ChevronRight" size="sm" />
@@ -375,14 +398,17 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
 
       {/* FAQ Section */}
       {isEnabled('faq') && (
-        <section className="py-16 lg:py-24 bg-white" style={sectionStyle('faq')}>
+        <section
+          className="bg-white"
+          style={{ ...(sectionStyle('faq') || {}), ...sectionSpacingStyle }}
+        >
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-heading font-bold text-gray-900 mb-4">
+              <h2 className="text-heading font-bold text-[var(--text-color-primary)] mb-4">
                 {faq.title}
               </h2>
-              <p className="text-gray-600">
+              <p className="text-[var(--text-color-secondary)]">
                 {faqSubtitle}
               </p>
             </div>
@@ -402,17 +428,17 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
 
       {isEnabled('relatedReading') && relatedPosts.length > 0 && (
         <section
-          className="py-16 lg:py-24 bg-gradient-to-br from-backdrop-secondary to-white"
-          style={sectionStyle('relatedReading')}
+          className="bg-gradient-to-br from-backdrop-secondary to-white"
+          style={{ ...(sectionStyle('relatedReading') || {}), ...sectionSpacingStyle }}
         >
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-center justify-between gap-4 mb-10">
                 <div>
-                  <h2 className="text-heading font-bold text-gray-900">
+                  <h2 className="text-heading font-bold text-[var(--text-color-primary)]">
                     {relatedReading.title || (locale === 'en' ? 'Related Reading' : '相关阅读')}
                   </h2>
-                  <p className="text-gray-600">
+                  <p className="text-[var(--text-color-secondary)]">
                     {relatedReading.subtitle ||
                       (locale === 'en'
                         ? 'Explore practical guides related to these services.'
@@ -430,12 +456,12 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
               <div className="grid md:grid-cols-3 gap-6">
                 {relatedPosts.map((post) => (
                   <Link key={post.slug} href={`/${locale}/blog/${post.slug}`}>
-                    <Card className="h-full hover:shadow-lg transition-shadow">
+                    <Card className="h-full">
                       <CardHeader>
                         <Badge variant="secondary" size="sm">
                           {post.category || relatedReading.defaultCategory || (locale === 'en' ? 'Guide' : '指南')}
                         </Badge>
-                        <CardTitle className="text-base mt-3 line-clamp-2">
+                        <CardTitle className="text-body mt-3 line-clamp-2">
                           {post.title}
                         </CardTitle>
                         {post.excerpt && (
@@ -462,7 +488,7 @@ export default async function ServicesPageComponent({ params }: ServicesPageProp
             primaryCta={cta.primaryCta}
             secondaryCta={cta.secondaryCta}
             variant={cta.variant || 'centered'}
-            className="py-16 lg:py-24"
+            className=""
           />
         </div>
       )}

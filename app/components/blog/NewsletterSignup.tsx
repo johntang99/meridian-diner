@@ -98,7 +98,7 @@ export default function NewsletterSignup({
           placeholder={placeholder || defaultPlaceholder}
           style={{
             padding: '0.75rem 1rem',
-            borderRadius: 'var(--btn-radius)',
+            borderRadius: 'var(--radius-base, 0.5rem)',
             border: '1px solid var(--border-default)',
             backgroundColor: 'var(--color-surface)',
             fontFamily: 'var(--font-body)',
@@ -113,7 +113,7 @@ export default function NewsletterSignup({
           className="transition-opacity hover:opacity-80"
           style={{
             padding: '0.75rem 1.5rem',
-            borderRadius: 'var(--btn-radius)',
+            borderRadius: 'var(--radius-base, 0.5rem)',
             border: 'none',
             backgroundColor: 'var(--primary)',
             color: 'var(--text-color-inverse)',
@@ -127,7 +127,7 @@ export default function NewsletterSignup({
         </button>
       </form>
       {error && (
-        <p className="mt-2" style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'rgb(180, 40, 40)' }}>
+        <p className="mt-2" style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--color-error)' }}>
           {error}
         </p>
       )}

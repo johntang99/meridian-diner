@@ -147,6 +147,16 @@ export default async function LocaleLayout({
 
   // Generate inline style for theme variables
   const t = theme as any;
+  const spacingDensityMap: Record<string, string> = {
+    compact: '3rem',
+    comfortable: '5rem',
+    spacious: '8rem',
+  };
+  const themeSpacingDensity = String(t?.layout?.spacingDensity || 'comfortable');
+  const themeSectionPaddingY =
+    spacingDensityMap[themeSpacingDensity] || t?.spacing?.sectionPy || '5rem';
+  const themeRadius = t?.shape?.radius || t?.effects?.cardRadius || '8px';
+  const themeShadow = t?.shape?.shadow || t?.effects?.cardShadow || '0 4px 20px rgba(0,0,0,0.08)';
   const themeStyle = t ? `
     :root {
       /* Typography — sizes */
@@ -190,13 +200,24 @@ export default async function LocaleLayout({
       --backdrop-primary: ${t.colors.backdrop.primary};
       --backdrop-secondary: ${t.colors.backdrop.secondary};
       --color-surface: ${t.colors.backdrop?.surface || '#FFFFFF'};
-      --color-overlay: ${t.colors.backdrop?.overlay || 'rgba(0,0,0,0.5)'};
+      --color-overlay: ${t.effects?.heroOverlay || t.colors.backdrop?.overlay || 'rgba(0,0,0,0.5)'};
+      /* Canonical shape/layout tokens */
+      --radius-base: ${themeRadius};
+      --shadow-base: ${themeShadow};
+      --section-padding-y: ${themeSectionPaddingY};
       /* Text Colors */
-      --text-color-primary: ${t.colors.text?.primary || '#1A1A1A'};
-      --text-color-secondary: ${t.colors.text?.secondary || '#4B5563'};
-      --text-color-muted: ${t.colors.text?.muted || '#9CA3AF'};
+      /* Legacy runtime tokens remain dark-surface-safe until full migration */
+      --text-color-primary: ${t.colors.text?.onDarkPrimary || t.colors.text?.primary || '#1A1A1A'};
+      --text-color-secondary: ${t.colors.text?.onDarkSecondary || t.colors.text?.secondary || '#4B5563'};
+      --text-color-muted: ${t.colors.text?.onDarkSecondary || t.colors.text?.muted || '#9CA3AF'};
       --text-color-inverse: ${t.colors.text?.inverse || '#FFFFFF'};
       --text-color-accent: ${t.colors.text?.accent || t.colors.primary.DEFAULT};
+      --text-on-dark-primary: ${t.colors.text?.onDarkPrimary || '#FFFFFF'};
+      --text-on-dark-secondary: ${t.colors.text?.onDarkSecondary || 'rgba(255,255,255,0.9)'};
+      /* Semantic aliases for light surfaces */
+      --heading-on-light: ${t.colors.text?.headingOnLight || '#111827'};
+      --body-on-light: ${t.colors.text?.bodyOnLight || '#4B5563'};
+      --muted-on-light: ${t.colors.text?.mutedOnLight || '#6B7280'};
       /* Border Colors */
       --border-default: ${t.colors.border?.DEFAULT || 'rgba(0,0,0,0.10)'};
       --border-subtle: ${t.colors.border?.subtle || 'rgba(0,0,0,0.05)'};
@@ -207,8 +228,8 @@ export default async function LocaleLayout({
       --color-error: ${t.colors.status?.error || '#EF4444'};
 
       /* Spacing */
-      --section-py: ${t.spacing?.sectionPy || '5rem'};
-      --section-py-sm: ${t.spacing?.sectionPySm || '3.5rem'};
+      --section-py: ${t.spacing?.sectionPy || themeSectionPaddingY};
+      --section-py-sm: ${t.spacing?.sectionPySm || 'calc(var(--section-padding-y, 5rem) * 0.7)'};
       --container-max: ${t.spacing?.containerMax || '1200px'};
       --container-px: ${t.spacing?.containerPx || '2rem'};
       --card-pad: ${t.spacing?.cardPad || '1.5rem'};
@@ -218,10 +239,10 @@ export default async function LocaleLayout({
       --grid-gap: ${t.spacing?.gridGap || '1.5rem'};
 
       /* Effects */
-      --card-radius: ${t.effects?.cardRadius || '8px'};
-      --btn-radius: ${t.effects?.btnRadius || '4px'};
+      --card-radius: ${t.effects?.cardRadius || themeRadius};
+      --btn-radius: ${t.effects?.btnRadius || themeRadius};
       --badge-radius: ${t.effects?.badgeRadius || '4px'};
-      --shadow-card: ${t.effects?.cardShadow || '0 1px 3px rgba(0,0,0,0.1)'};
+      --shadow-card: ${t.effects?.cardShadow || themeShadow};
       --shadow-card-hover: ${t.effects?.cardShadowHover || '0 4px 12px rgba(0,0,0,0.15)'};
       --hero-overlay: ${t.effects?.heroOverlay || 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%)'};
       --menu-divider: ${t.effects?.menuDivider || '1px solid rgba(0,0,0,0.08)'};

@@ -332,6 +332,32 @@ export function ContentEditor({
     loadFiles(initialFilePath);
   }, [siteId, locale, initialFilePath, fileFilter]);
 
+  const withThemeDefaults = (input: Record<string, any>) => {
+    const next = JSON.parse(JSON.stringify(input || {}));
+    if (!next.shape || typeof next.shape !== 'object') {
+      next.shape = {};
+    }
+    if (!next.layout || typeof next.layout !== 'object') {
+      next.layout = {};
+    }
+    if (!next._preset || typeof next._preset !== 'object') {
+      next._preset = {};
+    }
+    if (!next.shape.radius) {
+      next.shape.radius = next.effects?.cardRadius || '8px';
+    }
+    if (!next.shape.shadow) {
+      next.shape.shadow = next.effects?.cardShadow || '0 4px 20px rgba(0,0,0,0.08)';
+    }
+    if (!next.layout.spacingDensity) {
+      next.layout.spacingDensity = 'comfortable';
+    }
+    if (!next._preset.name && next.variantId) {
+      next._preset.name = String(next.variantId);
+    }
+    return next;
+  };
+
   useEffect(() => {
     if (!activeFile) return;
     setLoading(true);
@@ -350,10 +376,17 @@ export function ContentEditor({
       })
       .then((payload) => {
         const nextContent = payload.content || '';
-        setContent(nextContent);
         try {
-          setFormData(JSON.parse(nextContent));
+          let parsed = JSON.parse(nextContent);
+          if (activeFile?.path === 'theme.json') {
+            parsed = withThemeDefaults(parsed);
+            setContent(JSON.stringify(parsed, null, 2));
+          } else {
+            setContent(nextContent);
+          }
+          setFormData(parsed);
         } catch (error) {
+          setContent(nextContent);
           setFormData(null);
         }
       })
@@ -505,6 +538,12 @@ export function ContentEditor({
       }
       parsedContent = nextFormData;
       setFormData(nextFormData);
+    }
+
+    if (activeFile.path === 'theme.json') {
+      parsedContent = withThemeDefaults(parsedContent);
+      setFormData(parsedContent);
+      setContent(JSON.stringify(parsedContent, null, 2));
     }
 
     const isPublishMode = mode === 'publish';
@@ -999,30 +1038,6 @@ export function ContentEditor({
 
   const getPathValueLocal = (path: string[]) =>
     getPathValue(formData, path);
-
-  const renderColorField = (label: string, path: string[]) => {
-    const value = String(getPathValueLocal(path) || '');
-    return (
-      <div className="grid gap-2 md:grid-cols-[1fr_auto] items-center">
-        <div>
-          <label className="block text-xs text-gray-500">{label}</label>
-          <input
-            className="mt-1 w-full rounded-md border border-gray-200 px-3 py-2 text-sm"
-            value={value}
-            onChange={(event) => updateFormValue(path, event.target.value)}
-            placeholder="#000000"
-          />
-        </div>
-        <input
-          type="color"
-          className="mt-6 h-10 w-10 rounded-md border border-gray-200"
-          value={value || '#000000'}
-          onChange={(event) => updateFormValue(path, event.target.value)}
-          aria-label={`${label} color`}
-        />
-      </div>
-    );
-  };
 
   const isSeoFile = activeFile?.path === 'seo.json';
   const isBlogPostFile = activeFile?.path.startsWith('blog/');
@@ -2499,9 +2514,9 @@ export function ContentEditor({
 
               {isThemeFile && formData && (
                 <ThemePanel
+                  formData={formData}
                   getPathValue={getPathValueLocal}
                   updateFormValue={updateFormValue}
-                  renderColorField={renderColorField}
                 />
               )}
 

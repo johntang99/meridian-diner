@@ -99,14 +99,21 @@ function Subline({ text, dark, centered }: { text?: string; dark?: boolean; cent
 export default function PageHero({ hero }: PageHeroProps) {
   const variant = resolveVariant(hero.variant);
   const backgroundImage = hero.gallery?.[0] || hero.image;
+  const heroPaddingStyle = {
+    paddingTop: 'calc(var(--section-padding-y, 5rem) + 2rem)',
+    paddingBottom: 'var(--section-padding-y, 5rem)',
+  };
+  const surfaceTokenStyle = {
+    borderRadius: 'var(--radius-base, 0.75rem)',
+    boxShadow: 'var(--shadow-base, 0 4px 20px rgba(0,0,0,0.08))',
+  };
 
   if (variant === 'split-photo-right') {
     return (
       <section
         className="px-6"
         style={{
-          paddingTop: 'calc(var(--section-py) + 2rem)',
-          paddingBottom: 'var(--section-py-sm)',
+          ...heroPaddingStyle,
           backgroundColor: 'var(--backdrop-secondary)',
         }}
       >
@@ -117,7 +124,7 @@ export default function PageHero({ hero }: PageHeroProps) {
             <Subline text={hero.subline} />
           </div>
           {backgroundImage && (
-            <div className="overflow-hidden" style={{ borderRadius: 'var(--card-radius)', aspectRatio: '4/3' }}>
+            <div className="overflow-hidden" style={{ ...surfaceTokenStyle, aspectRatio: '4/3' }}>
               <Image src={backgroundImage} alt={hero.headline} width={1200} height={900} priority className="w-full h-full object-cover" />
             </div>
           )}
@@ -131,14 +138,13 @@ export default function PageHero({ hero }: PageHeroProps) {
       <section
         className="px-6"
         style={{
-          paddingTop: 'calc(var(--section-py) + 2rem)',
-          paddingBottom: 'var(--section-py-sm)',
+          ...heroPaddingStyle,
           backgroundColor: 'var(--backdrop-secondary)',
         }}
       >
         <div className="mx-auto grid gap-8 md:grid-cols-2 items-center" style={{ maxWidth: 'var(--container-max, 1200px)' }}>
           {backgroundImage && (
-            <div className="overflow-hidden order-2 md:order-1" style={{ borderRadius: 'var(--card-radius)', aspectRatio: '4/3' }}>
+            <div className="overflow-hidden order-2 md:order-1" style={{ ...surfaceTokenStyle, aspectRatio: '4/3' }}>
               <Image src={backgroundImage} alt={hero.headline} width={1200} height={900} priority className="w-full h-full object-cover" />
             </div>
           )}
@@ -158,8 +164,7 @@ export default function PageHero({ hero }: PageHeroProps) {
         className="relative px-6 text-center"
         style={{
           minHeight: 'min(72vh, 720px)',
-          paddingTop: 'calc(var(--section-py) + 2rem)',
-          paddingBottom: 'var(--section-py-sm)',
+          ...heroPaddingStyle,
           backgroundColor: 'var(--backdrop-primary)',
         }}
       >
@@ -173,7 +178,7 @@ export default function PageHero({ hero }: PageHeroProps) {
             sizes="100vw"
           />
         )}
-        <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.48)' }} />
+        <div className="absolute inset-0" style={{ background: 'var(--color-overlay, rgba(0,0,0,0.48))' }} />
         <div className="relative z-10 mx-auto" style={{ maxWidth: '820px', paddingTop: '8rem' }}>
           <Eyebrow text={hero.eyebrow} dark />
           <Headline text={hero.headline} dark />
@@ -188,14 +193,13 @@ export default function PageHero({ hero }: PageHeroProps) {
       <section
         className="px-6"
         style={{
-          paddingTop: 'calc(var(--section-py) + 2rem)',
-          paddingBottom: 'var(--section-py-sm)',
+          ...heroPaddingStyle,
           backgroundColor: 'var(--backdrop-secondary)',
         }}
       >
         <div className="mx-auto" style={{ maxWidth: 'var(--container-max, 1200px)' }}>
           {backgroundImage && (
-            <div className="overflow-hidden" style={{ borderRadius: 'var(--card-radius)', aspectRatio: '16/7' }}>
+            <div className="overflow-hidden" style={{ ...surfaceTokenStyle, aspectRatio: '16/7' }}>
               <Image src={backgroundImage} alt={hero.headline} width={1600} height={700} priority className="w-full h-full object-cover" />
             </div>
           )}
@@ -204,10 +208,10 @@ export default function PageHero({ hero }: PageHeroProps) {
             style={{
               marginTop: '-2.5rem',
               maxWidth: '760px',
-              borderRadius: 'var(--card-radius)',
+              borderRadius: 'var(--radius-base, 0.75rem)',
               backgroundColor: 'var(--color-surface)',
               border: '1px solid var(--border-default)',
-              boxShadow: 'var(--shadow-card, 0 10px 30px rgba(15, 23, 42, 0.08))',
+              boxShadow: 'var(--shadow-base, 0 4px 20px rgba(0,0,0,0.08))',
               padding: '1.5rem 2rem',
             }}
           >
@@ -224,15 +228,14 @@ export default function PageHero({ hero }: PageHeroProps) {
     <section
       className="px-6 text-center"
       style={{
-        paddingTop: 'calc(var(--section-py) + 2rem)',
-        paddingBottom: 'var(--section-py-sm)',
+        ...heroPaddingStyle,
         backgroundColor: 'var(--backdrop-secondary)',
       }}
     >
       {backgroundImage && (
         <div
           className="mx-auto mb-6 overflow-hidden"
-          style={{ maxWidth: '960px', borderRadius: 'var(--card-radius)', aspectRatio: '16/7' }}
+          style={{ maxWidth: '960px', ...surfaceTokenStyle, aspectRatio: '16/7' }}
         >
           <Image
             src={backgroundImage}

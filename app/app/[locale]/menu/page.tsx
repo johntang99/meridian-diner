@@ -282,7 +282,7 @@ export default async function MenuHubPage({ params }: PageProps) {
                 href={`/${locale}/menu/${menu.slug}`}
                 className="group block transition-all"
                 style={{
-                  borderRadius: 'var(--card-radius)',
+                  borderRadius: 'var(--radius-base, 0.75rem)',
                   border: '1px solid var(--border-default)',
                   backgroundColor: 'var(--color-surface)',
                   overflow: 'hidden',
@@ -325,7 +325,7 @@ export default async function MenuHubPage({ params }: PageProps) {
                     fontFamily: 'var(--font-body)',
                     fontSize: '0.875rem',
                     fontWeight: 600,
-                    color: 'var(--primary)',
+                    color: 'var(--text-on-dark-primary)',
                   }}
                 >
                   {locale === 'en' ? 'View Menu' : locale === 'zh' ? '查看菜单' : 'Ver Menú'} →

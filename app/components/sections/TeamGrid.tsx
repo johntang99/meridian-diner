@@ -38,7 +38,7 @@ function ChefProfileCard({ member }: { member: TeamMember }) {
     <div
       className="group overflow-hidden"
       style={{
-        borderRadius: 'var(--card-radius)',
+        borderRadius: 'var(--radius-base, 0.75rem)',
       }}
     >
       {/* Portrait photo */}

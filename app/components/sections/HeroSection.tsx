@@ -63,6 +63,14 @@ export default function HeroSection({
     backgroundImage:
       'linear-gradient(135deg, var(--backdrop-primary), var(--backdrop-secondary), var(--backdrop-primary))',
   };
+  const sectionPaddingStyle = {
+    paddingTop: 'var(--section-padding-y, 5rem)',
+    paddingBottom: 'var(--section-padding-y, 5rem)',
+  };
+  const surfaceTokenStyle = {
+    borderRadius: 'var(--radius-base, 0.75rem)',
+    boxShadow: 'var(--shadow-base, 0 4px 20px rgba(0,0,0,0.08))',
+  };
   
   // Render based on variant
   switch (variant) {
@@ -70,8 +78,8 @@ export default function HeroSection({
       return (
         <>
           <section
-            className={cn('py-20 md:py-28', className)}
-            style={backdropGradientStyle}
+            className={cn(className)}
+            style={{ ...backdropGradientStyle, ...sectionPaddingStyle }}
           >
             <div className="container-custom">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -93,7 +101,7 @@ export default function HeroSection({
                 {/* Image - Right */}
                 {image && (
                   <div className="relative w-full max-w-xl mx-auto lg:mx-0">
-                    <div className="rounded-2xl bg-white/80 shadow-2xl overflow-hidden">
+                    <div className="bg-white/80 overflow-hidden" style={surfaceTokenStyle}>
                       <Image
                         src={image}
                         alt={displayName}
@@ -122,7 +130,7 @@ export default function HeroSection({
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Image - Left */}
             {image && (
-              <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl order-2 md:order-1">
+              <div className="relative h-[400px] md:h-[500px] overflow-hidden order-2 md:order-1" style={surfaceTokenStyle}>
                 <Image
                   src={image}
                   alt={displayName}
@@ -170,9 +178,9 @@ export default function HeroSection({
           )}
           
           {/* Overlapping Content */}
-          <div className="relative z-10 container-custom py-20 md:py-32">
+          <div className="relative z-10 container-custom" style={sectionPaddingStyle}>
             <div className="max-w-2xl">
-              <div className="bg-white/95 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-2xl">
+              <div className="bg-white/95 backdrop-blur-sm p-8 md:p-12" style={surfaceTokenStyle}>
                 <HeroContent
                   businessName={displayName}
                   tagline={tagline}
@@ -198,7 +206,7 @@ export default function HeroSection({
     case 'photo-background':
       return (
         <>
-          <section className={cn('relative min-h-[600px] md:min-h-[700px] pb-16', className)}>
+          <section className={cn('relative min-h-[600px] md:min-h-[700px]', className)} style={{ paddingBottom: 'var(--section-padding-y, 5rem)' }}>
             {/* Background Image */}
             {image && (
               <>
@@ -216,8 +224,8 @@ export default function HeroSection({
             )}
             
             {/* Content */}
-            <div className="relative z-10 container-custom py-20 md:py-32 flex items-center min-h-[600px]">
-              <div className="max-w-3xl mx-auto text-white">
+            <div className="relative z-10 container-custom flex items-center min-h-[600px]" style={sectionPaddingStyle}>
+              <div className="max-w-3xl mx-auto" style={{ color: 'var(--text-on-dark-primary, #fff)' }}>
                 <HeroContent
                   businessName={displayName}
                   tagline={tagline}
@@ -264,8 +272,8 @@ export default function HeroSection({
           )}
           
           {/* Content */}
-          <div className="relative z-10 container-custom py-20 md:py-32 flex items-center min-h-[600px]">
-            <div className="max-w-3xl mx-auto text-white">
+          <div className="relative z-10 container-custom flex items-center min-h-[600px]" style={sectionPaddingStyle}>
+            <div className="max-w-3xl mx-auto" style={{ color: 'var(--text-on-dark-primary, #fff)' }}>
               <HeroContent
                 businessName={displayName}
                 tagline={tagline}
@@ -343,9 +351,11 @@ function HeroContent({
   align,
   theme = 'light',
 }: HeroContentProps) {
-  const textColor = theme === 'dark' ? 'text-white' : 'text-gray-900';
-  const taglineColor = theme === 'dark' ? 'text-white' : 'text-primary';
-  const descColor = theme === 'dark' ? 'text-white/90' : 'text-gray-700';
+  const textColor = theme === 'dark' ? '' : 'text-[var(--text-color-primary)]';
+  const taglineColor = theme === 'dark' ? '' : 'text-primary';
+  const descColor = theme === 'dark' ? '' : 'text-[var(--text-color-secondary)]';
+  const darkTextStyle = theme === 'dark' ? { color: 'var(--text-on-dark-primary, #fff)' } : undefined;
+  const darkSubTextStyle = theme === 'dark' ? { color: 'var(--text-on-dark-secondary, rgba(255,255,255,0.9))' } : undefined;
   
   return (
     <div className={align === 'center' ? 'text-center' : ''}>
@@ -353,27 +363,27 @@ function HeroContent({
       {badgeText && (
         <div className={cn('mb-4', align === 'center' ? 'flex justify-center' : '')}>
           <span className={cn(
-            'inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold',
+            'inline-flex items-center px-3 py-1 rounded-full text-small font-semibold',
             theme === 'dark'
-              ? 'bg-white/20 text-white'
-              : 'bg-primary/10 text-primary'
+              ? 'bg-white/20'
+              : 'bg-[var(--backdrop-secondary)] text-[var(--text-on-dark-primary)]'
           )}>
             {badgeText}
           </span>
         </div>
       )}
       {/* Business Name */}
-      <h1 className={cn('text-display font-bold mb-4 animate-fade-in', textColor)}>
+      <h1 className={cn('text-display font-bold mb-4 animate-fade-in', textColor)} style={darkTextStyle}>
         {businessName}
       </h1>
       
       {/* Tagline */}
-      <p className={cn('text-heading mb-6 animate-fade-in animate-delay-100', taglineColor)}>
+      <p className={cn('text-heading mb-6 animate-fade-in animate-delay-100', taglineColor)} style={darkTextStyle}>
         {tagline}
       </p>
       
       {/* Description */}
-      <p className={cn('text-lg mb-8 max-w-2xl animate-fade-in animate-delay-200', descColor, align === 'center' && 'mx-auto')}>
+      <p className={cn('text-body mb-8 max-w-2xl animate-fade-in animate-delay-200', descColor, align === 'center' && 'mx-auto')} style={darkSubTextStyle}>
         {description}
       </p>
       
@@ -384,11 +394,15 @@ function HeroContent({
             <a 
               href={primaryCta.link}
               className={cn(
-                'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-200 px-8 py-4 text-lg shadow-lg hover:shadow-xl',
-                theme === 'dark' 
-                  ? 'bg-white text-primary hover:bg-gray-100 border-2 border-white' 
-                  : 'bg-primary text-white hover:bg-primary-dark'
+                'inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-subheading',
+                theme === 'dark'
+                  ? 'bg-white text-primary hover:bg-gray-100 border-2 border-white'
+                  : 'bg-primary text-[var(--text-color-inverse)] hover:bg-primary-dark'
               )}
+              style={{
+                borderRadius: 'var(--radius-base, 0.5rem)',
+                boxShadow: 'var(--shadow-base, 0 4px 20px rgba(0,0,0,0.08))',
+              }}
             >
               {primaryCta.text}
             </a>
@@ -397,11 +411,16 @@ function HeroContent({
             <a 
               href={secondaryCta.link}
               className={cn(
-                'inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-200 px-8 py-4 text-lg shadow-lg hover:shadow-xl',
-                theme === 'dark' 
-                  ? 'border-2 border-white text-white hover:bg-white hover:text-primary bg-white/10 backdrop-blur-sm' 
-                  : 'border-2 border-primary text-primary hover:bg-primary hover:text-white'
+                'inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-subheading',
+                theme === 'dark'
+                  ? 'border-2 border-white hover:bg-white hover:text-primary bg-white/10 backdrop-blur-sm'
+                  : 'border-2 border-primary text-primary hover:bg-primary hover:text-[var(--text-color-inverse)]'
               )}
+              style={{
+                borderRadius: 'var(--radius-base, 0.5rem)',
+                boxShadow: 'var(--shadow-base, 0 4px 20px rgba(0,0,0,0.08))',
+                color: theme === 'dark' ? 'var(--text-on-dark-primary, #fff)' : undefined,
+              }}
             >
               {secondaryCta.text}
             </a>
@@ -416,18 +435,21 @@ function HeroContent({
             <span
               key={index}
               className={cn(
-                'inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold',
+                'inline-flex items-center gap-2 rounded-full px-3 py-1 text-small font-semibold',
                 theme === 'dark'
-                  ? 'bg-white/20 text-white'
-                  : 'bg-primary/10 text-primary'
+                  ? 'bg-white/20'
+                  : 'bg-[var(--backdrop-secondary)] text-[var(--text-on-dark-primary)]'
               )}
+              style={theme === 'dark' ? { color: 'var(--text-on-dark-primary, #fff)' } : undefined}
             >
               <CheckCircle2 className={cn(
                 'h-4 w-4',
                 theme === 'dark'
-                  ? 'text-white'
+                  ? ''
                   : 'text-primary'
-              )} />
+              )}
+              style={theme === 'dark' ? { color: 'var(--text-on-dark-primary, #fff)' } : undefined}
+              />
               {tag}
             </span>
           ))}
@@ -448,6 +470,10 @@ interface HeroStatsProps {
 }
 
 function HeroStats({ stats, elevated, style = 'card' }: HeroStatsProps) {
+  const elevatedTokenStyle = {
+    borderRadius: 'var(--radius-base, 0.75rem)',
+    boxShadow: 'var(--shadow-base, 0 4px 20px rgba(0,0,0,0.08))',
+  };
   // Map icon names from stats to actual icon components
   const getIconName = (iconName?: string) => {
     if (!iconName) return 'Award';
@@ -471,22 +497,29 @@ function HeroStats({ stats, elevated, style = 'card' }: HeroStatsProps) {
         <div key={index} className="text-center">
           {/* Icon */}
           <div className="flex justify-center mb-3">
-            <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center">
-              <Icon 
-                name={getIconName(stat.icon) as any} 
-                className="text-white" 
+            <div className="w-12 h-12 md:w-14 md:h-14 bg-white/20 backdrop-blur-sm flex items-center justify-center" style={{ borderRadius: 'var(--radius-base, 0.75rem)' }}>
+              <Icon
+                name={getIconName(stat.icon) as any}
+                className=""
                 size="lg"
+                style={{ color: 'var(--text-on-dark-primary, #fff)' }}
               />
             </div>
           </div>
           
           {/* Number */}
-          <div className="text-3xl md:text-4xl font-bold text-white mb-2">
+          <div
+            className="font-bold mb-2"
+            style={{ color: 'var(--text-on-dark-primary, #fff)' }}
+          >
             {stat.number}
           </div>
           
           {/* Label */}
-          <div className="text-xs md:text-sm text-white/90 font-medium">
+          <div
+            className="text-small font-medium"
+            style={{ color: 'var(--text-on-dark-secondary, rgba(255,255,255,0.9))' }}
+          >
             {stat.label}
           </div>
         </div>
@@ -507,9 +540,11 @@ function HeroStats({ stats, elevated, style = 'card' }: HeroStatsProps) {
   return (
     <div className={cn(
       elevated 
-        ? 'bg-primary rounded-2xl shadow-2xl p-6 md:p-8' 
+        ? 'bg-primary p-6 md:p-8' 
         : 'mt-16'
-    )}>
+    )}
+    style={elevated ? elevatedTokenStyle : undefined}
+    >
       {content}
     </div>
   );
@@ -545,14 +580,17 @@ export function CredentialsSection({ credentials }: CredentialsSectionProps) {
         <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
           {credentials.map((credential, index) => (
             <div key={index} className="flex items-center gap-3">
-              <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+              <div
+                className="w-8 h-8 md:w-10 md:h-10 bg-[var(--backdrop-secondary)] flex items-center justify-center flex-shrink-0"
+                style={{ borderRadius: 'var(--radius-base, 0.5rem)' }}
+              >
                 <Icon 
                   name={getIconName(credential.icon) as any} 
                   className="text-primary" 
                   size="md"
                 />
               </div>
-              <span className="text-sm md:text-base text-gray-700 font-medium whitespace-nowrap">
+              <span className="text-body text-[var(--text-color-secondary)] font-medium whitespace-nowrap">
                 {credential.text}
               </span>
             </div>

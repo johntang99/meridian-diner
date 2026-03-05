@@ -111,7 +111,7 @@ export default async function FAQPage({ params }: PageProps) {
                 fontFamily: 'var(--font-heading)',
                 fontSize: 'var(--text-subheading, 1.25rem)',
                 letterSpacing: 'var(--tracking-heading)',
-                color: 'var(--text-color-primary)',
+                color: 'var(--primary)',
               }}
             >
               {group.heading}
@@ -165,7 +165,7 @@ export default async function FAQPage({ params }: PageProps) {
             className="inline-block transition-opacity hover:opacity-80"
             style={{
               padding: '0.75rem 1.5rem',
-              borderRadius: 'var(--btn-radius)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               backgroundColor: 'var(--primary)',
               color: 'var(--text-color-inverse)',
               fontFamily: 'var(--font-body)',

@@ -233,7 +233,7 @@ export default async function MenuTypePage({ params }: PageProps) {
         >
           <div
             className="mx-auto mb-6 overflow-hidden"
-            style={{ maxWidth: '960px', borderRadius: 'var(--card-radius)', aspectRatio: '16/7' }}
+            style={{ maxWidth: '960px', borderRadius: 'var(--radius-base, 0.75rem)', aspectRatio: '16/7' }}
           >
             <Image
               src={menuData.defaultItemImage || MENU_TYPE_DEFAULT_IMAGES[type]}

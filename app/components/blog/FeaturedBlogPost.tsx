@@ -20,7 +20,7 @@ export default function FeaturedBlogPost({ post, locale = 'en' }: FeaturedBlogPo
       href={`/${locale}/blog/${post.slug}`}
       className="group block overflow-hidden"
       style={{
-        borderRadius: 'var(--card-radius)',
+        borderRadius: 'var(--radius-base, 0.75rem)',
         backgroundColor: 'var(--color-surface)',
         boxShadow: 'var(--shadow-card)',
       }}
@@ -126,7 +126,7 @@ export default function FeaturedBlogPost({ post, locale = 'en' }: FeaturedBlogPo
               style={{
                 fontFamily: 'var(--font-body)',
                 fontSize: '0.875rem',
-                color: 'var(--primary)',
+                color: 'var(--text-on-dark-primary)',
                 fontWeight: 600,
               }}
             >

@@ -70,7 +70,7 @@ export default function TodaySpecialSection({
                     className="inline-flex h-9 w-9 items-center justify-center rounded-full"
                     style={{
                       backgroundColor: 'var(--text-color-accent)',
-                      color: '#1A1A1A',
+                      color: 'var(--text-color-inverse)',
                       fontWeight: 700,
                     }}
                   >
@@ -80,12 +80,12 @@ export default function TodaySpecialSection({
                     <p style={{ color: 'var(--primary)', fontWeight: 700, fontSize: 'var(--text-subheading, 1.5rem)', fontFamily: 'var(--font-heading)' }}>
                       {title}
                     </p>
-                    <p style={{ color: 'var(--text-color-secondary)', fontSize: '0.875rem' }}>
+                    <p style={{ color: 'var(--primary-light)', fontSize: '0.875rem' }}>
                       {locale === 'zh' ? '今日推荐' : locale === 'es' ? 'Especial del dia' : 'Chef selected for today'}
                     </p>
                   </div>
                 </div>
-                <p style={{ color: 'var(--text-color-secondary)', fontSize: '0.9375rem', fontWeight: 600 }}>
+                <p style={{ color: 'var(--primary-light)', fontSize: '0.9375rem', fontWeight: 600 }}>
                   {availabilityLabel}
                 </p>
               </div>
@@ -99,10 +99,10 @@ export default function TodaySpecialSection({
                         key={dayNumber}
                         type="button"
                         onClick={() => setActiveDay(dayNumber)}
-                        className="rounded-full px-5 py-2 text-sm transition-all"
+                        className="rounded-full px-5 py-2 text-small transition-all"
                         style={{
                           border: isActive ? '2px solid var(--text-color-accent)' : '1px solid var(--border-default)',
-                          color: isActive ? 'var(--text-color-accent)' : 'var(--text-color-secondary)',
+                          color: isActive ? 'var(--primary)' : 'var(--text-color-secondary)',
                           backgroundColor: isActive ? 'rgba(201,168,76,0.12)' : 'var(--color-surface)',
                           fontWeight: isActive ? 700 : 500,
                         }}
@@ -121,8 +121,8 @@ export default function TodaySpecialSection({
           )}
 
           <div
-            className="w-full rounded-2xl border border-[var(--border-default)] text-left overflow-hidden"
-            style={{ backgroundColor: 'var(--color-surface)' }}
+            className="w-full border border-[var(--border-default)] text-left overflow-hidden"
+            style={{ backgroundColor: 'var(--color-surface)', borderRadius: 'var(--radius-base, 1rem)' }}
           >
             <div className={`grid gap-0 ${isCompact ? 'md:grid-cols-[0.9fr_1fr]' : 'md:grid-cols-[1.1fr_1fr]'}`}>
               <button
@@ -148,14 +148,14 @@ export default function TodaySpecialSection({
                 </p>
                 {!isCompact && (activeSpecial.includes || []).length > 0 && (
                   <div className="mt-4">
-                    <p className="mb-2 text-sm font-semibold" style={{ color: 'var(--text-color-secondary)' }}>
+                    <p className="mb-2 text-small font-semibold" style={{ color: 'var(--text-color-secondary)' }}>
                       {includesLabel}
                     </p>
                     <ul className="space-y-1.5">
                       {(activeSpecial.includes || []).slice(0, 3).map((item) => (
                         <li
                           key={item}
-                          className="flex items-center gap-2 text-sm"
+                          className="flex items-center gap-2 text-small"
                           style={{ color: 'var(--text-color-primary)' }}
                         >
                           <span
@@ -175,7 +175,7 @@ export default function TodaySpecialSection({
                   <button
                     type="button"
                     onClick={() => setOpen(true)}
-                    className="text-sm"
+                    className="text-small"
                     style={{ color: 'var(--text-color-accent)', fontWeight: 600 }}
                   >
                     {detailsLabel}
@@ -185,18 +185,19 @@ export default function TodaySpecialSection({
                   <div className="mt-5 flex flex-col gap-3 sm:flex-row">
                     <Link
                       href={orderHref}
-                      className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold"
-                      style={{ backgroundColor: 'var(--primary)', color: '#F5F0E8' }}
+                      className="inline-flex items-center justify-center px-5 py-3 text-small font-semibold"
+                      style={{ backgroundColor: 'var(--primary)', color: 'var(--text-color-inverse)', borderRadius: 'var(--radius-base, 0.5rem)' }}
                     >
                       {orderNowLabel}
                     </Link>
                     <a
                       href={callHref}
-                      className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold"
+                      className="inline-flex items-center justify-center px-5 py-3 text-small font-semibold"
                       style={{
                         border: '1px solid var(--text-color-accent)',
                         color: 'var(--text-color-accent)',
                         backgroundColor: 'transparent',
+                        borderRadius: 'var(--radius-base, 0.5rem)',
                       }}
                     >
                       {callNowLabel}
@@ -216,7 +217,7 @@ export default function TodaySpecialSection({
         size="lg"
       >
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+          <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: 'var(--radius-base, 0.75rem)' }}>
             <Image
               src={activeSpecial.image || fallbackImage}
               alt={activeSpecial.name}
@@ -230,7 +231,7 @@ export default function TodaySpecialSection({
               {(activeSpecial.badges || []).map((badge) => (
                 <span
                   key={badge}
-                  className="rounded-full px-3 py-1 text-xs"
+                  className="rounded-full px-3 py-1 text-small"
                   style={{ backgroundColor: 'var(--backdrop-secondary)', color: 'var(--text-color-primary)' }}
                 >
                   {badge}
@@ -240,20 +241,20 @@ export default function TodaySpecialSection({
             <p style={{ color: 'var(--text-color-secondary)' }}>{activeSpecial.description}</p>
             {(activeSpecial.includes || []).length > 0 && (
               <div className="mt-4">
-                <p className="mb-2 text-sm font-semibold">{includesLabel}</p>
-                <ul className="space-y-1 text-sm" style={{ color: 'var(--text-color-secondary)' }}>
+                <p className="mb-2 text-small font-semibold">{includesLabel}</p>
+                <ul className="space-y-1 text-small" style={{ color: 'var(--text-color-secondary)' }}>
                   {activeSpecial.includes?.map((item) => (
                     <li key={item}>- {item}</li>
                   ))}
                 </ul>
               </div>
             )}
-            <p className="mt-4 text-lg font-bold">${activeSpecial.price.toFixed(2)}</p>
+            <p className="mt-4 text-subheading font-bold">${activeSpecial.price.toFixed(2)}</p>
             <div className="mt-6">
               <Link
                 href={`/${locale}/menu/${menuType}`}
-                className="inline-flex items-center rounded-lg px-4 py-2 text-sm font-semibold"
-                style={{ backgroundColor: 'var(--primary)', color: '#F5F0E8' }}
+                className="inline-flex items-center px-4 py-2 text-small font-semibold"
+                style={{ backgroundColor: 'var(--primary)', color: 'var(--text-color-inverse)', borderRadius: 'var(--radius-base, 0.5rem)' }}
               >
                 {activeSpecial.ctaLabel || 'View Menu Category'}
               </Link>

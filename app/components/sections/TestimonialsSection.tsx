@@ -1,4 +1,3 @@
-import { Badge } from '@/components/ui';
 import { Testimonial } from '@/lib/types';
 import { cn } from '@/lib/utils';
 import { Star, ArrowRight } from 'lucide-react';
@@ -35,33 +34,36 @@ export default function TestimonialsSection({
   const single = testimonials[0];
   
   return (
-    <section className={cn('py-20 px-4 bg-gradient-to-b from-white to-gray-50', className)}>
+    <section className={cn('section-padding px-4 bg-[var(--color-surface)]', className)}>
       <div className="container-custom max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
           {badge && (
-            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+            <span className="inline-block px-4 py-2 bg-[var(--backdrop-secondary)] text-[var(--text-on-dark-primary)] rounded-full text-small font-semibold mb-4">
               {badge}
             </span>
           )}
-          <h2 className="text-heading font-bold mb-4">{title}</h2>
-          {subtitle && <p className="text-subheading text-gray-600">{subtitle}</p>}
+          <h2 className="text-heading font-bold mb-4 text-[var(--text-on-dark-primary)]">{title}</h2>
+          {subtitle && <p className="text-subheading text-[var(--text-on-dark-secondary)]">{subtitle}</p>}
         </div>
         
         {variant === 'featured-single' && single ? (
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-2xl p-10 border-2 border-gray-200 shadow-lg">
+            <div
+              className="bg-[var(--color-surface)] p-10 border-2 border-[var(--border-subtle)]"
+              style={{ borderRadius: 'var(--radius-base, 1rem)', boxShadow: 'var(--shadow-base)' }}
+            >
               <div className="flex gap-1 mb-6 justify-center">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5" style={{ fill: 'var(--secondary-light)', color: 'var(--secondary-light)' }} />
                 ))}
               </div>
-              <p className="text-gray-700 italic mb-8 leading-relaxed text-subheading text-center">
+              <p className="text-[var(--text-color-secondary)] italic mb-8 leading-relaxed text-subheading text-center">
                 &ldquo;{single.quote}&rdquo;
               </p>
-              <div className="border-t border-gray-200 pt-4 text-center">
-                <p className="font-semibold text-gray-900">{single.name}</p>
-                <p className="text-sm text-primary">{single.condition}</p>
+              <div className="border-t border-[var(--border-subtle)] pt-4 text-center">
+                <p className="font-semibold text-[var(--text-color-primary)]">{single.name}</p>
+                <p className="text-small text-[var(--text-on-dark-primary)]">{single.condition}</p>
               </div>
             </div>
           </div>
@@ -77,10 +79,11 @@ export default function TestimonialsSection({
               <div
                 key={index}
                 className={cn(
-                  'bg-white rounded-xl p-8 border-2 border-gray-200 hover:border-primary hover:shadow-xl transition-all',
+                  'bg-[var(--color-surface)] p-8 border-2 border-[var(--border-subtle)] hover:border-primary transition-all',
                   variant === 'masonry' && 'break-inside-avoid mb-6',
                   variant === 'slider-vertical' && 'w-full'
                 )}
+                style={{ borderRadius: 'var(--radius-base, 0.75rem)', boxShadow: 'var(--shadow-base)' }}
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -88,13 +91,13 @@ export default function TestimonialsSection({
                   ))}
                 </div>
                 
-                <p className="text-gray-700 italic mb-6 leading-relaxed text-base">
+                <p className="text-[var(--text-color-secondary)] italic mb-6 leading-relaxed text-body">
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 
-                <div className="border-t border-gray-200 pt-4">
-                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-primary">{testimonial.condition}</p>
+                <div className="border-t border-[var(--border-subtle)] pt-4">
+                  <p className="font-semibold text-[var(--text-color-primary)]">{testimonial.name}</p>
+                  <p className="text-small text-[var(--text-on-dark-primary)]">{testimonial.condition}</p>
                 </div>
               </div>
             ))}

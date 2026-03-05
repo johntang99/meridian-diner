@@ -182,7 +182,7 @@ export default function RestaurantFooter({
                   fontFamily: 'var(--font-body)',
                   fontSize: '0.8125rem',
                   lineHeight: 'var(--leading-body, 1.65)',
-                  color: 'var(--text-color-muted)',
+                  color: 'var(--text-on-dark-secondary)',
                 }}
               >
                 {footerConfig?.tagline || siteData?.tagline || ''}
@@ -198,7 +198,7 @@ export default function RestaurantFooter({
                       target="_blank"
                       rel="noreferrer"
                       className="transition-colors hover:opacity-80"
-                      style={{ color: 'var(--text-color-muted)' }}
+                      style={{ color: 'var(--text-on-dark-secondary)' }}
                       aria-label={key}
                     >
                       <Icon className="w-5 h-5" />
@@ -210,7 +210,7 @@ export default function RestaurantFooter({
                       target="_blank"
                       rel="noreferrer"
                       className="transition-colors hover:opacity-80"
-                      style={{ color: 'var(--text-color-muted)', fontFamily: 'var(--font-body)', fontSize: '0.75rem', fontWeight: 700 }}
+                      style={{ color: 'var(--text-on-dark-secondary)', fontFamily: 'var(--font-body)', fontSize: '0.75rem', fontWeight: 700 }}
                       aria-label="Yelp"
                     >
                       Yelp
@@ -294,7 +294,7 @@ export default function RestaurantFooter({
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center gap-1 hover:opacity-80 transition-opacity"
-                      style={{ color: 'var(--primary)', fontSize: '0.8125rem' }}
+                      style={{ color: 'var(--text-on-dark-primary)', fontSize: '0.8125rem' }}
                     >
                       <MapPin className="w-3.5 h-3.5" />
                       {headingLabels.directions}
@@ -361,7 +361,7 @@ export default function RestaurantFooter({
                   className="flex-1 md:w-64 px-4 py-2.5 outline-none transition-all"
                   style={{
                     backgroundColor: 'var(--color-surface)',
-                    borderRadius: 'var(--btn-radius)',
+                    borderRadius: 'var(--radius-base, 0.5rem)',
                     fontFamily: 'var(--font-body)',
                     fontSize: '0.875rem',
                     color: 'var(--text-color-primary)',
@@ -376,7 +376,7 @@ export default function RestaurantFooter({
                   style={{
                     backgroundColor: 'var(--primary)',
                     color: 'var(--text-color-inverse)',
-                    borderRadius: 'var(--btn-radius)',
+                    borderRadius: 'var(--radius-base, 0.5rem)',
                     fontFamily: 'var(--font-body)',
                     fontSize: '0.8125rem',
                     fontWeight: 600,
@@ -404,7 +404,7 @@ export default function RestaurantFooter({
       {/* Bottom Bar */}
       <div style={{ borderTop: 'var(--menu-divider)' }}>
         <div className="mx-auto px-6 py-5" style={{ maxWidth: 'var(--container-max, 1200px)' }}>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-3" style={{ fontSize: '0.75rem', color: 'var(--text-color-muted)' }}>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3" style={{ fontSize: '0.75rem', color: 'var(--text-on-dark-secondary)' }}>
             <div>{copyright}</div>
             {footerConfig?.legal_links && footerConfig.legal_links.length > 0 && (
               <div className="flex gap-6">
@@ -413,7 +413,7 @@ export default function RestaurantFooter({
                     key={link.url}
                     href={localizeUrl(link.url)}
                     className="hover:opacity-80 transition-opacity"
-                    style={{ color: 'var(--text-color-muted)' }}
+                    style={{ color: 'var(--text-on-dark-secondary)' }}
                   >
                     {link.text}
                   </Link>

@@ -32,7 +32,7 @@ export default function ChefHeroFull({
           className="mx-auto grid grid-cols-1 md:grid-cols-2 overflow-hidden"
           style={{
             maxWidth: 'var(--container-max, 1200px)',
-            borderRadius: 'var(--card-radius)',
+            borderRadius: 'var(--radius-base, 0.75rem)',
             backgroundColor: 'var(--backdrop-secondary)',
           }}
         >

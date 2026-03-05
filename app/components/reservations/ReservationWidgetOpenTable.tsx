@@ -41,7 +41,7 @@ export default function ReservationWidgetOpenTable({
         style={{
           maxWidth: '480px',
           padding: 'var(--card-pad, 2rem)',
-          borderRadius: 'var(--card-radius)',
+          borderRadius: 'var(--radius-base, 0.75rem)',
           border: '1px solid var(--border-default)',
           backgroundColor: 'var(--color-surface)',
         }}
@@ -77,7 +77,7 @@ export default function ReservationWidgetOpenTable({
       style={{
         maxWidth: '640px',
         padding: 'var(--card-pad, 2rem)',
-        borderRadius: 'var(--card-radius)',
+        borderRadius: 'var(--radius-base, 0.75rem)',
         border: '1px solid var(--border-default)',
         backgroundColor: 'var(--color-surface)',
       }}
@@ -90,7 +90,7 @@ export default function ReservationWidgetOpenTable({
               className="animate-pulse"
               style={{
                 height: '3rem',
-                borderRadius: 'var(--btn-radius)',
+                borderRadius: 'var(--radius-base, 0.5rem)',
                 backgroundColor: 'var(--backdrop-secondary)',
               }}
             />

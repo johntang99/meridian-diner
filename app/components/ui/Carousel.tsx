@@ -50,7 +50,7 @@ export default function Carousel({
       onMouseLeave={() => setIsPaused(false)}
     >
       {/* Slides */}
-      <div className="overflow-hidden rounded-xl">
+      <div className="overflow-hidden rounded-[var(--radius-base,0.75rem)]">
         <div
           className="flex transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -68,17 +68,17 @@ export default function Carousel({
         <>
           <button
             onClick={goToPrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all hover:scale-110"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-[var(--color-surface)]/90 hover:bg-[var(--color-surface)] p-2 rounded-full shadow-[var(--shadow-base)] transition-all hover:scale-110"
             aria-label="Previous slide"
           >
-            <ChevronLeft size={24} className="text-gray-800" />
+            <ChevronLeft size={24} className="text-[var(--text-color-primary)]" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all hover:scale-110"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-[var(--color-surface)]/90 hover:bg-[var(--color-surface)] p-2 rounded-full shadow-[var(--shadow-base)] transition-all hover:scale-110"
             aria-label="Next slide"
           >
-            <ChevronRight size={24} className="text-gray-800" />
+            <ChevronRight size={24} className="text-[var(--text-color-primary)]" />
           </button>
         </>
       )}
@@ -93,8 +93,8 @@ export default function Carousel({
               className={cn(
                 'w-2 h-2 rounded-full transition-all',
                 currentIndex === index
-                  ? 'bg-white w-8'
-                  : 'bg-white/50 hover:bg-white/75'
+                  ? 'bg-[var(--text-color-inverse)] w-8'
+                  : 'bg-[var(--text-color-inverse)]/50 hover:bg-[var(--text-color-inverse)]/75'
               )}
               aria-label={`Go to slide ${index + 1}`}
             />

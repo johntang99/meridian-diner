@@ -70,10 +70,10 @@ export default function Pagination({
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
         className={cn(
-          'p-2 rounded-lg transition-colors',
+          'p-2 rounded-[var(--radius-base,0.5rem)] transition-colors',
           currentPage === 1
-            ? 'text-gray-300 cursor-not-allowed'
-            : 'text-gray-700 hover:bg-gray-100'
+            ? 'text-[var(--text-color-muted)] cursor-not-allowed opacity-60'
+            : 'text-[var(--text-color-secondary)] hover:bg-[var(--backdrop-secondary)]'
         )}
         aria-label="Previous page"
       >
@@ -85,11 +85,11 @@ export default function Pagination({
         <>
           <button
             onClick={() => onPageChange(1)}
-            className="px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+            className="px-3 py-2 rounded-[var(--radius-base,0.5rem)] text-[var(--text-color-secondary)] hover:bg-[var(--backdrop-secondary)] transition-colors"
           >
             1
           </button>
-          <span className="px-2 text-gray-400">
+          <span className="px-2 text-[var(--text-color-muted)]">
             <MoreHorizontal size={20} />
           </span>
         </>
@@ -99,7 +99,7 @@ export default function Pagination({
       {pageNumbers.map((page, index) => {
         if (typeof page === 'string') {
           return (
-            <span key={`${page}-${index}`} className="px-2 text-gray-400">
+            <span key={`${page}-${index}`} className="px-2 text-[var(--text-color-muted)]">
               <MoreHorizontal size={20} />
             </span>
           );
@@ -110,10 +110,10 @@ export default function Pagination({
             key={page}
             onClick={() => onPageChange(page)}
             className={cn(
-              'min-w-[40px] px-3 py-2 rounded-lg font-medium transition-colors',
+              'min-w-[40px] px-3 py-2 rounded-[var(--radius-base,0.5rem)] font-medium transition-colors',
               currentPage === page
-                ? 'bg-primary text-white'
-                : 'text-gray-700 hover:bg-gray-100'
+                ? 'bg-primary text-[var(--text-color-inverse)]'
+                : 'text-[var(--text-color-secondary)] hover:bg-[var(--backdrop-secondary)]'
             )}
             aria-label={`Page ${page}`}
             aria-current={currentPage === page ? 'page' : undefined}
@@ -126,12 +126,12 @@ export default function Pagination({
       {/* Last Page (optional) */}
       {showFirstLast && currentPage < totalPages - 2 && totalPages > maxVisible && (
         <>
-          <span className="px-2 text-gray-400">
+          <span className="px-2 text-[var(--text-color-muted)]">
             <MoreHorizontal size={20} />
           </span>
           <button
             onClick={() => onPageChange(totalPages)}
-            className="px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+            className="px-3 py-2 rounded-[var(--radius-base,0.5rem)] text-[var(--text-color-secondary)] hover:bg-[var(--backdrop-secondary)] transition-colors"
           >
             {totalPages}
           </button>
@@ -143,10 +143,10 @@ export default function Pagination({
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
         className={cn(
-          'p-2 rounded-lg transition-colors',
+          'p-2 rounded-[var(--radius-base,0.5rem)] transition-colors',
           currentPage === totalPages
-            ? 'text-gray-300 cursor-not-allowed'
-            : 'text-gray-700 hover:bg-gray-100'
+            ? 'text-[var(--text-color-muted)] cursor-not-allowed opacity-60'
+            : 'text-[var(--text-color-secondary)] hover:bg-[var(--backdrop-secondary)]'
         )}
         aria-label="Next page"
       >

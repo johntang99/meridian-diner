@@ -18,7 +18,7 @@ export default function DietaryLegend({ usedFlags }: DietaryLegendProps) {
     <div
       className="flex items-center gap-4 flex-wrap py-3 px-4"
       style={{
-        borderRadius: 'var(--card-radius)',
+        borderRadius: 'var(--radius-base, 0.75rem)',
         backgroundColor: 'var(--menu-list-legend-bg, #F8FAFC)',
         border: '1px solid var(--menu-list-border, #E5E7EB)',
         fontSize: '0.75rem',

@@ -66,7 +66,7 @@ export default function EventsPreview({
                 style={{
                   fontFamily: 'var(--font-body)',
                   fontSize: 'var(--text-body, 1rem)',
-                  color: 'var(--text-color-secondary)',
+                  color: 'var(--body-on-light, #4B5563)',
                 }}
               >
                 {subline}
@@ -82,7 +82,7 @@ export default function EventsPreview({
               key={i}
               className="group overflow-hidden transition-all"
               style={{
-                borderRadius: 'var(--card-radius)',
+                borderRadius: 'var(--radius-base, 0.75rem)',
                 boxShadow: 'var(--shadow-card)',
                 backgroundColor: 'var(--color-surface)',
               }}
@@ -179,7 +179,7 @@ export default function EventsPreview({
                       fontFamily: 'var(--font-body)',
                       fontSize: 'var(--text-small, 0.875rem)',
                       fontWeight: 600,
-                      color: 'var(--primary)',
+                      color: 'var(--text-on-dark-primary)',
                     }}
                   >
                     {locale === 'en' ? 'Learn More' : locale === 'zh' ? '了解更多' : 'Más Info'} →

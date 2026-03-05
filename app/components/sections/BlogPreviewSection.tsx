@@ -36,21 +36,29 @@ export default function BlogPreviewSection({
   };
 
   return (
-    <section className={cn('section-padding bg-white', className)}>
+    <section
+      className={cn('section-padding bg-white', className)}
+      style={{
+        ['--color-surface' as any]: '#FFFFFF',
+        ['--text-color-primary' as any]: 'var(--heading-on-light, #111827)',
+        ['--text-color-secondary' as any]: 'var(--body-on-light, #4B5563)',
+        ['--text-color-muted' as any]: 'var(--muted-on-light, #6B7280)',
+      }}
+    >
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-12">
           {badge && (
             <Badge
               variant="primary"
-              className="mb-4 bg-transparent border-transparent shadow-none px-0 py-0 rounded-none"
+              className="mb-4 bg-transparent border-transparent shadow-none px-0 py-0 rounded-none text-[var(--heading-on-light,#111827)]"
             >
               {badge}
             </Badge>
           )}
-          <h2 className="text-heading font-bold mb-4">{title}</h2>
+          <h2 className="text-heading font-bold mb-4 text-[var(--heading-on-light,#111827)]">{title}</h2>
           {subtitle && (
-            <p className="text-gray-600 max-w-2xl mx-auto">{subtitle}</p>
+            <p className="text-[var(--text-color-secondary)] max-w-2xl mx-auto">{subtitle}</p>
           )}
         </div>
 
@@ -76,7 +84,7 @@ export default function BlogPreviewSection({
           <div className="text-center mt-12">
             <Link
               href={getLocalizedUrl(moreLink.url)}
-              className="text-primary hover:text-primary-dark font-semibold inline-flex items-center gap-2 group"
+              className="text-[var(--heading-on-light,#111827)] hover:opacity-80 font-semibold inline-flex items-center gap-2 group"
             >
               {moreLink.text}
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -169,7 +177,10 @@ function BlogCard({ post, locale, featured, compact, horizontal }: BlogCardProps
           <CardContent className="md:flex gap-6 items-start">
             {/* Image */}
             {post.image && (
-              <div className="relative flex-shrink-0 w-full md:w-48 h-32 bg-gray-200 rounded-lg overflow-hidden mb-4 md:mb-0">
+              <div
+                className="relative flex-shrink-0 w-full md:w-48 h-32 bg-[var(--backdrop-secondary)] overflow-hidden mb-4 md:mb-0"
+                style={{ borderRadius: 'var(--radius-base, 0.5rem)' }}
+              >
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -193,7 +204,7 @@ function BlogCard({ post, locale, featured, compact, horizontal }: BlogCardProps
                   {post.category}
                 </Badge>
                 {post.readTime && (
-                  <span className="text-sm text-gray-500 flex items-center gap-1">
+                  <span className="text-small text-[var(--text-color-muted)] flex items-center gap-1">
                     <Clock size={14} />
                     {post.readTime}
                   </span>
@@ -202,7 +213,7 @@ function BlogCard({ post, locale, featured, compact, horizontal }: BlogCardProps
               <h3 className="text-subheading font-bold mb-2 hover:text-primary transition-colors">
                 {post.title}
               </h3>
-              <p className="text-gray-600 text-sm line-clamp-2">{post.excerpt}</p>
+              <p className="text-[var(--text-color-secondary)] text-small line-clamp-2">{post.excerpt}</p>
             </div>
           </CardContent>
         </Card>
@@ -217,7 +228,10 @@ function BlogCard({ post, locale, featured, compact, horizontal }: BlogCardProps
           <CardContent className="flex gap-4 items-start">
             {/* Small Image */}
             {post.image && (
-              <div className="relative flex-shrink-0 w-20 h-20 bg-gray-200 rounded-lg overflow-hidden">
+              <div
+                className="relative flex-shrink-0 w-20 h-20 bg-[var(--backdrop-secondary)] overflow-hidden"
+                style={{ borderRadius: 'var(--radius-base, 0.5rem)' }}
+              >
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -232,11 +246,11 @@ function BlogCard({ post, locale, featured, compact, horizontal }: BlogCardProps
               <Badge variant="secondary" size="sm" className="mb-2">
                 {post.category}
               </Badge>
-              <h3 className="font-semibold text-sm mb-1 line-clamp-2 hover:text-primary transition-colors">
+              <h3 className="font-semibold text-small mb-1 line-clamp-2 hover:text-primary transition-colors">
                 {post.title}
               </h3>
               {post.readTime && (
-                <span className="text-xs text-gray-500 flex items-center gap-1">
+                <span className="text-small text-[var(--text-color-muted)] flex items-center gap-1">
                   <Clock size={12} />
                   {post.readTime}
                 </span>
@@ -254,9 +268,10 @@ function BlogCard({ post, locale, featured, compact, horizontal }: BlogCardProps
         {/* Image */}
         {post.image && (
           <div className={cn(
-            'relative bg-gray-200 rounded-t-xl overflow-hidden',
+            'relative bg-[var(--backdrop-secondary)] overflow-hidden',
             featured ? 'h-64 lg:h-96' : 'h-48'
-          )}>
+          )}
+          style={{ borderTopLeftRadius: 'var(--radius-base, 0.75rem)', borderTopRightRadius: 'var(--radius-base, 0.75rem)' }}>
             <Image
               src={post.image}
               alt={post.title}
@@ -281,7 +296,7 @@ function BlogCard({ post, locale, featured, compact, horizontal }: BlogCardProps
               {post.category}
             </Badge>
             {post.readTime && (
-              <span className="text-sm text-gray-500 flex items-center gap-1">
+              <span className="text-small text-[var(--text-color-muted)] flex items-center gap-1">
                 <Clock size={14} />
                 {post.readTime}
               </span>
@@ -293,7 +308,7 @@ function BlogCard({ post, locale, featured, compact, horizontal }: BlogCardProps
         </CardHeader>
         
         <CardContent>
-          <p className="text-gray-600 text-sm line-clamp-3">{post.excerpt}</p>
+          <p className="text-[var(--text-color-secondary)] text-small line-clamp-3">{post.excerpt}</p>
         </CardContent>
       </Card>
     </Link>

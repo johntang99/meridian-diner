@@ -22,7 +22,7 @@ export default function WhyChooseUsSection({
   className,
 }: WhyChooseUsSectionProps) {
   return (
-    <section className={cn('section-padding bg-white', className)}>
+    <section className={cn('section-padding bg-[var(--color-surface)]', className)}>
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -33,7 +33,7 @@ export default function WhyChooseUsSection({
           )}
           <h2 className="text-heading font-bold mb-4">{title}</h2>
           {subtitle && (
-            <p className="text-gray-600 max-w-2xl mx-auto">{subtitle}</p>
+            <p className="text-[var(--text-color-secondary)] max-w-2xl mx-auto">{subtitle}</p>
           )}
         </div>
 
@@ -65,7 +65,7 @@ function FeaturesCards({ features }: { features: Feature[] }) {
         <Card key={index} variant="default" hover padding="none" className="relative overflow-hidden">
           {/* Image or Icon */}
           {feature.image ? (
-            <div className="relative w-full aspect-video bg-gray-200">
+            <div className="relative w-full aspect-video bg-[var(--backdrop-secondary)]">
               <Image
                 src={feature.image}
                 alt={feature.title}
@@ -75,7 +75,10 @@ function FeaturesCards({ features }: { features: Feature[] }) {
             </div>
           ) : (
             <div className="p-6 pb-0">
-              <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center mb-4 shadow-lg">
+              <div
+                className="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center mb-4"
+                style={{ borderRadius: 'var(--radius-base, 0.75rem)', boxShadow: 'var(--shadow-base)' }}
+              >
                 <FeatureIcon icon={feature.icon} />
               </div>
             </div>
@@ -86,7 +89,7 @@ function FeaturesCards({ features }: { features: Feature[] }) {
           </CardHeader>
           
           <CardContent className="px-6 pb-6">
-            <p className="text-gray-600">{feature.description}</p>
+            <p className="text-[var(--text-color-secondary)]">{feature.description}</p>
           </CardContent>
         </Card>
       ))}
@@ -98,10 +101,17 @@ function FeaturesGridIcons({ features }: { features: Feature[] }) {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {features.map((feature, index) => (
-        <div key={index} className="flex gap-4 items-start p-6 rounded-xl hover:bg-gray-50 transition-colors">
+        <div
+          key={index}
+          className="flex gap-4 items-start p-6 hover:bg-[var(--backdrop-secondary)] transition-colors"
+          style={{ borderRadius: 'var(--radius-base, 0.75rem)' }}
+        >
           {/* Image or Icon */}
           {feature.image ? (
-            <div className="relative flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden">
+            <div
+              className="relative flex-shrink-0 w-12 h-12 overflow-hidden"
+              style={{ borderRadius: 'var(--radius-base, 0.5rem)' }}
+            >
               <Image
                 src={feature.image}
                 alt={feature.title}
@@ -110,7 +120,10 @@ function FeaturesGridIcons({ features }: { features: Feature[] }) {
               />
             </div>
           ) : (
-            <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center">
+            <div
+              className="flex-shrink-0 w-12 h-12 bg-primary-50 flex items-center justify-center"
+              style={{ borderRadius: 'var(--radius-base, 0.5rem)' }}
+            >
               <FeatureIcon icon={feature.icon} />
             </div>
           )}
@@ -118,7 +131,7 @@ function FeaturesGridIcons({ features }: { features: Feature[] }) {
           {/* Content */}
           <div>
             <h3 className="font-bold mb-2">{feature.title}</h3>
-            <p className="text-sm text-gray-600">{feature.description}</p>
+            <p className="text-small text-[var(--text-color-secondary)]">{feature.description}</p>
           </div>
         </div>
       ))}
@@ -134,7 +147,10 @@ function FeaturesList({ features }: { features: Feature[] }) {
           <CardContent className="flex gap-6 items-start">
             {/* Image or Icon */}
             {feature.image ? (
-              <div className="relative flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden shadow-lg">
+              <div
+                className="relative flex-shrink-0 w-16 h-16 overflow-hidden"
+                style={{ borderRadius: 'var(--radius-base, 0.75rem)', boxShadow: 'var(--shadow-base)' }}
+              >
                 <Image
                   src={feature.image}
                   alt={feature.title}
@@ -143,15 +159,18 @@ function FeaturesList({ features }: { features: Feature[] }) {
                 />
               </div>
             ) : (
-              <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-xl flex items-center justify-center shadow-lg">
-                <FeatureIcon icon={feature.icon} className="text-white" />
+              <div
+                className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary to-primary-dark flex items-center justify-center"
+                style={{ borderRadius: 'var(--radius-base, 0.75rem)', boxShadow: 'var(--shadow-base)' }}
+              >
+                <FeatureIcon icon={feature.icon} className="text-[var(--text-color-inverse)]" />
               </div>
             )}
             
             {/* Content */}
             <div className="flex-1 pt-2">
               <h3 className="text-subheading font-bold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-[var(--text-color-secondary)]">{feature.description}</p>
             </div>
           </CardContent>
         </Card>

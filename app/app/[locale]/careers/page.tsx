@@ -106,7 +106,7 @@ export default async function CareersPage({ params }: PageProps) {
                 fontFamily: 'var(--font-heading)',
                 fontSize: 'var(--text-heading, 2rem)',
                 letterSpacing: 'var(--tracking-heading)',
-                color: 'var(--text-color-primary)',
+                color: 'var(--primary)',
               }}
             >
               {locale === 'en' ? 'Why Work With Us' : locale === 'zh' ? '为什么加入我们' : 'Por Qué Trabajar Con Nosotros'}
@@ -118,7 +118,7 @@ export default async function CareersPage({ params }: PageProps) {
                   className="text-center"
                   style={{
                     padding: 'var(--card-pad, 1.5rem)',
-                    borderRadius: 'var(--card-radius)',
+                    borderRadius: 'var(--radius-base, 0.75rem)',
                     backgroundColor: 'var(--backdrop-secondary)',
                   }}
                 >
@@ -192,7 +192,7 @@ export default async function CareersPage({ params }: PageProps) {
                   key={job.title}
                   style={{
                     padding: 'var(--card-pad, 1.5rem)',
-                    borderRadius: 'var(--card-radius)',
+                    borderRadius: 'var(--radius-base, 0.75rem)',
                     backgroundColor: 'var(--color-surface)',
                     border: '1px solid var(--border-default)',
                   }}
@@ -251,7 +251,7 @@ export default async function CareersPage({ params }: PageProps) {
                     className="inline-block transition-opacity hover:opacity-80"
                     style={{
                       padding: '0.5rem 1.25rem',
-                      borderRadius: 'var(--btn-radius)',
+                      borderRadius: 'var(--radius-base, 0.5rem)',
                       backgroundColor: 'var(--primary)',
                       color: 'var(--text-color-inverse)',
                       fontFamily: 'var(--font-body)',
@@ -265,7 +265,7 @@ export default async function CareersPage({ params }: PageProps) {
               ))}
             </div>
           ) : (
-            <div className="text-center" style={{ padding: 'var(--card-pad, 2rem)', borderRadius: 'var(--card-radius)', backgroundColor: 'var(--color-surface)', border: '1px solid var(--border-default)' }}>
+            <div className="text-center" style={{ padding: 'var(--card-pad, 2rem)', borderRadius: 'var(--radius-base, 0.75rem)', backgroundColor: 'var(--color-surface)', border: '1px solid var(--border-default)' }}>
               <p style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-subheading, 1.125rem)', color: 'var(--text-color-primary)', marginBottom: '0.5rem' }}>
                 {emptyState?.headline || (locale === 'en' ? 'No open positions right now.' : locale === 'zh' ? '暂无开放职位。' : 'No hay posiciones abiertas.')}
               </p>
@@ -277,7 +277,7 @@ export default async function CareersPage({ params }: PageProps) {
                 className="inline-block mt-4 transition-opacity hover:opacity-80"
                 style={{
                   padding: '0.5rem 1.25rem',
-                  borderRadius: 'var(--btn-radius)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   backgroundColor: 'var(--primary)',
                   color: 'var(--text-color-inverse)',
                   fontFamily: 'var(--font-body)',

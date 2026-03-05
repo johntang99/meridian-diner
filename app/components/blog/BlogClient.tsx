@@ -50,7 +50,7 @@ export default function BlogClient({ posts, locale = 'en' }: BlogClientProps) {
               className="transition-colors"
               style={{
                 padding: '0.5rem 1rem',
-                borderRadius: 'var(--btn-radius)',
+                borderRadius: 'var(--radius-base, 0.5rem)',
                 border: 'none',
                 cursor: 'pointer',
                 fontFamily: 'var(--font-body)',
@@ -86,10 +86,10 @@ export default function BlogClient({ posts, locale = 'en' }: BlogClientProps) {
             className="transition-opacity hover:opacity-80"
             style={{
               padding: '0.75rem 2rem',
-              borderRadius: 'var(--btn-radius)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               border: '1px solid var(--border-default)',
               backgroundColor: 'transparent',
-              color: 'var(--text-color-primary)',
+              color: 'var(--primary)',
               fontFamily: 'var(--font-body)',
               fontSize: '0.875rem',
               fontWeight: 600,

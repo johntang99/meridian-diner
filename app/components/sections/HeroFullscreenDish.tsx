@@ -106,7 +106,7 @@ export default function HeroFullscreenDish({
                   fontSize: '0.875rem',
                   fontWeight: 600,
                   letterSpacing: 'var(--tracking-label)',
-                  borderRadius: 'var(--btn-radius)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   backgroundColor: 'var(--primary)',
                   color: 'var(--text-color-inverse)',
                 }}
@@ -123,7 +123,7 @@ export default function HeroFullscreenDish({
                   fontSize: '0.875rem',
                   fontWeight: 600,
                   letterSpacing: 'var(--tracking-label)',
-                  borderRadius: 'var(--btn-radius)',
+                  borderRadius: 'var(--radius-base, 0.5rem)',
                   border: '1px solid var(--border-default)',
                   color: 'var(--text-color-primary)',
                 }}
@@ -213,7 +213,7 @@ export default function HeroFullscreenDish({
               fontFamily: 'var(--font-body)',
               fontSize: '0.75rem',
               letterSpacing: 'var(--tracking-label)',
-              color: 'rgba(245, 240, 232, 0.92)',
+              color: 'var(--text-on-dark-primary, #fff)',
               backgroundColor: 'rgba(17, 17, 17, 0.42)',
               border: '1px solid rgba(245, 240, 232, 0.25)',
               borderRadius: '999px',
@@ -231,7 +231,7 @@ export default function HeroFullscreenDish({
             fontWeight: 'var(--weight-display, 400)' as any,
             letterSpacing: 'var(--tracking-display)',
             lineHeight: 'var(--leading-display, 1.1)',
-            color: '#F5F0E8',
+            color: 'var(--text-on-dark-primary, #fff)',
             maxWidth: '800px',
             margin: '0 auto',
           }}
@@ -245,7 +245,7 @@ export default function HeroFullscreenDish({
               fontFamily: 'var(--font-body)',
               fontSize: 'clamp(1rem, 2vw, 1.25rem)',
               lineHeight: 'var(--leading-body, 1.65)',
-              color: 'rgba(245, 240, 232, 0.85)',
+              color: 'var(--text-on-dark-secondary, rgba(255,255,255,0.9))',
               maxWidth: '600px',
               margin: '0 auto',
             }}
@@ -265,9 +265,9 @@ export default function HeroFullscreenDish({
                 fontSize: '0.875rem',
                 fontWeight: 600,
                 letterSpacing: 'var(--tracking-label)',
-                borderRadius: 'var(--btn-radius)',
+                borderRadius: 'var(--radius-base, 0.5rem)',
                 backgroundColor: 'var(--primary)',
-                color: '#F5F0E8',
+                color: 'var(--text-color-inverse)',
               }}
             >
               {ctaPrimary.text}
@@ -282,9 +282,9 @@ export default function HeroFullscreenDish({
                 fontSize: '0.875rem',
                 fontWeight: 600,
                 letterSpacing: 'var(--tracking-label)',
-                borderRadius: 'var(--btn-radius)',
+                borderRadius: 'var(--radius-base, 0.5rem)',
                 border: '1px solid rgba(245, 240, 232, 0.4)',
-                color: '#F5F0E8',
+                color: 'var(--text-on-dark-primary, #fff)',
               }}
             >
               {ctaSecondary.text}
@@ -296,7 +296,7 @@ export default function HeroFullscreenDish({
       {/* Scroll Indicator */}
       {showScrollIndicator && (
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-6 h-6" style={{ color: 'rgba(245, 240, 232, 0.6)' }} />
+          <ChevronDown className="w-6 h-6" style={{ color: 'var(--text-on-dark-secondary, rgba(255,255,255,0.75))' }} />
         </div>
       )}
     </section>

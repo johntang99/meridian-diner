@@ -63,7 +63,7 @@ export default function TrustBar({ variant = 'logos-only', items }: TrustBarProp
             <div
               key={i}
               className="flex items-center gap-2 transition-all hover:opacity-100 group"
-              style={{ opacity: 0.6 }}
+              style={{ opacity: 0.9 }}
             >
               {item.logo ? (
                 <Image
@@ -81,7 +81,7 @@ export default function TrustBar({ variant = 'logos-only', items }: TrustBarProp
                     fontFamily: 'var(--font-body)',
                     fontSize: '0.6875rem',
                     letterSpacing: '0.1em',
-                    color: 'var(--text-color-muted)',
+                    color: 'var(--text-on-dark-secondary)',
                   }}
                 >
                   {item.label}

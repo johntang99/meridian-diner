@@ -41,7 +41,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
         {label && (
           <label
             htmlFor={selectId}
-            className="text-sm font-medium text-gray-700"
+            className="text-small font-medium text-[var(--text-color-secondary)]"
           >
             {label}
           </label>
@@ -52,9 +52,9 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
             ref={ref}
             id={selectId}
             className={cn(
-              'block w-full appearance-none rounded-lg border border-gray-300 bg-white px-4 py-2.5 pr-10 text-gray-900 transition-colors',
+              'block w-full appearance-none rounded-[var(--radius-base,0.5rem)] border border-[var(--border-default)] bg-[var(--color-surface)] px-4 py-2.5 pr-10 text-[var(--text-color-primary)] transition-colors',
               'focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20',
-              'disabled:bg-gray-100 disabled:cursor-not-allowed',
+              'disabled:bg-[var(--backdrop-secondary)] disabled:cursor-not-allowed',
               error && 'border-red-500 focus:border-red-500 focus:ring-red-500/20',
               className
             )}
@@ -81,17 +81,17 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
             )}
           </select>
           
-          <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400">
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-[var(--text-color-muted)]">
             <ChevronDown size={20} />
           </div>
         </div>
         
         {error && (
-          <p className="text-sm text-red-600">{error}</p>
+          <p className="text-small text-[var(--color-error)]">{error}</p>
         )}
         
         {helperText && !error && (
-          <p className="text-sm text-gray-500">{helperText}</p>
+          <p className="text-small text-[var(--text-color-muted)]">{helperText}</p>
         )}
       </div>
     );

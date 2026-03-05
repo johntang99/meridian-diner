@@ -91,10 +91,11 @@ export default function WeeklySpecialsSection({
                   key={`${special.day}-${special.name}-${index}`}
                   type="button"
                   onClick={() => setSelectedSpecial(special)}
-                  className={`flex-shrink-0 rounded-xl border p-0 text-left overflow-hidden transition-opacity hover:opacity-90 ${isCompact ? 'w-[260px]' : 'w-[300px]'}`}
+                  className={`flex-shrink-0 border p-0 text-left overflow-hidden transition-opacity hover:opacity-90 ${isCompact ? 'w-[260px]' : 'w-[300px]'}`}
                   style={{
                     borderColor: today ? 'var(--primary)' : 'var(--border-default)',
                     backgroundColor: 'var(--color-surface)',
+                    borderRadius: 'var(--radius-base, 0.75rem)',
                   }}
                 >
                   <div className={`relative ${isCompact ? 'aspect-[4/3]' : 'aspect-[16/10]'}`}>
@@ -135,7 +136,7 @@ export default function WeeklySpecialsSection({
       >
         {selectedSpecial && (
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+            <div className="relative aspect-[4/3] overflow-hidden" style={{ borderRadius: 'var(--radius-base, 0.75rem)' }}>
               <Image
                 src={selectedSpecial.image || fallbackImage}
                 alt={selectedSpecial.name}
@@ -149,28 +150,28 @@ export default function WeeklySpecialsSection({
                 {(selectedSpecial.badges || []).map((badge) => (
                   <span
                     key={badge}
-                    className="rounded-full px-3 py-1 text-xs"
+                    className="rounded-full px-3 py-1 text-small"
                     style={{ backgroundColor: 'var(--backdrop-secondary)', color: 'var(--text-color-primary)' }}
                   >
                     {badge}
                   </span>
                 ))}
               </div>
-              <h3 className="text-xl font-bold">{selectedSpecial.name}</h3>
+              <h3 className="text-subheading font-bold">{selectedSpecial.name}</h3>
               <p className="mt-2" style={{ color: 'var(--text-color-secondary)' }}>
                 {selectedSpecial.description}
               </p>
               {(selectedSpecial.includes || []).length > 0 && (
                 <div className="mt-4">
-                  <p className="mb-2 text-sm font-semibold">Includes</p>
-                  <ul className="space-y-1 text-sm" style={{ color: 'var(--text-color-secondary)' }}>
+                  <p className="mb-2 text-small font-semibold">Includes</p>
+                  <ul className="space-y-1 text-small" style={{ color: 'var(--text-color-secondary)' }}>
                     {selectedSpecial.includes?.map((item) => (
                       <li key={item}>- {item}</li>
                     ))}
                   </ul>
                 </div>
               )}
-              <p className="mt-4 text-lg font-bold">${selectedSpecial.price.toFixed(2)}</p>
+              <p className="mt-4 text-subheading font-bold">${selectedSpecial.price.toFixed(2)}</p>
             </div>
           </div>
         )}

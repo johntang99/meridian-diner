@@ -11,6 +11,7 @@ import ReservationsCTA from '@/components/sections/ReservationsCTA';
 
 interface EventItem {
   id: string;
+  slug?: string;
   title: string;
   description?: string;
   shortDescription?: string;
@@ -35,6 +36,10 @@ interface PageProps {
   params: { locale: Locale; slug: string };
 }
 
+function matchesEventSlug(event: EventItem, slug: string): boolean {
+  return event.id === slug || event.slug === slug;
+}
+
 function formatFullDate(dateStr: string, locale: string): string {
   const d = new Date(dateStr);
   if (locale === 'zh') return d.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' });
@@ -54,7 +59,7 @@ export async function generateMetadata({ params }: PageProps) {
   let eventsData = await loadContent<EventsData>(siteId, locale, 'events/events.json');
   if (!eventsData && locale !== 'en') eventsData = await loadContent<EventsData>(siteId, 'en', 'events/events.json');
 
-  const event = eventsData?.events?.find((e) => (e.id === slug) && e.published !== false);
+  const event = eventsData?.events?.find((e) => matchesEventSlug(e, slug) && e.published !== false);
   if (!event) return {};
 
   const siteInfo = await loadSiteInfo(siteId, locale) as SiteInfo | null;
@@ -77,7 +82,7 @@ export default async function EventDetailPage({ params }: PageProps) {
   if (!eventsData && locale !== 'en') eventsData = await loadContent<EventsData>(siteId, 'en', 'events/events.json');
 
   const events = eventsData?.events || [];
-  const event = events.find((e) => e.id === slug && e.published !== false);
+  const event = events.find((e) => matchesEventSlug(e, slug) && e.published !== false);
 
   if (!event) notFound();
 
@@ -224,12 +229,12 @@ export default async function EventDetailPage({ params }: PageProps) {
               <div
                 className="mb-6 px-4 py-3"
                 style={{
-                  borderRadius: 'var(--card-radius)',
+                  borderRadius: 'var(--radius-base, 0.75rem)',
                   backgroundColor: 'rgba(220, 50, 50, 0.1)',
                   border: '1px solid rgba(220, 50, 50, 0.3)',
                   fontFamily: 'var(--font-body)',
                   fontSize: 'var(--text-small, 0.875rem)',
-                  color: 'rgb(180, 40, 40)',
+                  color: 'var(--color-error)',
                   fontWeight: 600,
                 }}
               >
@@ -249,7 +254,7 @@ export default async function EventDetailPage({ params }: PageProps) {
                   fontFamily: 'var(--font-body)',
                   fontSize: 'var(--text-body, 1rem)',
                   lineHeight: 'var(--leading-body, 1.65)',
-                  color: 'var(--text-color-secondary)',
+                  color: 'var(--body-on-light, #4B5563)',
                 }}
               >
                 {p}
@@ -263,9 +268,9 @@ export default async function EventDetailPage({ params }: PageProps) {
               className="lg:sticky lg:top-32"
               style={{
                 padding: 'var(--card-pad, 1.5rem)',
-                borderRadius: 'var(--card-radius)',
+                borderRadius: 'var(--radius-base, 0.75rem)',
                 border: '1px solid var(--border-default)',
-                backgroundColor: 'var(--color-surface)',
+                backgroundColor: 'var(--backdrop-secondary)',
               }}
             >
               {/* Date */}
@@ -277,13 +282,13 @@ export default async function EventDetailPage({ params }: PageProps) {
                     fontSize: '0.7rem',
                     letterSpacing: 'var(--tracking-label)',
                     textTransform: 'uppercase',
-                    color: 'var(--text-color-muted)',
+                    color: 'var(--text-on-dark-secondary)',
                     fontWeight: 600,
                   }}
                 >
                   {locale === 'en' ? 'Date' : locale === 'zh' ? '日期' : 'Fecha'}
                 </h3>
-                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--text-color-primary)', fontWeight: 600 }}>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--text-on-dark-primary)', fontWeight: 600 }}>
                   {formatFullDate(event.startDatetime, locale)}
                 </p>
               </div>
@@ -297,13 +302,13 @@ export default async function EventDetailPage({ params }: PageProps) {
                     fontSize: '0.7rem',
                     letterSpacing: 'var(--tracking-label)',
                     textTransform: 'uppercase',
-                    color: 'var(--text-color-muted)',
+                    color: 'var(--text-on-dark-secondary)',
                     fontWeight: 600,
                   }}
                 >
                   {locale === 'en' ? 'Time' : locale === 'zh' ? '时间' : 'Hora'}
                 </h3>
-                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--text-color-primary)' }}>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--text-on-dark-primary)' }}>
                   {formatTime(event.startDatetime, locale)}
                   {event.endDatetime && ` – ${formatTime(event.endDatetime, locale)}`}
                 </p>
@@ -318,16 +323,16 @@ export default async function EventDetailPage({ params }: PageProps) {
                     fontSize: '0.7rem',
                     letterSpacing: 'var(--tracking-label)',
                     textTransform: 'uppercase',
-                    color: 'var(--text-color-muted)',
+                    color: 'var(--text-on-dark-secondary)',
                     fontWeight: 600,
                   }}
                 >
                   {locale === 'en' ? 'Location' : locale === 'zh' ? '地点' : 'Ubicación'}
                 </h3>
-                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--text-color-primary)' }}>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--text-on-dark-primary)' }}>
                   {getSiteDisplayName(siteInfo, 'The Meridian')}
                 </p>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-color-muted)' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-on-dark-secondary)' }}>
                   {siteInfo?.address}
                 </p>
               </div>
@@ -342,13 +347,13 @@ export default async function EventDetailPage({ params }: PageProps) {
                       fontSize: '0.7rem',
                       letterSpacing: 'var(--tracking-label)',
                       textTransform: 'uppercase',
-                      color: 'var(--text-color-muted)',
+                      color: 'var(--text-on-dark-secondary)',
                       fontWeight: 600,
                     }}
                   >
                     {locale === 'en' ? 'Price' : locale === 'zh' ? '价格' : 'Precio'}
                   </h3>
-                  <p style={{ fontFamily: 'var(--font-body)', color: 'var(--primary)', fontWeight: 600 }}>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'var(--text-on-dark-primary)', fontWeight: 600 }}>
                     {priceLabel}
                   </p>
                 </div>
@@ -361,7 +366,7 @@ export default async function EventDetailPage({ params }: PageProps) {
                   style={{
                     fontFamily: 'var(--font-body)',
                     fontSize: '0.8rem',
-                    color: 'var(--text-color-muted)',
+                    color: 'var(--text-on-dark-secondary)',
                     fontStyle: 'italic',
                   }}
                 >
@@ -381,9 +386,9 @@ export default async function EventDetailPage({ params }: PageProps) {
                     className="block text-center transition-opacity hover:opacity-80"
                     style={{
                       padding: '0.875rem',
-                      borderRadius: 'var(--btn-radius)',
+                      borderRadius: 'var(--radius-base, 0.5rem)',
                       backgroundColor: 'var(--primary)',
-                      color: 'var(--text-color-inverse)',
+                      color: 'var(--text-on-dark-primary)',
                       fontFamily: 'var(--font-body)',
                       fontSize: '0.875rem',
                       fontWeight: 600,

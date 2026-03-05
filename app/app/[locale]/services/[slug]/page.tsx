@@ -88,13 +88,18 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
 
   const isTransparentMenu = headerConfig?.menu?.variant === 'transparent';
   const heroTopPaddingClass = isTransparentMenu ? 'pt-30 md:pt-36' : 'pt-16 md:pt-20';
+  const heroBottomSpacingStyle = { paddingBottom: 'var(--section-padding-y, 5rem)' };
+  const tokenSurfaceStyle = {
+    borderRadius: 'var(--radius-base, 0.75rem)',
+    boxShadow: 'var(--shadow-base, 0 4px 20px rgba(0,0,0,0.08))',
+  };
   const heroVariant = service.heroVariant || 'centered';
   const hasHeroImage = Boolean(service.image && !service.image.startsWith('/images/'));
   const isSplitHero = heroVariant === 'split-photo-right' || heroVariant === 'split-photo-left';
   const isPhotoBackground = heroVariant === 'photo-background' && hasHeroImage;
 
-  const breadcrumb = (textColorClass = 'text-gray-500') => (
-    <nav className={`flex items-center gap-2 text-sm ${textColorClass} mb-8`}>
+  const breadcrumb = (textColorClass = 'text-[var(--text-color-muted)]') => (
+    <nav className={`flex items-center gap-2 text-small ${textColorClass} mb-8`}>
       <Link href={`/${locale}`} className="hover:text-primary transition-colors">
         Home
       </Link>
@@ -103,7 +108,10 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
         Services
       </Link>
       <Icon name="ChevronRight" size="sm" />
-      <span className={isPhotoBackground ? 'text-white font-medium' : 'text-gray-900 font-medium'}>
+      <span
+        className={isPhotoBackground ? 'font-medium' : 'text-[var(--text-color-primary)] font-medium'}
+        style={isPhotoBackground ? { color: 'var(--text-on-dark-primary, #fff)' } : undefined}
+      >
         {service.title}
       </span>
     </nav>
@@ -129,18 +137,31 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
     </div>
   );
 
-  const heroTextContent = (titleClass = 'text-gray-900', subtitleClass = 'text-[var(--brand)]') => (
+  const heroTextContent = (titleClass = 'text-[var(--text-color-primary)]', subtitleClass = 'text-[var(--brand)]') => (
     <>
       <div className="flex items-start gap-4 mb-6">
         {service.icon && (
-          <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+          <div
+            className="w-14 h-14 bg-primary/10 flex items-center justify-center flex-shrink-0"
+            style={{ borderRadius: 'var(--radius-base, 0.75rem)' }}
+          >
             <Icon name={service.icon as any} className="text-primary" />
           </div>
         )}
         <div>
-          <h1 className={`text-display font-bold ${titleClass} mb-2`}>{service.title}</h1>
+          <h1
+            className={`text-display font-bold ${titleClass} mb-2`}
+            style={isPhotoBackground ? { color: 'var(--text-on-dark-primary, #fff)' } : undefined}
+          >
+            {service.title}
+          </h1>
           {service.subtitle && (
-            <p className={`text-subheading ${subtitleClass} font-medium`}>{service.subtitle}</p>
+            <p
+              className={`text-subheading ${subtitleClass} font-medium`}
+              style={isPhotoBackground ? { color: 'var(--text-on-dark-secondary, rgba(255,255,255,0.9))' } : undefined}
+            >
+              {service.subtitle}
+            </p>
           )}
         </div>
       </div>
@@ -171,7 +192,10 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
       )}
       {/* Hero */}
       {isPhotoBackground ? (
-        <section className={`relative min-h-[400px] ${heroTopPaddingClass} pb-16 md:pb-20 px-4`}>
+        <section
+          className={`relative min-h-[400px] ${heroTopPaddingClass} px-4`}
+          style={heroBottomSpacingStyle}
+        >
           <Image
             src={service.image!}
             alt={service.title}
@@ -179,15 +203,16 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0" style={{ background: 'var(--color-overlay, rgba(0,0,0,0.5))' }} />
           <div className="container mx-auto max-w-4xl relative z-10">
-            {breadcrumb('text-gray-300')}
-            {heroTextContent('text-white', 'text-white/80')}
+            {breadcrumb('text-[var(--text-on-dark-secondary)]')}
+            {heroTextContent('', '')}
           </div>
         </section>
       ) : isSplitHero && hasHeroImage ? (
         <section
-          className={`relative bg-gradient-to-br from-[var(--backdrop-primary)] via-[var(--backdrop-secondary)] to-[var(--backdrop-primary)] ${heroTopPaddingClass} pb-16 md:pb-20 px-4`}
+          className={`relative bg-gradient-to-br from-[var(--backdrop-primary)] via-[var(--backdrop-secondary)] to-[var(--backdrop-primary)] ${heroTopPaddingClass} px-4`}
+          style={heroBottomSpacingStyle}
         >
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-10 right-10 w-64 h-64 bg-primary-100 rounded-full blur-3xl" />
@@ -200,7 +225,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
                 {heroTextContent()}
               </div>
               <div className={heroVariant === 'split-photo-left' ? 'lg:order-1' : ''}>
-                <div className="rounded-2xl overflow-hidden shadow-xl">
+                <div className="overflow-hidden" style={tokenSurfaceStyle}>
                   <Image
                     src={service.image!}
                     alt={service.title}
@@ -217,7 +242,8 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
       ) : (
         /* Default centered hero */
         <section
-          className={`relative bg-gradient-to-br from-[var(--backdrop-primary)] via-[var(--backdrop-secondary)] to-[var(--backdrop-primary)] ${heroTopPaddingClass} pb-16 md:pb-20 px-4`}
+          className={`relative bg-gradient-to-br from-[var(--backdrop-primary)] via-[var(--backdrop-secondary)] to-[var(--backdrop-primary)] ${heroTopPaddingClass} px-4`}
+          style={heroBottomSpacingStyle}
         >
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-10 right-10 w-64 h-64 bg-primary-100 rounded-full blur-3xl" />
@@ -238,7 +264,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
             {service.fullDescription && (
               <div className="mb-12">
                 {service.fullDescription.split('\n\n').map((paragraph, i) => (
-                  <p key={i} className="text-gray-700 leading-relaxed mb-5 last:mb-0 text-lg">
+                  <p key={i} className="text-[var(--text-color-secondary)] leading-relaxed mb-5 last:mb-0 text-body">
                     {paragraph}
                   </p>
                 ))}
@@ -248,17 +274,21 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
             {/* Benefits */}
             {service.benefits && service.benefits.length > 0 && (
               <div className="mb-12">
-                <h2 className="text-heading font-bold text-gray-900 mb-6">Key Benefits</h2>
+                <h2 className="text-heading font-bold text-[var(--text-color-primary)] mb-6">Key Benefits</h2>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {service.benefits.map((benefit, i) => (
                     <div
                       key={i}
-                      className="flex items-start gap-3 p-4 bg-gradient-to-br from-primary/5 to-transparent rounded-xl"
+                      className="flex items-start gap-3 p-4 bg-gradient-to-br from-primary/5 to-transparent"
+                      style={{ borderRadius: 'var(--radius-base, 0.75rem)' }}
                     >
-                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div
+                        className="w-6 h-6 bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5"
+                        style={{ borderRadius: '9999px' }}
+                      >
                         <Icon name="Check" className="text-primary" size="sm" />
                       </div>
-                      <span className="text-gray-700">{benefit}</span>
+                      <span className="text-[var(--text-color-secondary)]">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -268,9 +298,9 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
             {/* What to Expect */}
             {service.whatToExpect && (
               <div className="mb-12">
-                <h2 className="text-heading font-bold text-gray-900 mb-6">What to Expect</h2>
-                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-                  <p className="text-gray-700 leading-relaxed text-lg">{service.whatToExpect}</p>
+                <h2 className="text-heading font-bold text-[var(--text-color-primary)] mb-6">What to Expect</h2>
+                <div className="bg-gray-50 p-8 border border-gray-100" style={tokenSurfaceStyle}>
+                  <p className="text-[var(--text-color-secondary)] leading-relaxed text-body">{service.whatToExpect}</p>
                 </div>
               </div>
             )}
@@ -278,7 +308,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
             {/* FAQ */}
             {service.faq && service.faq.length > 0 && (
               <div className="mb-12">
-                <h2 className="text-heading font-bold text-gray-900 mb-6">
+                <h2 className="text-heading font-bold text-[var(--text-color-primary)] mb-6">
                   Frequently Asked Questions
                 </h2>
                 <Accordion
@@ -300,25 +330,25 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
         <section className="py-16 lg:py-24 bg-gradient-to-br from-[var(--backdrop-secondary)] to-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-heading font-bold text-gray-900 mb-8 text-center">
+              <h2 className="text-heading font-bold text-[var(--text-color-primary)] mb-8 text-center">
                 Explore Other Services
               </h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {otherServices.map((s) => (
                   <Link key={s.slug} href={`/${locale}/services/${s.slug}`}>
-                    <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer group">
+                    <Card className="h-full transition-shadow cursor-pointer group">
                       <CardHeader>
                         {s.icon && (
-                          <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
+                          <div className="w-12 h-12 bg-primary/10 flex items-center justify-center mb-3" style={{ borderRadius: 'var(--radius-base, 0.75rem)' }}>
                             <Icon name={s.icon as any} className="text-primary" />
                           </div>
                         )}
-                        <CardTitle className="text-lg group-hover:text-primary transition-colors">
+                        <CardTitle className="text-subheading group-hover:text-primary transition-colors">
                           {s.title}
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-sm text-gray-600 line-clamp-2">{s.shortDescription}</p>
+                        <p className="text-small text-[var(--text-color-secondary)] line-clamp-2">{s.shortDescription}</p>
                       </CardContent>
                     </Card>
                   </Link>

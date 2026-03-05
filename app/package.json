@@ -18,9 +18,16 @@
     "qa:routes": "node scripts/qa/route-check.mjs",
     "qa:seo": "node scripts/qa/seo-check.mjs",
     "qa:links": "node scripts/qa/link-check.mjs",
+    "qa:theme": "node scripts/qa/theme-compliance-check.mjs --scope=pages",
+    "qa:theme:deep": "node scripts/qa/theme-compliance-check.mjs --scope=all",
+    "qa:contrast": "node scripts/qa/contrast-audit.mjs --inventory=extended --site-id=meridian-diner --locale=en",
+    "qa:contrast:extended": "node scripts/qa/contrast-audit.mjs --inventory=extended --site-id=meridian-diner --locale=en",
+    "qa:contrast:exhaustive": "node scripts/qa/contrast-audit.mjs --inventory=exhaustive --site-id=meridian-diner --locale=en",
+    "qa:contrast:routes": "node scripts/qa/contrast-audit.mjs --inventory=exhaustive --site-id=meridian-diner --locale=en --list-routes-only=true",
+    "qa:contrast:critical": "node scripts/qa/contrast-audit.mjs --routes=/,/en,/en/menu,/en/about,/en/events,/en/gallery,/en/reservations,/en/reservations/private-dining,/en/contact,/en/blog,/en/careers,/en/gift-cards,/en/faq,/en/privacy,/en/terms",
     "qa:media": "node scripts/qa/media-check.mjs",
     "qa:content": "node scripts/qa/content-check.mjs",
-    "qa:all": "npm run qa:content && npm run qa:media && npm run qa:schema && npm run qa:routes && npm run qa:seo && npm run qa:links"
+    "qa:all": "npm run qa:content && npm run qa:media && npm run qa:theme && npm run qa:contrast:critical && npm run qa:schema && npm run qa:routes && npm run qa:seo && npm run qa:links"
   },
   "dependencies": {
     "@fullcalendar/daygrid": "^6.1.20",
@@ -47,6 +54,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.1",
     "@types/bcryptjs": "^2.4.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/negotiator": "^0.6.3",
@@ -55,6 +63,7 @@
     "@types/react-dom": "^18.2.18",
     "@types/uuid": "^10.0.0",
     "autoprefixer": "^10.4.17",
+    "playwright": "^1.58.2",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"

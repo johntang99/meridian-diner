@@ -83,8 +83,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   for (const locale of locales) {
     for (const event of events) {
+      const eventRouteId = event.slug || event.id;
+      if (!eventRouteId) continue;
       entries.push({
-        url: new URL(`/${locale}/events/${event.id}`, baseUrl).toString(),
+        url: new URL(`/${locale}/events/${eventRouteId}`, baseUrl).toString(),
         lastModified: now,
         changeFrequency: 'weekly' as const,
         priority: 0.7,

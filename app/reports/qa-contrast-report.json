@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-03-05T10:14:21.090Z",
+  "baseUrl": "http://localhost:3021",
+  "routes": [
+    "/en"
+  ],
+  "totals": {
+    "routes": 1,
+    "contrastViolations": 0,
+    "routeErrors": 0
+  },
+  "results": [
+    {
+      "route": "/en",
+      "url": "http://localhost:3021/en",
+      "status": "ok",
+      "contrastViolations": 0,
+      "violations": []
+    }
+  ]
+}

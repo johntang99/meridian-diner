@@ -71,12 +71,12 @@ export default function PrivateDiningForm({
   const inputStyle = {
     width: '100%',
     padding: '0.75rem',
-    borderRadius: 'var(--btn-radius)',
+    borderRadius: 'var(--radius-base, 0.5rem)',
     border: '1px solid var(--border-default)',
-    backgroundColor: 'var(--color-surface)',
+    backgroundColor: '#FFFFFF',
     fontFamily: 'var(--font-body)',
     fontSize: '0.875rem',
-    color: 'var(--text-color-primary)',
+    color: 'var(--primary)',
   };
 
   const labelStyle = {
@@ -85,13 +85,13 @@ export default function PrivateDiningForm({
     fontFamily: 'var(--font-body)',
     fontSize: '0.8rem',
     fontWeight: 600 as const,
-    color: 'var(--text-color-primary)',
+    color: 'var(--primary)',
   };
 
   const errorStyle = {
     fontFamily: 'var(--font-body)',
     fontSize: '0.75rem',
-    color: 'rgb(180, 40, 40)',
+    color: 'var(--color-error)',
     marginTop: '0.25rem',
   };
 
@@ -104,13 +104,13 @@ export default function PrivateDiningForm({
         >
           ✓
         </div>
-        <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-subheading, 1.25rem)', color: 'var(--text-color-primary)', marginBottom: '0.5rem' }}>
+        <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-subheading, 1.25rem)', color: 'var(--primary)', marginBottom: '0.5rem' }}>
           {locale === 'en' ? "We've received your enquiry." : locale === 'zh' ? '我们已收到您的咨询。' : 'Hemos recibido su consulta.'}
         </h3>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-small, 0.875rem)', color: 'var(--text-color-secondary)', marginBottom: '1rem' }}>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-small, 0.875rem)', color: 'var(--primary-light)', marginBottom: '1rem' }}>
           {locale === 'en' ? 'Our private dining team will contact you within 24 hours.' : locale === 'zh' ? '我们的私人餐饮团队将在24小时内与您联系。' : 'Nuestro equipo de comedor privado se comunicará con usted dentro de 24 horas.'}
         </p>
-        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-color-muted)' }}>
+        <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--primary-light)' }}>
           {locale === 'en' ? 'Reference:' : locale === 'zh' ? '参考编号：' : 'Referencia:'} {refNumber}
         </p>
       </div>
@@ -126,7 +126,7 @@ export default function PrivateDiningForm({
             fontFamily: 'var(--font-heading)',
             fontSize: 'var(--text-heading, 2rem)',
             letterSpacing: 'var(--tracking-heading)',
-            color: 'var(--text-color-primary)',
+            color: 'var(--primary)',
           }}
         >
           {headline}
@@ -138,7 +138,7 @@ export default function PrivateDiningForm({
           style={{
             fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-small, 0.875rem)',
-            color: 'var(--text-color-secondary)',
+            color: 'var(--primary-light)',
           }}
         >
           {description}
@@ -236,10 +236,10 @@ export default function PrivateDiningForm({
             className="transition-opacity hover:opacity-80"
             style={{
               padding: '0.875rem 2.5rem',
-              borderRadius: 'var(--btn-radius)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               border: 'none',
               backgroundColor: 'var(--primary)',
-              color: 'var(--text-color-inverse)',
+              color: 'var(--text-on-dark-primary)',
               fontFamily: 'var(--font-body)',
               fontSize: '0.875rem',
               fontWeight: 600,

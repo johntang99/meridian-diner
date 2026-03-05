@@ -33,15 +33,23 @@ export default function LanguageSwitcher({ currentLocale, variant = 'default' }:
           <span key={lang.code} className="flex items-center">
             <button
               onClick={() => handleLocaleChange(lang.code)}
-              className={`text-sm transition-colors ${
+              className={`text-small transition-colors ${
                 currentLocale === lang.code
-                  ? 'text-white font-semibold'
-                  : 'text-white/70 hover:text-white'
+                  ? 'font-semibold'
+                  : ''
               }`}
+              style={{
+                color:
+                  currentLocale === lang.code
+                    ? 'var(--text-on-dark-primary, #fff)'
+                    : 'var(--text-on-dark-secondary, rgba(255,255,255,0.9))',
+              }}
             >
               {lang.label}
             </button>
-            {i < languages.length - 1 && <span className="text-white/40 mx-1">|</span>}
+            {i < languages.length - 1 && (
+              <span className="mx-1" style={{ color: 'var(--text-on-dark-secondary, rgba(255,255,255,0.65))' }}>|</span>
+            )}
           </span>
         ))}
       </div>
@@ -49,15 +57,18 @@ export default function LanguageSwitcher({ currentLocale, variant = 'default' }:
   }
 
   return (
-    <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden">
+    <div
+      className="flex items-center border border-[var(--border-default)] overflow-hidden"
+      style={{ borderRadius: 'var(--radius-base, 0.5rem)' }}
+    >
       {languages.map((lang) => (
         <button
           key={lang.code}
           onClick={() => handleLocaleChange(lang.code)}
-          className={`px-2.5 py-1.5 text-sm font-medium transition-colors ${
+          className={`px-2.5 py-1.5 text-small font-medium transition-colors ${
             currentLocale === lang.code
-              ? 'bg-primary text-white'
-              : 'bg-white text-gray-700 hover:bg-gray-100'
+              ? 'bg-primary text-[var(--text-color-inverse)]'
+              : 'bg-[var(--color-surface)] text-[var(--text-color-secondary)] hover:bg-[var(--backdrop-secondary)]'
           }`}
         >
           {lang.label}

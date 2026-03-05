@@ -22,18 +22,18 @@ export default function Breadcrumb({
   separator,
   className,
 }: BreadcrumbProps) {
-  const defaultSeparator = <ChevronRight size={16} className="text-gray-400" />;
+  const defaultSeparator = <ChevronRight size={16} className="text-[var(--text-color-muted)]" />;
   const sep = separator || defaultSeparator;
   
   return (
-    <nav className={cn('flex items-center space-x-2 text-sm', className)} aria-label="Breadcrumb">
+    <nav className={cn('flex items-center space-x-2 text-small', className)} aria-label="Breadcrumb">
       <ol className="flex items-center space-x-2">
         {showHome && (
           <>
             <li>
               <Link
                 href={homeHref}
-                className="text-gray-500 hover:text-primary transition-colors flex items-center"
+                className="text-[var(--text-color-secondary)] hover:text-primary transition-colors flex items-center"
               >
                 <Home size={16} />
               </Link>
@@ -50,12 +50,12 @@ export default function Breadcrumb({
               {item.href && !isLast ? (
                 <Link
                   href={item.href}
-                  className="text-gray-500 hover:text-primary transition-colors"
+                  className="text-[var(--text-color-secondary)] hover:text-primary transition-colors"
                 >
                   {item.label}
                 </Link>
               ) : (
-                <span className={cn(isLast ? 'text-gray-900 font-medium' : 'text-gray-500')}>
+                <span className={cn(isLast ? 'text-[var(--text-color-primary)] font-medium' : 'text-[var(--text-color-secondary)]')}>
                   {item.label}
                 </span>
               )}

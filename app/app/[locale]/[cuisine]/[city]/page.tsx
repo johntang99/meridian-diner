@@ -276,7 +276,7 @@ export default async function ProgrammaticSEOPage({ params }: PageProps) {
             className="transition-opacity hover:opacity-80"
             style={{
               padding: '0.75rem 2rem',
-              borderRadius: 'var(--btn-radius)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               backgroundColor: 'var(--primary)',
               color: 'var(--text-color-inverse)',
               fontFamily: 'var(--font-body)',
@@ -291,7 +291,7 @@ export default async function ProgrammaticSEOPage({ params }: PageProps) {
             className="transition-opacity hover:opacity-80"
             style={{
               padding: '0.75rem 2rem',
-              borderRadius: 'var(--btn-radius)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               border: '1px solid var(--border-default)',
               backgroundColor: 'transparent',
               color: 'var(--text-color-primary)',
@@ -578,7 +578,7 @@ export default async function ProgrammaticSEOPage({ params }: PageProps) {
                     key={event.id}
                     style={{
                       padding: 'var(--card-pad, 1.5rem)',
-                      borderRadius: 'var(--card-radius)',
+                      borderRadius: 'var(--radius-base, 0.75rem)',
                       backgroundColor: 'var(--color-surface)',
                       border: '1px solid var(--border-default)',
                     }}
@@ -666,7 +666,7 @@ export default async function ProgrammaticSEOPage({ params }: PageProps) {
             className="transition-opacity hover:opacity-80 inline-block"
             style={{
               padding: '0.75rem 2.5rem',
-              borderRadius: 'var(--btn-radius)',
+              borderRadius: 'var(--radius-base, 0.5rem)',
               backgroundColor: 'var(--color-surface)',
               color: 'var(--primary)',
               fontFamily: 'var(--font-body)',

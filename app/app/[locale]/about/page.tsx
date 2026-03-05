@@ -244,7 +244,7 @@ export default async function AboutPage({ params }: PageProps) {
                   className="text-center"
                   style={{
                     padding: 'var(--card-pad, 2rem)',
-                    borderRadius: 'var(--card-radius)',
+                    borderRadius: 'var(--radius-base, 0.75rem)',
                     backgroundColor: 'var(--color-surface)',
                   }}
                 >
@@ -326,7 +326,7 @@ export default async function AboutPage({ params }: PageProps) {
                     style={{
                       width: '180px',
                       height: '180px',
-                      borderRadius: 'var(--card-radius)',
+                      borderRadius: 'var(--radius-base, 0.75rem)',
                       backgroundColor: 'var(--backdrop-secondary)',
                     }}
                   >
@@ -423,7 +423,7 @@ export default async function AboutPage({ params }: PageProps) {
                   className="text-center"
                   style={{
                     padding: 'var(--card-pad, 1.5rem)',
-                    borderRadius: 'var(--card-radius)',
+                    borderRadius: 'var(--radius-base, 0.75rem)',
                     border: '1px solid var(--border-default)',
                     backgroundColor: 'var(--color-surface)',
                   }}

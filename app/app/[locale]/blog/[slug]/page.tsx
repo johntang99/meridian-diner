@@ -156,7 +156,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
                 fontWeight: 'var(--weight-display, 400)' as any,
                 letterSpacing: 'var(--tracking-display)',
                 lineHeight: 'var(--leading-display, 1.1)',
-                color: 'var(--text-color-primary)',
+                color: 'var(--text-on-dark-primary)',
               }}
             >
               {post.title}
@@ -196,11 +196,11 @@ export default async function BlogArticlePage({ params }: PageProps) {
                 </div>
               )}
               <div>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.875rem', fontWeight: 600, color: 'var(--text-color-primary)' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.875rem', fontWeight: 600, color: 'var(--heading-on-light, #111827)' }}>
                   {post.author}
                 </p>
                 {authorMember?.role && (
-                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.75rem', color: 'var(--text-color-muted)' }}>
+                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.75rem', color: 'var(--muted-on-light, #6B7280)' }}>
                     {authorMember.role}
                   </p>
                 )}
@@ -209,14 +209,14 @@ export default async function BlogArticlePage({ params }: PageProps) {
 
             {/* Date */}
             {post.publishDate && (
-              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-color-muted)' }}>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--muted-on-light, #6B7280)' }}>
                 {formatArticleDate(post.publishDate, locale)}
               </span>
             )}
 
             {/* Read time */}
             {post.readTime && (
-              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-color-muted)' }}>
+              <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--muted-on-light, #6B7280)' }}>
                 {post.readTime} {locale === 'en' ? 'read' : locale === 'zh' ? '阅读' : 'lectura'}
               </span>
             )}
@@ -234,7 +234,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
                 fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-body, 1rem)',
                 lineHeight: 1.8,
-                color: 'var(--text-color-secondary)',
+                color: 'var(--body-on-light, #4B5563)',
               }}
               dangerouslySetInnerHTML={{ __html: post.body }}
             />
@@ -245,7 +245,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
                 fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-body, 1rem)',
                 lineHeight: 1.8,
-                color: 'var(--text-color-secondary)',
+                color: 'var(--body-on-light, #4B5563)',
               }}
             >
               {post.excerpt}
@@ -263,7 +263,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
                     fontSize: '0.75rem',
                     borderRadius: 'var(--badge-radius)',
                     backgroundColor: 'var(--backdrop-secondary)',
-                    color: 'var(--text-color-muted)',
+                    color: 'var(--text-on-dark-secondary)',
                     fontFamily: 'var(--font-body)',
                   }}
                 >
@@ -343,7 +343,7 @@ export default async function BlogArticlePage({ params }: PageProps) {
                 fontFamily: 'var(--font-heading)',
                 fontSize: 'var(--text-heading, 2rem)',
                 letterSpacing: 'var(--tracking-heading)',
-                color: 'var(--text-color-primary)',
+                color: 'var(--heading-on-light, #111827)',
               }}
             >
               {locale === 'en' ? 'You Might Also Enjoy' : locale === 'zh' ? '您可能还会喜欢' : 'También Podría Interesarte'}

@@ -28,7 +28,7 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
         {label && (
           <label
             htmlFor={textareaId}
-            className="text-sm font-medium text-gray-700"
+            className="text-small font-medium text-[var(--text-color-secondary)]"
           >
             {label}
           </label>
@@ -38,10 +38,10 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
           ref={ref}
           id={textareaId}
           className={cn(
-            'block w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-gray-900 transition-colors',
-            'placeholder:text-gray-400',
+            'block w-full rounded-[var(--radius-base,0.5rem)] border border-[var(--border-default)] bg-[var(--color-surface)] px-4 py-2.5 text-[var(--text-color-primary)] transition-colors',
+            'placeholder:text-[var(--text-color-muted)]',
             'focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20',
-            'disabled:bg-gray-100 disabled:cursor-not-allowed',
+            'disabled:bg-[var(--backdrop-secondary)] disabled:cursor-not-allowed',
             'resize-y min-h-[100px]',
             error && 'border-red-500 focus:border-red-500 focus:ring-red-500/20',
             className
@@ -50,11 +50,11 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
         />
         
         {error && (
-          <p className="text-sm text-red-600">{error}</p>
+          <p className="text-small text-[var(--color-error)]">{error}</p>
         )}
         
         {helperText && !error && (
-          <p className="text-sm text-gray-500">{helperText}</p>
+          <p className="text-small text-[var(--text-color-muted)]">{helperText}</p>
         )}
       </div>
     );
