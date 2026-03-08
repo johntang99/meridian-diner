@@ -38,6 +38,29 @@ function isColorLikeValue(value: unknown): boolean {
   );
 }
 
+function toPickerHex(value: string): string {
+  const v = value.trim();
+  if (/^#([0-9a-f]{6})$/i.test(v)) return v;
+  const shortHex = v.match(/^#([0-9a-f]{3})$/i);
+  if (shortHex) {
+    const expanded = shortHex[1]
+      .split('')
+      .map((c) => `${c}${c}`)
+      .join('');
+    return `#${expanded}`;
+  }
+
+  const rgb = v.match(
+    /^rgba?\(\s*([01]?\d?\d|2[0-4]\d|25[0-5])\s*,\s*([01]?\d?\d|2[0-4]\d|25[0-5])\s*,\s*([01]?\d?\d|2[0-4]\d|25[0-5])(?:\s*,\s*(0|1|0?\.\d+))?\s*\)$/i
+  );
+  if (rgb) {
+    const toHex = (n: string) => Number(n).toString(16).padStart(2, '0');
+    return `#${toHex(rgb[1])}${toHex(rgb[2])}${toHex(rgb[3])}`;
+  }
+
+  return '#000000';
+}
+
 export function ThemePanel({ formData, getPathValue, updateFormValue }: ThemePanelProps) {
   const orderedCategories = Object.keys(formData || {});
 
@@ -72,6 +95,8 @@ export function ThemePanel({ formData, getPathValue, updateFormValue }: ThemePan
   const renderPrimitiveField = (label: string, path: string[], value: any, asColor = false) => {
     const stringValue = value == null ? '' : String(value);
     const isBoolean = typeof value === 'boolean';
+    const colorInputId = `theme-color-${path.join('-').replace(/[^a-zA-Z0-9-_]/g, '-')}`;
+    const pickerValue = toPickerHex(stringValue || '#000000');
     return (
       <div key={path.join('.')} className="grid gap-2 md:grid-cols-[1fr_auto] items-center min-w-0">
         <div>
@@ -93,12 +118,27 @@ export function ThemePanel({ formData, getPathValue, updateFormValue }: ThemePan
             />
           )}
         </div>
-        {asColor && (
-          <div
-            className="mt-6 h-10 w-10 rounded-md border border-gray-200"
-            style={{ background: stringValue || 'transparent' }}
-            title={stringValue || 'No color'}
-          />
+        {asColor && !isBoolean && (
+          <div className="mt-6">
+            <button
+              type="button"
+              className="h-10 w-10 rounded-md border border-gray-200 cursor-pointer"
+              style={{ background: stringValue || 'transparent' }}
+              title="Pick color"
+              onClick={() => {
+                const input = document.getElementById(colorInputId) as HTMLInputElement | null;
+                if (input) input.click();
+              }}
+            />
+            <input
+              id={colorInputId}
+              type="color"
+              className="sr-only"
+              value={pickerValue}
+              onChange={(event) => updateFormValue(path, event.target.value.toUpperCase())}
+              aria-label={`${label} color picker`}
+            />
+          </div>
         )}
       </div>
     );

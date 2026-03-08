@@ -1,40 +1,31 @@
-import Link from 'next/link';
-import {
-  BookOpen,
-  Building2,
-  Calendar,
-  FileText,
-  Image,
-  Layers,
-  LayoutGrid,
-  Newspaper,
-  Rocket,
-  Settings,
-  SlidersHorizontal,
-  Users,
-  UsersRound,
-  UtensilsCrossed,
-  ImageIcon,
-} from 'lucide-react';
 import { getSession } from '@/lib/admin/auth';
 import { isSuperAdmin } from '@/lib/admin/permissions';
+import { AdminSidebarNav } from './AdminSidebarNav';
+import type { IconKey } from './AdminSidebarNav';
 
-const navigation = [
-  { name: 'Onboarding', href: '/admin/onboarding', icon: Rocket },
-  { name: 'Sites', href: '/admin/sites', icon: Building2 },
-  { name: 'Site Settings', href: '/admin/site-settings', icon: SlidersHorizontal },
-  { name: 'Content', href: '/admin/content', icon: FileText },
-  { name: 'Menu', href: '/admin/menu', icon: UtensilsCrossed },
-  { name: 'Events', href: '/admin/events', icon: Calendar },
-  { name: 'Gallery', href: '/admin/gallery', icon: ImageIcon },
-  { name: 'Blog Posts', href: '/admin/blog-posts', icon: BookOpen },
-  { name: 'Press', href: '/admin/press', icon: Newspaper },
-  { name: 'Team', href: '/admin/team', icon: UsersRound },
-  { name: 'Media', href: '/admin/media', icon: Image },
-  { name: 'Components', href: '/admin/components', icon: LayoutGrid },
-  { name: 'Variants', href: '/admin/variants', icon: Layers },
-  { name: 'Users', href: '/admin/users', icon: Users },
-  { name: 'Settings', href: '/admin/settings', icon: Settings },
+const navigation: Array<{
+  name: string;
+  href: string;
+  iconKey: IconKey;
+  group: 'site' | 'system';
+  preserveContext?: boolean;
+}> = [
+  { name: 'Site Settings', href: '/admin/site-settings', iconKey: 'slidersHorizontal', group: 'site' },
+  { name: 'Content', href: '/admin/content', iconKey: 'fileText', group: 'site' },
+  { name: 'Menu', href: '/admin/menu', iconKey: 'utensilsCrossed', group: 'site' },
+  { name: 'Events', href: '/admin/events', iconKey: 'calendar', group: 'site' },
+  { name: 'Gallery', href: '/admin/gallery', iconKey: 'imageIcon', group: 'site' },
+  { name: 'Blog Posts', href: '/admin/blog-posts', iconKey: 'bookOpen', group: 'site' },
+  { name: 'Press', href: '/admin/press', iconKey: 'newspaper', group: 'site' },
+  { name: 'Team', href: '/admin/team', iconKey: 'usersRound', group: 'site' },
+  { name: 'Media', href: '/admin/media', iconKey: 'image', group: 'site' },
+
+  { name: 'Onboarding', href: '/admin/onboarding', iconKey: 'rocket', group: 'system', preserveContext: false },
+  { name: 'Sites', href: '/admin/sites', iconKey: 'building2', group: 'system', preserveContext: false },
+  { name: 'Components', href: '/admin/components', iconKey: 'layoutGrid', group: 'system', preserveContext: false },
+  { name: 'Variants', href: '/admin/variants', iconKey: 'layers', group: 'system', preserveContext: false },
+  { name: 'Users', href: '/admin/users', iconKey: 'users', group: 'system', preserveContext: false },
+  { name: 'Settings', href: '/admin/settings', iconKey: 'settings', group: 'system', preserveContext: false },
 ];
 
 export async function AdminSidebar() {
@@ -46,18 +37,7 @@ export async function AdminSidebar() {
       <div className="flex items-center h-16 px-6 border-b border-gray-200">
         <span className="text-lg font-semibold">Admin Dashboard</span>
       </div>
-      <nav className="flex-1 overflow-y-auto px-4 py-6 space-y-2">
-        {items.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-gray-100"
-          >
-            <item.icon className="w-4 h-4 text-gray-500" />
-            {item.name}
-          </Link>
-        ))}
-      </nav>
+      <AdminSidebarNav items={items} />
     </aside>
   );
 }

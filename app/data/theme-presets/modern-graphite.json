@@ -1,0 +1,120 @@
+{
+  "variantId": "modern-graphite",
+  "_preset": {
+    "id": "modern-graphite",
+    "name": "Modern Graphite",
+    "category": "modern",
+    "description": "Clean contemporary look with graphite neutrals, electric blue accents, and compact rhythm."
+  },
+  "colors": {
+    "primary": {
+      "DEFAULT": "#1F2937",
+      "dark": "#111827",
+      "light": "#374151",
+      "50": "#F3F4F6",
+      "100": "#E5E7EB"
+    },
+    "secondary": {
+      "DEFAULT": "#0EA5E9",
+      "dark": "#0284C7",
+      "light": "#38BDF8",
+      "50": "#E0F2FE"
+    },
+    "backdrop": {
+      "primary": "#0F172A",
+      "secondary": "#111827",
+      "surface": "#1F2937",
+      "overlay": "rgba(15,23,42,0.55)"
+    },
+    "text": {
+      "primary": "#111827",
+      "secondary": "#374151",
+      "muted": "#6B7280",
+      "inverse": "#F9FAFB",
+      "accent": "#0EA5E9",
+      "onDarkPrimary": "#F9FAFB",
+      "onDarkSecondary": "#CBD5E1",
+      "headingOnLight": "#111827",
+      "bodyOnLight": "#374151",
+      "mutedOnLight": "#6B7280"
+    },
+    "border": {
+      "DEFAULT": "rgba(14,165,233,0.2)",
+      "subtle": "rgba(148,163,184,0.2)",
+      "emphasis": "rgba(14,165,233,0.45)"
+    },
+    "status": {
+      "success": "#16A34A",
+      "warning": "#F59E0B",
+      "error": "#DC2626"
+    }
+  },
+  "typography": {
+    "display": "clamp(2.2rem, 4.6vw, 4rem)",
+    "heading": "clamp(1.7rem, 3vw, 2.7rem)",
+    "subheading": "clamp(1.05rem, 1.5vw, 1.35rem)",
+    "body": "1rem",
+    "small": "0.875rem",
+    "fonts": {
+      "display": "'Space Grotesk', 'Inter', system-ui, sans-serif",
+      "heading": "'Space Grotesk', 'Inter', system-ui, sans-serif",
+      "subheading": "'Inter', system-ui, sans-serif",
+      "body": "'Inter', system-ui, sans-serif",
+      "small": "'Inter', system-ui, sans-serif"
+    },
+    "tracking": {
+      "display": "-0.01em",
+      "heading": "-0.01em",
+      "body": "0em",
+      "nav": "0.06em",
+      "label": "0.08em"
+    },
+    "lineHeight": {
+      "display": "1.15",
+      "heading": "1.25",
+      "body": "1.6",
+      "menu": "1.6"
+    },
+    "weight": {
+      "display": "700"
+    }
+  },
+  "spacing": {
+    "sectionPy": "4.5rem",
+    "sectionPySm": "3rem",
+    "containerMax": "1200px",
+    "containerPx": "1.5rem",
+    "cardPad": "1.25rem",
+    "menuItemPy": "1rem",
+    "navHeight": "66px",
+    "heroMinH": "82svh",
+    "gridGap": "1.25rem"
+  },
+  "effects": {
+    "cardRadius": "14px",
+    "btnRadius": "12px",
+    "badgeRadius": "999px",
+    "cardShadow": "0 8px 24px rgba(2,6,23,0.12)",
+    "cardShadowHover": "0 14px 36px rgba(2,6,23,0.18)",
+    "heroOverlay": "linear-gradient(to bottom, rgba(15,23,42,0.12) 0%, rgba(15,23,42,0.4) 100%)",
+    "menuDivider": "1px solid rgba(148,163,184,0.28)"
+  },
+  "motion": {
+    "durationFast": "140ms",
+    "durationBase": "240ms",
+    "durationSlow": "420ms",
+    "easing": "cubic-bezier(0.2, 0.9, 0.2, 1)",
+    "hoverLift": "-4px",
+    "entranceDist": "14px"
+  },
+  "shape": {
+    "radius": "14px",
+    "shadow": "0 8px 24px rgba(2,6,23,0.12)"
+  },
+  "layout": {
+    "heroVariant": "split-photo-left",
+    "featureVariant": "grid",
+    "spacingDensity": "compact"
+  },
+  "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+}

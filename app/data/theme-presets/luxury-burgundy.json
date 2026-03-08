@@ -1,0 +1,120 @@
+{
+  "variantId": "luxury-burgundy",
+  "_preset": {
+    "id": "luxury-burgundy",
+    "name": "Luxury Burgundy",
+    "category": "luxury",
+    "description": "Wine-forward upscale palette with burgundy accents and smooth classic spacing."
+  },
+  "colors": {
+    "primary": {
+      "DEFAULT": "#2A1A1E",
+      "dark": "#170F12",
+      "light": "#3D2A30",
+      "50": "#F7F3F4",
+      "100": "#ECDDDF"
+    },
+    "secondary": {
+      "DEFAULT": "#8C2F39",
+      "dark": "#73232C",
+      "light": "#A64550",
+      "50": "#F9EDEF"
+    },
+    "backdrop": {
+      "primary": "#131113",
+      "secondary": "#1B171A",
+      "surface": "#241E22",
+      "overlay": "rgba(16,12,14,0.58)"
+    },
+    "text": {
+      "primary": "#1A1A1A",
+      "secondary": "#4B5563",
+      "muted": "#6B7280",
+      "inverse": "#F7F4F2",
+      "accent": "#B88A50",
+      "onDarkPrimary": "#F7F4F2",
+      "onDarkSecondary": "#D6D3D1",
+      "headingOnLight": "#111827",
+      "bodyOnLight": "#4B5563",
+      "mutedOnLight": "#6B7280"
+    },
+    "border": {
+      "DEFAULT": "rgba(184,138,80,0.22)",
+      "subtle": "rgba(255,255,255,0.08)",
+      "emphasis": "rgba(140,47,57,0.48)"
+    },
+    "status": {
+      "success": "#16A34A",
+      "warning": "#D97706",
+      "error": "#DC2626"
+    }
+  },
+  "typography": {
+    "display": "clamp(2.5rem, 5vw, 4.5rem)",
+    "heading": "clamp(1.85rem, 3.3vw, 3rem)",
+    "subheading": "clamp(1.1rem, 1.7vw, 1.45rem)",
+    "body": "1rem",
+    "small": "0.85rem",
+    "fonts": {
+      "display": "'Playfair Display', Georgia, serif",
+      "heading": "'Playfair Display', Georgia, serif",
+      "subheading": "'Inter', system-ui, sans-serif",
+      "body": "'Inter', system-ui, sans-serif",
+      "small": "'Inter', system-ui, sans-serif"
+    },
+    "tracking": {
+      "display": "0.04em",
+      "heading": "0.02em",
+      "body": "0em",
+      "nav": "0.1em",
+      "label": "0.12em"
+    },
+    "lineHeight": {
+      "display": "1.12",
+      "heading": "1.32",
+      "body": "1.64",
+      "menu": "1.64"
+    },
+    "weight": {
+      "display": "500"
+    }
+  },
+  "spacing": {
+    "sectionPy": "5.5rem",
+    "sectionPySm": "3.75rem",
+    "containerMax": "1180px",
+    "containerPx": "1.75rem",
+    "cardPad": "1.75rem",
+    "menuItemPy": "1.15rem",
+    "navHeight": "70px",
+    "heroMinH": "92svh",
+    "gridGap": "1.4rem"
+  },
+  "effects": {
+    "cardRadius": "8px",
+    "btnRadius": "999px",
+    "badgeRadius": "999px",
+    "cardShadow": "0 4px 16px rgba(42,26,30,0.28)",
+    "cardShadowHover": "0 12px 30px rgba(42,26,30,0.36)",
+    "heroOverlay": "linear-gradient(to bottom, rgba(24,18,20,0.2) 0%, rgba(24,18,20,0.48) 100%)",
+    "menuDivider": "1px solid rgba(184,138,80,0.24)"
+  },
+  "motion": {
+    "durationFast": "160ms",
+    "durationBase": "280ms",
+    "durationSlow": "460ms",
+    "easing": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "hoverLift": "-3px",
+    "entranceDist": "16px"
+  },
+  "shape": {
+    "radius": "8px",
+    "shadow": "0 4px 16px rgba(42,26,30,0.28)"
+  },
+  "layout": {
+    "heroVariant": "split-photo-right",
+    "featureVariant": "cards",
+    "spacingDensity": "comfortable"
+  },
+  "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+}

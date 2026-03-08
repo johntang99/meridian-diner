@@ -9,6 +9,7 @@ import { ImagePickerModal } from '@/components/admin/ImagePickerModal';
 import { SeoPanel } from '@/components/admin/panels/SeoPanel';
 import { HeaderPanel } from '@/components/admin/panels/HeaderPanel';
 import { ThemePanel } from '@/components/admin/panels/ThemePanel';
+import ThemePresetsTab from '@/components/admin/ThemePresetsTab';
 import { SectionVariantsPanel } from '@/components/admin/panels/SectionVariantsPanel';
 import { ConditionsLayoutPanel } from '@/components/admin/panels/ConditionsLayoutPanel';
 import { HomeSectionPhotosPanel } from '@/components/admin/panels/HomeSectionPhotosPanel';
@@ -41,6 +42,7 @@ import { MenuLayoutPanel } from '@/components/admin/panels/MenuLayoutPanel';
 import { MenuTypePanel } from '@/components/admin/panels/MenuTypePanel';
 import { SECTION_VARIANT_OPTIONS, SITE_SETTINGS_PATHS } from '@/components/admin/utils/editorConstants';
 import { getPathValue, toTitleCase } from '@/components/admin/utils/editorHelpers';
+import type { ThemePreset } from '@/lib/theme-presets';
 
 interface ContentFileItem {
   id: string;
@@ -93,7 +95,7 @@ export function ContentEditor({
   const [formData, setFormData] = useState<Record<string, any> | null>(null);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<'form' | 'json'>('form');
+  const [activeTab, setActiveTab] = useState<'presets' | 'form' | 'json'>('form');
   const [showImagePicker, setShowImagePicker] = useState(false);
   const [imageFieldPath, setImageFieldPath] = useState<string[] | null>(null);
   const [markdownPreview, setMarkdownPreview] = useState<Record<string, boolean>>({});
@@ -1019,6 +1021,14 @@ export function ContentEditor({
     setFormData(next);
   };
 
+  const applyThemePreset = (preset: ThemePreset) => {
+    const nextTheme = withThemeDefaults(JSON.parse(JSON.stringify(preset)));
+    setFormData(nextTheme);
+    setContent(JSON.stringify(nextTheme, null, 2));
+    setActiveTab('form');
+    setStatus(`Applied theme preset: ${preset._preset.name}. Save/Publish to persist.`);
+  };
+
   const openImagePicker = (path: string[]) => {
     setImageFieldPath(path);
     setShowImagePicker(true);
@@ -1043,6 +1053,11 @@ export function ContentEditor({
   const isBlogPostFile = activeFile?.path.startsWith('blog/');
   const isHeaderFile = activeFile?.path === 'header.json';
   const isThemeFile = activeFile?.path === 'theme.json';
+  useEffect(() => {
+    if (!isThemeFile && activeTab === 'presets') {
+      setActiveTab('form');
+    }
+  }, [isThemeFile, activeTab]);
   const isHomePageFile = activeFile?.path === 'pages/home.json';
   const isMenuHubPageFile = activeFile?.path === 'pages/menu.json';
   const isPagesLayoutFile = activeFile?.path === 'pages/layout.json';
@@ -2456,6 +2471,19 @@ export function ContentEditor({
           )}
 
           <div className="flex items-center gap-2 mb-3">
+            {isThemeFile && (
+              <button
+                type="button"
+                onClick={() => setActiveTab('presets')}
+                className={`px-3 py-1.5 rounded-md text-xs ${
+                  activeTab === 'presets'
+                    ? 'bg-[var(--primary)] text-white'
+                    : 'border border-gray-200 text-gray-700'
+                }`}
+              >
+                Presets
+              </button>
+            )}
             <button
               type="button"
               onClick={() => setActiveTab('form')}
@@ -2480,7 +2508,13 @@ export function ContentEditor({
             </button>
           </div>
 
-          {activeTab === 'form' ? (
+          {activeTab === 'presets' ? (
+            isThemeFile && formData ? (
+              <ThemePresetsTab currentTheme={formData} onApply={applyThemePreset} />
+            ) : (
+              <div className="text-sm text-gray-500">Presets are available only for theme.json.</div>
+            )
+          ) : activeTab === 'form' ? (
             <div className="space-y-6 text-sm">
               {!formData && (
                 <div className="text-sm text-gray-500">

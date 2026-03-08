@@ -1,0 +1,120 @@
+{
+  "variantId": "garden-fresh",
+  "_preset": {
+    "id": "garden-fresh",
+    "name": "Garden Fresh",
+    "category": "fresh",
+    "description": "Bright, natural palette for farm-to-table and healthy dining concepts."
+  },
+  "colors": {
+    "primary": {
+      "DEFAULT": "#2F6F4F",
+      "dark": "#1F5238",
+      "light": "#438764",
+      "50": "#EFF8F3",
+      "100": "#DCEFE4"
+    },
+    "secondary": {
+      "DEFAULT": "#F4B400",
+      "dark": "#D18F00",
+      "light": "#F7C843",
+      "50": "#FFF9E6"
+    },
+    "backdrop": {
+      "primary": "#FAFDF9",
+      "secondary": "#F3F9F2",
+      "surface": "#FFFFFF",
+      "overlay": "rgba(31,82,56,0.24)"
+    },
+    "text": {
+      "primary": "#102A1D",
+      "secondary": "#335244",
+      "muted": "#5E7469",
+      "inverse": "#F9FCF8",
+      "accent": "#2F6F4F",
+      "onDarkPrimary": "#F9FCF8",
+      "onDarkSecondary": "#D6E5DC",
+      "headingOnLight": "#102A1D",
+      "bodyOnLight": "#335244",
+      "mutedOnLight": "#5E7469"
+    },
+    "border": {
+      "DEFAULT": "rgba(47,111,79,0.2)",
+      "subtle": "rgba(47,111,79,0.1)",
+      "emphasis": "rgba(244,180,0,0.4)"
+    },
+    "status": {
+      "success": "#15803D",
+      "warning": "#CA8A04",
+      "error": "#DC2626"
+    }
+  },
+  "typography": {
+    "display": "clamp(2.25rem, 4.8vw, 4.1rem)",
+    "heading": "clamp(1.7rem, 3vw, 2.6rem)",
+    "subheading": "clamp(1.05rem, 1.5vw, 1.25rem)",
+    "body": "1rem",
+    "small": "0.875rem",
+    "fonts": {
+      "display": "'Manrope', system-ui, sans-serif",
+      "heading": "'Manrope', system-ui, sans-serif",
+      "subheading": "'Manrope', system-ui, sans-serif",
+      "body": "'Manrope', system-ui, sans-serif",
+      "small": "'Manrope', system-ui, sans-serif"
+    },
+    "tracking": {
+      "display": "-0.01em",
+      "heading": "-0.005em",
+      "body": "0em",
+      "nav": "0.05em",
+      "label": "0.08em"
+    },
+    "lineHeight": {
+      "display": "1.18",
+      "heading": "1.3",
+      "body": "1.66",
+      "menu": "1.66"
+    },
+    "weight": {
+      "display": "700"
+    }
+  },
+  "spacing": {
+    "sectionPy": "4.75rem",
+    "sectionPySm": "3.2rem",
+    "containerMax": "1180px",
+    "containerPx": "1.5rem",
+    "cardPad": "1.3rem",
+    "menuItemPy": "1rem",
+    "navHeight": "66px",
+    "heroMinH": "82svh",
+    "gridGap": "1.25rem"
+  },
+  "effects": {
+    "cardRadius": "14px",
+    "btnRadius": "999px",
+    "badgeRadius": "999px",
+    "cardShadow": "0 6px 18px rgba(31,82,56,0.1)",
+    "cardShadowHover": "0 12px 28px rgba(31,82,56,0.16)",
+    "heroOverlay": "linear-gradient(to bottom, rgba(31,82,56,0.1) 0%, rgba(31,82,56,0.34) 100%)",
+    "menuDivider": "1px solid rgba(47,111,79,0.2)"
+  },
+  "motion": {
+    "durationFast": "140ms",
+    "durationBase": "250ms",
+    "durationSlow": "430ms",
+    "easing": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "hoverLift": "-3px",
+    "entranceDist": "13px"
+  },
+  "shape": {
+    "radius": "14px",
+    "shadow": "0 6px 18px rgba(31,82,56,0.1)"
+  },
+  "layout": {
+    "heroVariant": "gallery-background",
+    "featureVariant": "grid",
+    "spacingDensity": "comfortable"
+  },
+  "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+}
